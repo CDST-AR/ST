@@ -1,0 +1,33 @@
+//Variables de colores
+
+$rosa:#E21982;
+$azul:#22193F;
+$gris:#E8E8E8;
+
+.banner-secundario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 400px;
+    background-image: url(/sass/banner-secundario.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    h2{
+        text-align: center;
+        color: $gris;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+    }
+    button{
+        background-color: $rosa;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        color: $gris;
+        border-radius: 50px;
+        padding: 4px 15px;
+    }
+}

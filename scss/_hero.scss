@@ -1,0 +1,52 @@
+
+$rosa:#E21982;
+$azul:#22193F;
+$gris:#E8E8E8;
+
+@mixin Boton {
+    background-color: $rosa;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: $gris;
+    border-radius: 50px;
+    padding: 4px 15px;
+}
+
+.hero{
+    height: 800px;
+    background-image: url(/sass/banner-principal.jpg);
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.descripcion-banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1{
+        color: $gris;
+        font-size: 40px;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 900;
+        text-align: center;
+    }
+    p{
+        color: $gris;
+        font-size: 16px;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 200;
+        text-align: center;
+    }
+    .comenzar{
+
+        @include Boton
+        
+    }
+
+}
