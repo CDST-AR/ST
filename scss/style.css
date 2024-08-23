@@ -207,7 +207,7 @@
   align-items: center;
   flex-direction: column;
   height: 400px;
-  background-image: url(ST/sass/banner-secundario.jpg);
+  background-image: url(../sass/banner-secundario.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
