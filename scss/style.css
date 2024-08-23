@@ -21,7 +21,12 @@
 }
 
 .quienes-somos {
-  text-align: center;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('/sass/banner-principal.png');
+  background-size: cover;
+  background-position: center;
+  padding: 50px;
+  color: white; 
+  text-align: start;
   background-color: #E8E8E8;
   padding-top: 70px;
   padding-bottom: 70px;
@@ -36,7 +41,7 @@
 }
 
 .quienes-somos h2 {
-  color: #22193F;
+  color: #f5f5f5;
   font-size: 28px;
   font-family: "Nunito", sans-serif;
   font-weight: 900;
@@ -50,9 +55,7 @@
   font-weight: 400;
 }
 
-.quienes-somos span {
-  font-weight: bold;
-}
+
 
 .como-funciona {
   text-align: center;
