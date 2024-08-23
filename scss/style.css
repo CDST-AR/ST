@@ -21,7 +21,7 @@
 }
 
 .quienes-somos {
-  background-image:linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('/sass/banner-principal.png');
+  background-image:linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('../sass/banner-principal.png');
   background-size: cover;
   background-position: center;
   padding: 50px;
