@@ -1,0 +1,3098 @@
+{
+  "models": {
+    "Samsung 4020": {
+      "errors": {
+        "A1-1110": {
+          "Impresora": "Samsung 4020",
+          "Error": "A1-1110",
+          "Sintoma": "El arnés, el motor BLDC principal o la placa principal están defectuosos. / El acoplador OPC en el cartucho de tóner (o unidad de imágen) está sobrecargado.",
+          "Solucion": [
+            "1) Apague y encienda la máquina. Si el error persiste, consulte lo siguiente:",
+            "2) Retire la cubierta derecha.",
+            "3) Verifique si el conector del motor en la placa principal está conectado correctamente. Reconéctelo.",
+            "4) El acoplador OPC está sobrecargado. Después de retirar el cartucho de tóner/unidad de imagen, gire el acoplador OPC. Si hay algún daño, el acoplador OPC no girará bien. Reemplace el cartucho de tóner/unidad de imagen.",
+            "5) Retire la cubierta izquierda.",
+            "6) Retire la unidad principal de transmisión.",
+            "7) El motor BLDC principal está defectuoso. Desconecte con cuidado el conector del motor. Reemplace el motor BLDC principal (JC31-00075A) por uno nuevo.",
+            "8) Si el problema persiste, reemplace la placa principal."
+          ]
+        },
+        "C1-1110,C1-1120,C1-1144,C1-1150,C1-1160,C1-1170": {
+          "Impresora": "Samsung M3325/3825/4025",
+          "Error": "C1-1110,C1-1120,C1-1144,C1-1150,C1-1160,C1-1170",
+          "Sintoma": "El cartucho de tóner restante tiene menos del 10% de vida útil / El cartucho de tóner está al final de su vida útil.",
+          "Solucion": [
+            "1) Verifique la vida restante del cartucho de tóner.",
+            "2) Si la vida útil está al final, apague la máquina y reemplace el cartucho de tóner por uno nuevo."
+          ]
+        },
+        "C1-1310,C1-1411": {
+          "Impresora": "Samsung M3325/3825/4025",
+          "Error": "C1-1310,C1-1411",
+          "Sintoma": "El cartucho de tóner no está instalado.",
+          "Solucion": [
+            "1) Apague y encienda la máquina.",
+            "2) Abra la cubierta frontal.",
+            "3) Verifique si el cartucho de tóner está instalado. Si está instalado, retírelo y vuelva a instalarlo.",
+            "4) Si el problema persiste, reemplace el cartucho de tóner con uno nuevo."
+          ]
+        },
+        "C1-1512": {
+          "Impresora": "Samsung M3325/3825/4025",
+          "Error": "C1-1512",
+          "Sintoma": "El cartucho de tóner no es compatible.",
+          "Solucion": [
+            "1) Abra la cubierta frontal.",
+            "2) Retire el cartucho de tóner.",
+            "3) Si el cartucho de tóner no es un cartucho original de Samsung, reemplácelo por uno nuevo."
+          ]
+        },
+        "C1-1710,C1-1711,C1-1712": {
+          "Impresora": "Samsung M3325/3825/4025",
+          "Error": "C1-1710,C1-1711,C1-1712",
+          "Sintoma": "La máquina no puede detectar el chip CRUM del cartucho de tóner.",
+          "Solucion": [
+            "1) Abra la cubierta frontal.",
+            "2) Retire el cartucho de tóner.",
+            "3) Verifique si el terminal CRUM está contaminado. Límpielo.",
+            "4) Si el cartucho de tóner no es un cartucho original de Samsung, reemplácelo por uno nuevo."
+          ]
+        },
+        "C2-1110,C2-1120,C2-1150,C2-1160,C2-1170": {
+          "Impresora": "Samsung M3320/3820/4020",
+          "Error": "C2-1110,C2-1120,C2-1150,C2-1160,C2-1170",
+          "Sintoma": "El cartucho de tóner restante tiene menos del 10% de vida útil / El cartucho de tóner está al final de su vida útil.",
+          "Solucion": [
+            "1) Verifique la vida restante del cartucho de tóner.",
+            "2) Si la vida útil está al final, apague la máquina y reemplace el cartucho de tóner por uno nuevo."
+          ]
+        },
+        "C2-1411": {
+          "Impresora": "Samsung M3320/3820/4020",
+          "Error": "C2-1411",
+          "Sintoma": "El cartucho de tóner no está instalado.",
+          "Solucion": [
+            "1) Apague y encienda la máquina.",
+            "2) Abra la cubierta frontal.",
+            "3) Verifique si el cartucho de tóner está instalado. Si está instalado, retírelo y vuelva a instalarlo.",
+            "4) Si el problema persiste, reemplace el cartucho de tóner con uno nuevo."
+          ]
+        },
+        "C2-1512": {
+          "Impresora": "Samsung M3320/3820/4020",
+          "Error": "C2-1512",
+          "Sintoma": "El cartucho de tóner no es compatible.",
+          "Solucion": [
+            "1) Abra la cubierta frontal.",
+            "2) Retire el cartucho de tóner.",
+            "3) Si el cartucho de tóner no es un cartucho original de Samsung, reemplácelo por uno nuevo."
+          ]
+        },
+        "C2-1710,C2-1711,C2-1712": {
+          "Impresora": "Samsung M3320/3820/4020",
+          "Error": "C2-1710,C2-1711,C2-1712",
+          "Sintoma": "La máquina no puede detectar el chip CRUM del cartucho de tóner.",
+          "Solucion": [
+            "1) Abra la cubierta frontal.",
+            "2) Retire el cartucho de tóner.",
+            "3) Verifique si el terminal CRUM está contaminado. Límpielo.",
+            "4) Si el cartucho de tóner no es un cartucho original de Samsung, reemplácelo por uno nuevo."
+          ]
+        },
+        "C3-1110,C3-1120,C3-1144": {
+          "Impresora": "Samsung M3325/3825/4025",
+          "Error": "C3-1110,C3-1120,C3-1144",
+          "Sintoma": "La unidad de imágen restante tiene menos del 10% de vida útil / La unidad de imágen está al final de su vida útil.",
+          "Solucion": [
+            "1) Verifique la vida restante de la unidad de imágen.",
+            "2) Si la vida útil está al final, apague la máquina y reemplace la unidad de imágen por una nueva."
+          ]
+        },
+        "C3-1410": {
+          "Impresora": "Samsung M3325/3825/4025",
+          "Error": "C3-1410",
+          "Sintoma": "La unidad de imágen no está instalada.",
+          "Solucion": [
+            "1) Apague y encienda la máquina.",
+            "2) Abra la cubierta frontal.",
+            "3) Verifique si la unidad de imágen está instalada. Si está instalada, retírela y vuelva a instalarla.",
+            "4) Si el problema persiste, reemplace la unidad de imágen con una nueva."
+          ]
+        },
+        "C3-1510": {
+          "Impresora": "Samsung 4020",
+          "Error": "C3-1510",
+          "Sintoma": "La unidad de imagen no es compatible.",
+          "Solucion": [
+            "1) Abre la cubierta frontal.",
+            "2) Retira el cartucho de tóner y la unidad de imagen.",
+            "3) Si la unidad de imagen no es una unidad genuina de Samsung, reemplázala por una nueva."
+          ]
+        },
+        "C9-1112": {
+          "Impresora": "Samsung 4020",
+          "Error": "C9-1112",
+          "Sintoma": "El rodillo de recogida de la bandeja 1 está desgastado.",
+          "Solucion": [
+            "1) Retira el casete de la bandeja 1.",
+            "2) Retira la unidad dúplex.",
+            "3) Tira hacia abajo la pequeña lengüeta y suelta el rodillo de recogida (JC73-00340A)."
+          ]
+        },
+        "C9-1115": {
+          "Impresora": "Samsung 4020",
+          "Error": "C9-1115",
+          "Sintoma": "El rodillo de inversión de la bandeja 1 está desgastado.",
+          "Solucion": [
+            "1) Retira el casete de la bandeja 1.",
+            "2) Retira el rodillo de inversión (JC90-01032A)."
+          ]
+        },
+        "C9-1122": {
+          "Impresora": "Samsung 4020",
+          "Error": "C9-1122",
+          "Sintoma": "El rodillo de recogida de la bandeja 2 está desgastado.",
+          "Solucion": [
+            "1) Retira el casete de la bandeja 2.",
+            "2) Mira la parte inferior de la unidad SCF.",
+            "3) Tira hacia abajo la pequeña lengüeta y suelta el rodillo de recogida (JC97-02259A)."
+          ]
+        },
+        "C9-1125": {
+          "Impresora": "Samsung 4020",
+          "Error": "C9-1125",
+          "Sintoma": "El rodillo de inversión de la bandeja 2 está desgastado.",
+          "Solucion": [
+            "1) Retira el casete de la bandeja 2.",
+            "2) Abre la cubierta del casete.",
+            "3) Tira hacia abajo la pequeña lengüeta y suelta el rodillo de inversión (JC97-02259A)."
+          ]
+        },
+        "H1-1210": {
+          "Impresora": "Samsung 4020",
+          "Error": "H1-1210",
+          "Sintoma": "Se detectó un atasco de papel en el área de alimentación de la bandeja 2.",
+          "Solucion": [
+            "1) Retira el casete de la bandeja 2.",
+            "2) Encuentra y retira el papel atascado.",
+            "3) Si el problema persiste, revisa lo siguiente:",
+            "4) Comprueba si el rodillo de recogida/avance/inversión (JC97-02259A) está contaminado o desgastado.",
+            "5) Comprueba si el conector del sensor de alimentación está conectado correctamente.",
+            "6) Si el sensor de alimentación (0604-001325) está defectuoso, reemplázalo."
+          ]
+        },
+        "H1-1220": {
+          "Impresora": "Samsung 4020",
+          "Error": "H1-1220",
+          "Sintoma": "El casete opcional no está instalado correctamente.",
+          "Solucion": [
+            "1) Retira y reinstala el casete de la bandeja 2.",
+            "2) Comprueba el sensor de detección del casete:",
+            "3) Comprueba si la conexión entre el sensor y la placa principal está bien. Reconecta el arnés.",
+            "4) Si el sensor (JC34-00001A) está defectuoso, reemplázalo."
+          ]
+        },
+        "H1-1230": {
+          "Impresora": "Samsung 4020",
+          "Error": "H1-1230",
+          "Sintoma": "Se ha producido un error de comunicación.",
+          "Solucion": [
+            "1) Apaga y enciende la máquina.",
+            "2) Si el problema persiste, apaga la máquina.",
+            "3) Retira la cubierta derecha de la SCF. (Refiérase a 3.3.19.1)",
+            "4) Comprueba si el conector de la interfaz está conectado a la placa principal de la SCF. Si el conector de la interfaz está defectuoso, reemplázalo.",
+            "5) Si el problema persiste, reemplaza la placa principal de la SCF (JC92-02636A)."
+          ]
+        },
+        "H1-1240": {
+          "Impresora": "Samsung 4020",
+          "Error": "H1-1240",
+          "Sintoma": "El casete opcional no está instalado correctamente.",
+          "Solucion": [
+            "1) Retira y reinstala el casete de la bandeja 2.",
+            "2) Comprueba el sensor de detección del casete:",
+            "3) Comprueba si la conexión entre el sensor y la placa principal está bien. Reconecta el arnés.",
+            "4) Si el sensor (JC34-00001A) está defectuoso, reemplázalo."
+          ]
+        },
+        "H1-1252,H1-1254": {
+          "Impresora": "Samsung 4020",
+          "Error": "H1-1252,H1-1254",
+          "Sintoma": "No hay papel en la bandeja 2. / El actuador de papel vacío o el sensor fotoeléctrico está defectuoso.",
+          "Solucion": [
+            "1) Carga el papel en la bandeja 2.",
+            "2) Si el problema persiste, apaga la máquina y revisa lo siguiente:",
+            "3) Si el actuador de papel vacío está defectuoso, reemplázalo.",
+            "4) Si el sensor fotoeléctrico (0604-001325) está defectuoso, reemplázalo. Comprueba si el conector está conectado correctamente.",
+            "5) Si el problema persiste, reemplaza la placa principal de la SCF (JC92-02636A)."
+          ]
+        },
+        "M1-1110": {
+          "Impresora": "Samsung 4020",
+          "Error": "M1-1110",
+          "Sintoma": "Se ha producido un atasco de papel en la bandeja 1.",
+          "Solucion": [
+            "1) Elimina el papel atascado. (Refiérase a 4.1.3)",
+            "2) Si el problema persiste, revisa lo siguiente:",
+            "3) Mientras presionas el sensor de papel vacío, envía los datos de impresión. Comprueba si el rodillo de recogida está girando normalmente.",
+            "4) Comprueba si hay algún obstáculo en el trayecto del papel (desde el rodillo de recogida hasta el sensor de alimentación). El rodillo de alimentación debe ser revisado especialmente.",
+            "5) Imprime la información de suministros. Comprueba la vida útil del rodillo de la bandeja 1 y la vida útil del rodillo de inversión (retardo) de la bandeja 1. Si la vida útil ha llegado a su fin, reemplaza el rodillo correspondiente."
+          ]
+        },
+        "M1-1610": {
+          "Impresora": "Samsung 4020",
+          "Error": "M1-1610",
+          "Sintoma": "Se ha producido un atasco de papel en la bandeja MP.",
+          "Solucion": [
+            "1) Elimina el papel atascado. (Refiérase a 4.1.3)",
+            "2) Si el problema persiste, revisa lo siguiente:",
+            "3) Apaga la máquina.",
+            "4) Retira la cubierta derecha.",
+            "5) Comprueba si el conector de la unidad MP está conectado correctamente.",
+            "6) Retira la unidad MP. (Refiérase a 3.3.14)",
+            "7) Comprueba si los rodillos de la MP están desgastados. Si es necesario, reemplaza el rodillo o la unidad MP defectuosa."
+          ]
+        },
+        "M1-5112,M1-5113,M1-5120": {
+          "Impresora": "Samsung",
+          "Error": "M1-5112,M1-5113,M1-5120",
+          "Sintoma": "No hay papel en la bandeja 1/No hay papel en todas las bandejas.. / El actuador de detección de papel vacío o el sensor fotográfico están defectuosos.",
+          "Solucion": [
+            "1) Cargar papel en la bandeja 1.",
+            "2) Si el problema persiste, revise lo siguiente después de apagar la máquina.",
+            "3) Si el actuador de detección de papel vacío (JC66-02762A) está defectuoso, reemplácelo.",
+            "4) Si el sensor fotográfico (0604-001393) está defectuoso, reemplácelo.",
+            "5) Si el problema persiste, reemplace la placa principal."
+          ]
+        },
+        "M1-5612": {
+          "Impresora": "Samsung",
+          "Error": "M1-5612",
+          "Sintoma": "No hay papel en la bandeja MP. / El actuador de detección de papel vacío o el sensor fotográfico están defectuosos.",
+          "Solucion": [
+            "1) Cargar papel en la bandeja MP.",
+            "2) Si el problema persiste, revise lo siguiente después de apagar la máquina.",
+            "3) Si el actuador de detección de papel vacío (JC66-02762A) está defectuoso, reemplácelo.",
+            "4) Si el sensor fotográfico (0604-001393) está defectuoso, reemplácelo.",
+            "5) Si el problema persiste, reemplace la placa principal."
+          ]
+        },
+        "M2-1110": {
+          "Impresora": "Samsung",
+          "Error": "M2-1110",
+          "Sintoma": "Se ha detectado un atasco de papel en el sensor de alimentación.",
+          "Solucion": [
+            "1) Eliminar el papel atascado. (Refiérase a 4.1.3)",
+            "2) Si el error persiste, revise lo siguiente:",
+            "3) Verifique si el conector del sensor de alimentación está conectado correctamente. (Refiérase a 3.3.17)",
+            "4) Compruebe si el rodillo de registro está contaminado o desgastado. Si es así, reemplácelo.",
+            "5) Verifique si hay obstáculos o contaminación en la ruta del papel. Si es así, límpielos o elimínelos."
+          ]
+        },
+        "M2-2210": {
+          "Impresora": "Samsung",
+          "Error": "M2-2210",
+          "Sintoma": "Se ha detectado un atasco de papel en la parte inferior del dúplex.",
+          "Solucion": [
+            "1) Eliminar el papel atascado. (Refiérase a 4.1.3)",
+            "2) Eliminar la contaminación u obstáculos en la ruta del papel.",
+            "3) Si este error de atasco ocurre continuamente, reemplace la unidad dúplex."
+          ]
+        },
+        "M3-1110": {
+          "Impresora": "Samsung",
+          "Error": "M3-1110",
+          "Sintoma": "Se ha detectado un atasco de papel en el área de salida.",
+          "Solucion": [
+            "1) Eliminar el papel atascado. (Refiérase a 4.1.3)",
+            "2) Verifique si hay obstáculos o contaminación en la ruta del papel. Si es así, límpielos o elimínelos.",
+            "3) Compruebe si la goma del rodillo de salida está desgastada. Reemplace el rodillo de salida (JC93-00323A).",
+            "4) Verifique si el conector del sensor de salida está conectado correctamente. Si la conexión es correcta, reemplace el sensor de salida."
+          ]
+        },
+        "M3-2130": {
+          "Impresora": "Samsung",
+          "Error": "M3-2130",
+          "Sintoma": "La máquina ha detectado que la bandeja de salida está llena o el sensor de bandeja llena está defectuoso.",
+          "Solucion": [
+            "1) Retire el papel de la bandeja de salida.",
+            "2) Si el problema persiste, revise lo siguiente:",
+            "3) Retire la cubierta superior.",
+            "4) Verifique si el conector del sensor de bandeja llena está conectado correctamente. Reconéctelo o reemplace el sensor de bandeja llena."
+          ]
+        },
+        "S2-4120": {
+          "Impresora": "Samsung",
+          "Error": "S2-4120",
+          "Sintoma": "La puerta está abierta o el interruptor de apertura de la tapa está defectuoso.",
+          "Solucion": [
+            "1) Verifique si la puerta frontal está cerrada correctamente.",
+            "2) Verifique si la puerta trasera está cerrada correctamente.",
+            "3) Verifique si la conexión entre la placa principal y la placa HVPS es correcta.",
+            "4) Verifique si el interruptor de apertura de la tapa en la placa HVPS funciona correctamente. Si está defectuoso, reemplace la placa HVPS (JC44-00197A)."
+          ]
+        },
+        "S6-3123": {
+          "Impresora": "Samsung",
+          "Error": "S6-3123",
+          "Sintoma": "Conflicto de IP. La dirección IP entra en conflicto con la de otro sistema. / No hay respuesta al verificar la prueba de ping.",
+          "Solucion": [
+            "Cambie la dirección IP de la máquina.",
+            "Configure la dirección IP en este orden: Red -> TCP/IP (IPv4) -> ESTÁTICA.",
+            "En caso de DHCP o Bootp, reinicie la máquina para recibir una nueva dirección IP."
+          ]
+        },
+        "S6-3128": {
+          "Impresora": "Samsung",
+          "Error": "S6-3128",
+          "Sintoma": "Error de red 802.1x. Se solicitó confirmación para el puerto cableado, el servidor ha rechazado. / El protocolo de confirmación no es el mismo o la información del usuario (ID/Contraseña) es incorrecta.",
+          "Solucion": [
+            "Verifique la configuración del servidor de confirmación 802.1x.",
+            "Vuelva a ingresar la información del servidor y el protocolo de confirmación.",
+            "Vuelva a ingresar la información del usuario."
+          ]
+        },
+        "U1-2334,U1-2340,U1-2330,U1-2320,U1-2315": {
+          "Impresora": "Samsung",
+          "Error": "U1-2334,U1-2340,U1-2330,U1-2320,U1-2315",
+          "Sintoma": "El control de temperatura de la unidad fusora es anormal.",
+          "Solucion": [
+            "1) Apague la máquina. Reinstale la unidad fusora. Luego encienda la máquina. ¿El mensaje de error ha desaparecido?",
+            "2) Si el problema persiste, apague la máquina y retire la unidad fusora. (Refiérase a 3.3.8)",
+            "3) Verifique si el conector de la unidad fusora está conectado correctamente.",
+            "4) Verifique si el voltaje de entrada es normal.",
+            "5) Verifique si el termistor está torcido o contaminado.",
+            "6) Después de confirmar la continuidad en el conector de la unidad fusora y el problema aún persiste; solicite una fuente de alimentación SMPS/HVPS y una unidad fusora, e instálelas según sea necesario."
+          ]
+        },
+        "U2-1112,U2-1113": {
+          "Impresora": "Samsung",
+          "Error": "U2-1112,U2-1113",
+          "Sintoma": "El motor LSU no funciona correctamente.",
+          "Solucion": [
+            "1) Ejecute la prueba del motor LSU en modo EDC. Verifique el sonido de operación del motor LSU.",
+            "2) Si no hay sonido, retire la cubierta derecha. Verifique si el arnés LSU está conectado correctamente en la placa principal.",
+            "3) Si está bien, retire la cubierta superior. Verifique si el arnés LSU está conectado correctamente en la placa LSU.",
+            "4) Verifique si el arnés LSU está defectuoso.",
+            "5) Vuelva a conectar el arnés LSU y ejecute nuevamente la prueba del motor LSU.",
+            "6) Si el problema persiste, reemplace el LSU (JC97-04065A).",
+            "7) Si el problema persiste después de reemplazar el LSU, reemplace la placa principal."
+          ]
+        }
+      }
+    },
+    "Samsung 4072": {
+      "errors": {
+        "A1-1110": {
+          "Impresora": "Samsung 4072",
+          "Error": "#A1-1110 / Motor Failure: #A1-1110. Turn off then on. Call for service if the problem persists",
+          "Sintoma": "El arnés, el motor BLDC principal o la placa principal están defectuosos. / El acoplador OPC en el cartucho de tóner (o unidad de imágen) está sobrecargado.",
+          "Solucion": [
+            "1) Apague la máquina y luego enciéndala. Si el error persiste, consulte lo siguiente:",
+            "2) Retire la cubierta derecha.",
+            "3) Verifique si el conector del motor en la placa principal está conectado correctamente. Reconéctelo.",
+            "4) El acoplador OPC está sobrecargado. Después de retirar el cartucho de tóner/unidad de imagen, gire el acoplador OPC. Si hay algún daño, el acoplador OPC no girará bien. Reemplace el cartucho de tóner/unidad de imagen.",
+            "5) Retire la cubierta izquierda.",
+            "6) Retire la unidad principal de transmisión.",
+            "7) El motor BLDC principal está defectuoso. Desconecte con cuidado el conector del motor. Reemplace el motor BLDC principal (JC31-00075A) por uno nuevo.",
+            "8) Si el problema persiste, reemplace la placa principal."
+          ]
+        },
+        "C1-1110,C1-1120,C1-1144,C1-1150,C1-1160,C1-1170": {
+          "Impresora": "Samsung 4072",
+          "Error": "Prepare nuevo tóner / Reemplace con nuevo cartucho de tóner",
+          "Sintoma": "El cartucho de tóner restante tiene menos del 10% / El cartucho de tóner está al final de su vida útil.",
+          "Solucion": [
+            "Verifique la vida restante del cartucho de tóner.",
+            "Si la vida útil está al final, apague la máquina y reemplace el cartucho de tóner por uno nuevo."
+          ]
+        },
+        "C1-1310,C1-1411": {
+          "Impresora": "Samsung 4072",
+          "Error": "Error: #C1-1310 / Fallo de tóner: #C1-1310. Instale el tóner nuevamente / El cartucho de tóner no está instalado. Instálelo",
+          "Sintoma": "El cartucho de tóner no está instalado.",
+          "Solucion": [
+            "Apague la máquina y vuelva a encenderla.",
+            "Abra la cubierta frontal.",
+            "Verifique si el cartucho de tóner está instalado. Si está instalado, retírelo y vuelva a instalarlo.",
+            "Si el problema persiste, reemplace el cartucho de tóner por uno nuevo."
+          ]
+        },
+        "C1-1512": {
+          "Impresora": "Samsung 4072",
+          "Error": "Tóner no compatible / El cartucho de tóner no es compatible. Verifique la guía",
+          "Sintoma": "El cartucho de tóner no es compatible.",
+          "Solucion": [
+            "Abra la cubierta frontal.",
+            "Retire el cartucho de tóner.",
+            "Si el cartucho de tóner no es un cartucho de tóner genuino de Samsung, reemplácelo por uno nuevo."
+          ]
+        },
+        "C1-1710,C1-1711,C1-1712": {
+          "Impresora": "Samsung 4072",
+          "Error": "Error: #C1-1710 / Fallo del cartucho de tóner: #C1-1710. Llame para servicio / Error: #C1-1711 / Fallo del cartucho de tóner: #C1-1711. Llame para servicio / Error: #C1-1712 / Fallo del cartucho de tóner: #C1-1712. Llame para servicio",
+          "Sintoma": "La máquina no puede detectar el chip CRUM del cartucho de tóner.",
+          "Solucion": [
+            "Abra la cubierta frontal.",
+            "Retire el cartucho de tóner.",
+            "Verifique si el terminal CRUM está contaminado. Límpielo.",
+            "Si el cartucho de tóner no es un cartucho de tóner genuino de Samsung, reemplácelo por uno nuevo."
+          ]
+        },
+        "C2-1110,C2-1120,C2-1150,C2-1160,C2-1170": {
+          "Impresora": "Samsung 4072",
+          "Error": "Prepare nuevo tóner / Reemplace con nuevo cartucho de tóner",
+          "Sintoma": "El cartucho de tóner restante tiene menos del 10% / El cartucho de tóner está al final de su vida útil.",
+          "Solucion": [
+            "Verifique la vida restante del cartucho de tóner.",
+            "Si la vida útil está al final, apague la máquina y reemplace el cartucho de tóner por uno nuevo."
+          ]
+        },
+        "C2-1411": {
+          "Impresora": "Samsung 4072",
+          "Error": "Tóner no instalado / El cartucho de tóner no está instalado. Instálelo",
+          "Sintoma": "El cartucho de tóner no está instalado.",
+          "Solucion": [
+            "Apague la máquina y vuelva a encenderla.",
+            "Abra la cubierta frontal.",
+            "Verifique si el cartucho de tóner está instalado. Si está instalado, retírelo y vuelva a instalarlo.",
+            "Si el problema persiste, reemplace el cartucho de tóner por uno nuevo."
+          ]
+        },
+        "C2-1512": {
+          "Impresora": "Samsung 3370/3870/4070",
+          "Error": "Tóner no compatible / El cartucho de tóner no es compatible. Verifique la guía",
+          "Sintoma": "El cartucho de tóner no es compatible.",
+          "Solucion": [
+            "1) Abra la cubierta frontal.",
+            "2) Retire el cartucho de tóner.",
+            "3) Si el cartucho de tóner no es un cartucho de tóner genuino de Samsung, reemplácelo por uno nuevo."
+          ]
+        },
+        "C2-1710,C2-1711,C2-1712": {
+          "Impresora": "Samsung 3370/3870/4070",
+          "Error": "Error: #C2-1710, #C2-1711, #C2-1712. Llame para servicio",
+          "Sintoma": "La máquina no puede detectar el chip CRUM del cartucho de tóner.",
+          "Solucion": [
+            "1) Abra la cubierta frontal.",
+            "2) Retire el cartucho de tóner.",
+            "3) Verifique si el terminal CRUM está contaminado. Límpielo.",
+            "4) Si el cartucho de tóner no es un cartucho de tóner genuino de Samsung, reemplácelo por uno nuevo."
+          ]
+        },
+        "C3–1110,C3–1120,C3–1144,C3–1150,C3–1160,C3–1170": {
+          "Impresora": "Samsung 3325/3825/4025",
+          "Error": "Prepare unidad de imágen / Prepare nueva unidad de imágen",
+          "Sintoma": "La unidad de imágen restante es menos del 10% / La unidad de imágen está al final de su vida útil.",
+          "Solucion": [
+            "1) Verifique la vida útil restante de la unidad de imágen.",
+            "2) Si la vida útil está al final, apague la máquina y reemplace la unidad de imágen por una nueva."
+          ]
+        },
+        "C3-1410": {
+          "Impresora": "Samsung 3325/3825/4025",
+          "Error": "Unidad de imágen no instalada / La unidad de imágen no está instalada. Instale la unidad",
+          "Sintoma": "La unidad de imágen no está instalada.",
+          "Solucion": [
+            "1) Apague la máquina y vuelva a encenderla.",
+            "2) Abra la cubierta frontal.",
+            "3) Verifique si la unidad de imágen está instalada. Si está instalada, retírela y vuelva a instalarla.",
+            "4) Si el problema persiste, reemplace la unidad de imágen por una nueva."
+          ]
+        },
+        "C3-1510": {
+          "Impresora": "Samsung 3320/3820/4020",
+          "Error": "Unidad de imágen no compatible / La unidad de imágen no es compatible. Verifique la guía",
+          "Sintoma": "La unidad de imágen no es compatible.",
+          "Solucion": [
+            "1) Abra la cubierta frontal.",
+            "2) Retire el cartucho de tóner y la unidad de imágen.",
+            "3) Si la unidad de imágen no es una unidad de imágen genuina de Samsung, reemplácela por una nueva."
+          ]
+        },
+        "C9-1112": {
+          "Impresora": "Modelo desconocido",
+          "Error": "Reemplace el rodillo de recogida / Reemplace con un nuevo rodillo de recogida de la bandeja 1",
+          "Sintoma": "El rodillo de recogida de la bandeja 1 está desgastado.",
+          "Solucion": [
+            "1) Retire el cassette de la bandeja 1.",
+            "2) Retire la unidad de dúplex.",
+            "3) Tire de la pequeña pestaña hacia abajo, luego libere el rodillo de recogida (JC73-00340A)."
+          ]
+        },
+        "C9-1115,C9-1125": {
+          "Impresora": "Modelo desconocido",
+          "Error": "Reemplace el rodillo de retroceso / Reemplace con un nuevo rodillo de retroceso de la bandeja",
+          "Sintoma": "El rodillo de retroceso de la bandeja está desgastado.",
+          "Solucion": [
+            "1) Retire el cassette de la bandeja.",
+            "2) Retire el rodillo de retroceso (JC90-01032A / JC97-02259A)."
+          ]
+        },
+        "C9-1122": {
+          "Impresora": "Modelo desconocido",
+          "Error": "Reemplace el rodillo de recogida / Reemplace con un nuevo rodillo de recogida de la bandeja 2",
+          "Sintoma": "El rodillo de recogida de la bandeja 2 está desgastado.",
+          "Solucion": [
+            "1) Retire el cassette de la bandeja 2.",
+            "2) Vea la parte inferior de la unidad SCF.",
+            "3) Tire de la pequeña pestaña hacia abajo, luego libere el rodillo de recogida (JC97-02259A)."
+          ]
+        },
+        "H1-1210": {
+          "Impresora": "Modelo desconocido",
+          "Error": "Atasco de papel en la bandeja 2.",
+          "Sintoma": "Se detectó un atasco de papel en el área de alimentación de la bandeja 2.",
+          "Solucion": [
+            "1) Retire el cassette de la bandeja 2.",
+            "2) Encuentre y retire el papel atascado.",
+            "3) Si el problema persiste, verifique lo siguiente:",
+            "   • Verifique si el rodillo de recogida/avanzado/retroceso (JC97-02259A) está contaminado o desgastado.",
+            "   • Verifique si el conector del sensor de alimentación está conectado correctamente.",
+            "   • Si el sensor de alimentación (0604–001325) está defectuoso, reemplácelo."
+          ]
+        },
+        "H1-1220,H1-1240": {
+          "Impresora": "Samsung 4072",
+          "Error": "Puerta de la bandeja 2 abierta. Ciérrela / Bandeja 2 no instalada",
+          "Sintoma": "El cassette opcional no está instalado correctamente.",
+          "Solucion": [
+            "1) Retire e instale nuevamente el cassette de la bandeja 2.",
+            "2) Verifique el sensor de detección del cassette.",
+            "   • Verifique si la conexión entre el sensor y la placa base está correcta. Reconecte el cable.",
+            "   • Si el sensor (JC34-00001A) está defectuoso, reemplácelo.",
+            "3) Si el problema persiste, reemplace la placa base SCF (JC92-02636A)."
+          ]
+        },
+        "H1-1230": {
+          "Impresora": "Samsung 4072",
+          "Error": "Error: #H1-1230 / Fallo del sistema de entrada: #H1-1230. Verifique la conexión de la bandeja 2",
+          "Sintoma": "Se ha producido un error de comunicación.",
+          "Solucion": [
+            "1) Apague la máquina y vuelva a encenderla.",
+            "2) Si el problema persiste, apague la máquina.",
+            "3) Retire la cubierta derecha del SCF. (Consulte 3.3.23.1)",
+            "4) Verifique si el conector de interfaz está conectado a la placa base SCF. Si el conector de interfaz está defectuoso, reemplácelo.",
+            "5) Si el problema persiste, reemplace la placa base SCF (JC92-02636A)."
+          ]
+        },
+        "H1-1252,H1-1254": {
+          "Impresora": "Samsung 4072",
+          "Error": "Papeles vacíos en bandeja 2 / Papeles vacíos en bandeja 2. Cargue papel",
+          "Sintoma": "No hay papel en la bandeja 2. / El actuador de papel vacío o el sensor fotoeléctrico están defectuosos.",
+          "Solucion": [
+            "1) Cargue papel en la bandeja 2.",
+            "2) Si el problema persiste, apague la máquina y verifique lo siguiente:",
+            "3) Si el actuador de papel vacío está defectuoso, reemplácelo.",
+            "4) Si el sensor fotoeléctrico (0604-001325) está defectuoso, reemplácelo. Verifique si el conector está conectado correctamente.",
+            "5) Si el problema persiste, reemplace la placa base SCF (JC92-02636A)."
+          ]
+        },
+        "M1-1110": {
+          "Impresora": "Samsung 4072",
+          "Error": "Atasco de papel en la bandeja 1.",
+          "Sintoma": "Se ha producido un atasco de papel en la bandeja 1.",
+          "Solucion": [
+            "1) Elimine el papel atascado. (Consulte 4.1.3)",
+            "2) Si el problema persiste, verifique lo siguiente:",
+            "   • Mientras presiona el sensor de papel vacío, envíe los datos de impresión. Verifique si el rodillo de recogida gira normalmente.",
+            "   • Verifique si hay obstáculos en el camino del papel (desde la recogida hasta el sensor de alimentación). El rodillo de alimentación debe ser revisado especialmente.",
+            "   • Imprima la Información de Suministros. Verifique la vida útil del rodillo de la bandeja 1 y del rodillo inverso (retardador) de la bandeja 1. Si la vida útil ha terminado, reemplace el rodillo correspondiente."
+          ]
+        },
+        "M1-1610": {
+          "Impresora": "Samsung 4072",
+          "Error": "Atasco de papel en la bandeja MP.",
+          "Sintoma": "Se ha producido un atasco de papel en la bandeja MP.",
+          "Solucion": [
+            "1) Elimine el papel atascado. (Consulte 4.1.3)",
+            "2) Si el problema persiste, apague la máquina.",
+            "3) Retire la cubierta derecha.",
+            "4) Verifique si el conector de la unidad MP está conectado correctamente.",
+            "5) Retire la unidad MP. (Consulte 3.3.19)",
+            "6) Verifique si los rodillos MP están desgastados. Si es necesario, reemplace el rodillo defectuoso o la unidad MP."
+          ]
+        },
+        "M1-5112,M1-5113,M1-5120": {
+          "Impresora": "Samsung 4072",
+          "Error": "Papeles vacíos en bandeja 1 / Papeles vacíos en bandeja 1. Cargue papel / Todos los cassettes vacíos / Papeles vacíos en todos los cassettes. Cargue papel",
+          "Sintoma": "No hay papel en la bandeja 1. / El actuador de papel vacío o el sensor fotoeléctrico están defectuosos.",
+          "Solucion": [
+            "1) Cargue papel en la bandeja 1.",
+            "2) Si el problema persiste, apague la máquina y verifique lo siguiente:",
+            "3) Si el actuador de papel vacío (JC66-02762A) está defectuoso, reemplácelo. (Consulte 3.3.21)",
+            "4) Si el sensor fotoeléctrico (0604-001393) está defectuoso, reemplácelo. Verifique si el conector está conectado correctamente.",
+            "5) Si el problema persiste, reemplace la placa base."
+          ]
+        },
+        "M1-5612,M1-5712": {
+          "Impresora": "Samsung 4072",
+          "Error": "Papeles vacíos en MP / Papeles vacíos en la bandeja MP. Cargue papel / Papeles vacíos en el alimentador manual / Papeles vacíos en el alimentador manual. Cargue papel",
+          "Sintoma": "No hay papel en la bandeja MP (o Alimentador Manual). / El actuador de papel vacío o el sensor fotoeléctrico están defectuosos.",
+          "Solucion": [
+            "1) Cargue papel en la bandeja MP.",
+            "2) Si el problema persiste, apague la máquina y verifique lo siguiente:",
+            "3) Si el actuador de papel vacío (JC66-02762A) está defectuoso, reemplácelo. (Consulte 3.3.21)",
+            "4) Si el sensor fotoeléctrico (0604-001393) está defectuoso, reemplácelo. Verifique si el conector está conectado correctamente.",
+            "5) Si el problema persiste, reemplace la placa base."
+          ]
+        },
+        "M2-1110": {
+          "Impresora": "Samsung 4072",
+          "Error": "Atasco dentro de la máquina",
+          "Sintoma": "Se detectó un atasco de papel en el sensor de alimentación.",
+          "Solucion": [
+            "1) Elimine el papel atascado. (Consulte 4.1.3)",
+            "2) Si el error persiste, verifique lo siguiente:",
+            "   • Verifique si el conector del sensor de alimentación está conectado correctamente. (Consulte 3.3.21)",
+            "   • Verifique si el rodillo de registro está contaminado o desgastado. Si es así, reemplácelo.",
+            "   • Verifique si hay obstáculos o contaminación en el camino del papel. Si es así, límpielo o retírelo."
+          ]
+        },
+        "M2-2210": {
+          "Impresora": "Samsung 4072",
+          "Error": "Atasco dentro del dúplex",
+          "Sintoma": "Se detectó un atasco de papel en la parte inferior del dúplex.",
+          "Solucion": [
+            "1) Elimine el papel atascado. (Consulte 4.1.3)",
+            "2) Retire la contaminación o los obstáculos en el camino del papel.",
+            "3) Si este error de atasco ocurre continuamente, reemplace la unidad de dúplex."
+          ]
+        },
+        "M3-1110": {
+          "Impresora": "Samsung 4072",
+          "Error": "Atasco en el área de salida",
+          "Sintoma": "Se detectó un atasco de papel en el área de salida.",
+          "Solucion": [
+            "1) Elimine el papel atascado. (Consulte 4.1.3)",
+            "2) Verifique si hay obstáculos o contaminación en el camino del papel. Si es así, límpielo o retírelo.",
+            "3) Verifique si el rodillo de salida está desgastado. Reemplace el rodillo de salida (JC93-00323A).",
+            "4) Verifique si el conector del sensor de salida está conectado correctamente. Si la conexión está correcta, reemplace el sensor de salida."
+          ]
+        },
+        "M3-2130": {
+          "Impresora": "Samsung 4072",
+          "Error": "Bandeja de salida llena / Bandeja de salida llena. Retire el papel impreso",
+          "Sintoma": "La máquina detectó que la bandeja de salida está llena o el sensor de llenado de bandeja está defectuoso.",
+          "Solucion": [
+            "1) Retire el papel de la bandeja de salida.",
+            "2) Si el problema persiste, verifique lo siguiente:",
+            "3) Retire la cubierta superior.",
+            "4) Verifique si el conector del sensor de llenado de bandeja está conectado correctamente. Reconéctelo o reemplace el sensor de llenado de bandeja."
+          ]
+        },
+        "S1-2411": {
+          "Impresora": "Samsung 4072",
+          "Error": "Error: #S1-2411 Apague y vuelva a encender",
+          "Sintoma": "El SD card tiene algún problema.",
+          "Solucion": [
+            "1) Verifique si la tarjeta SD está instalada correctamente. Retírela e instálela nuevamente.",
+            "2) Si el problema persiste, reemplace la tarjeta SD por una nueva."
+          ]
+        },
+        "S1-4210": {
+          "Impresora": "Samsung 4072",
+          "Error": "Error: #S1-4210 Apague y vuelva a encender",
+          "Sintoma": "Error de comunicación entre la placa base y la placa de fax.",
+          "Solucion": [
+            "1) Verifique la conexión entre la placa base y la placa de fax.",
+            "2) Si el problema persiste, reemplace la placa de fax.",
+            "3) Si el problema persiste, reemplace la placa base."
+          ]
+        },
+        "S2-331x": {
+          "Impresora": "Samsung 4072",
+          "Error": "Error: #S2-331x Apague y vuelva a encender",
+          "Sintoma": "Este error muestra el estado del motor.",
+          "Solucion": [
+            "1) S2–3310 : Estado de calentamiento",
+            "2) S2–3311 : Estado listo",
+            "3) S2–3312 : Estado de impresión",
+            "4) S2–3313 : Estado de ahorro de energía",
+            "5) S2–3314 : Estado de error",
+            "6) S2–3315 : Estado de recuperación",
+            "7) S2–3316 : Estado de espera",
+            "8) S2–3317 : Estado de modo EDC",
+            "9) S2–3318 : Estado de baja potencia",
+            "Cuando aparezcan estos errores, espere hasta que el mensaje desaparezca o apague la máquina y vuelva a encenderla."
+          ]
+        },
+        "S2-4120": {
+          "Impresora": "Samsung 4072",
+          "Error": "Puerta abierta. Ciérrela.",
+          "Sintoma": "La puerta está abierta o el interruptor de puerta abierta está defectuoso.",
+          "Solucion": [
+            "1) Verifique si la puerta frontal está cerrada correctamente.",
+            "2) Verifique si la puerta trasera está cerrada correctamente.",
+            "3) Verifique si la conexión entre la placa base y la placa HVPS es correcta.",
+            "4) Verifique si el interruptor de puerta abierta en la placa HVPS funciona correctamente. Si está defectuoso, reemplace la placa HVPS (JC44-00197A)."
+          ]
+        },
+        "S3-3122": {
+          "Impresora": "Samsung 4072",
+          "Error": "Escáner bloqueado / El escáner está bloqueado. Presione el botón de detener",
+          "Sintoma": "Error de bloqueo del escáner. El CIS no se mueve.",
+          "Solucion": [
+            "1) Verifique si la unidad CIS se mueve al encender el poder.",
+            "2) Verifique si el cable plano está conectado a la unidad CIS correctamente. Vuelva a conectar o reemplace el cable.",
+            "3) Si el CIS está defectuoso, reemplácelo.",
+            "4) Verifique si hay alguna pieza defectuosa en la unidad de escáner (engranaje, correa, motor, etc.).",
+            "5) Si el problema persiste, reemplace la placa base."
+          ]
+        },
+        "S4-2111,S4-2112": {
+          "Impresora": "Samsung 4072",
+          "Error": "Memoria llena / La memoria de fax está casi llena. Imprima o elimine el trabajo de fax recibido / Memoria llena / La memoria de fax está llena. Imprima o elimine el trabajo de fax recibido",
+          "Sintoma": "La memoria de fax está casi llena.",
+          "Solucion": [
+            "1) Imprima o elimine el trabajo de fax recibido en Recibo Seguro."
+          ]
+        },
+        "S6-3123": {
+          "Impresora": "Samsung 4072",
+          "Error": "Problema de red: Conflicto de IP.",
+          "Sintoma": "La dirección IP entra en conflicto con la de otro sistema. / No hay respuesta al verificar el test de ping.",
+          "Solucion": [
+            "1) Cambie la dirección IP de la máquina.",
+            "2) Configure la dirección IP en este orden: Red -> TCP/IP (IPv4) -> ESTÁTICO.",
+            "3) En caso de DHCP o Bootp, reinicie la máquina para recibir una nueva dirección IP."
+          ]
+        },
+        "S6-3128": {
+          "Impresora": "Samsung 4072",
+          "Error": "Error de red 802.1x.",
+          "Sintoma": "Se solicitó confirmación para el puerto cableado, el servidor ha rechazado. / El protocolo de confirmación no es el mismo o la información del usuario (ID/Contraseña) es incorrecta.",
+          "Solucion": [
+            "1) Verifique la configuración del servidor de confirmación 802.1x.",
+            "2) Vuelva a ingresar la información del servidor y el protocolo de confirmación.",
+            "3) Vuelva a ingresar la información del usuario."
+          ]
+        },
+        "U1-2315,U1-2320,U1-2330,U1-2334,U1-2340": {
+          "Impresora": "Samsung 4072",
+          "Error": "Error #U1-2315 Apague y vuelva a encender / Error #U1-2320 Apague y vuelva a encender / Error #U1-2330 Apague y vuelva a encender / Error #U1-2334 Apague y vuelva a encender / Error #U1-2340 Apague y vuelva a encender",
+          "Sintoma": "El control de temperatura de la unidad de fusión es anormal.",
+          "Solucion": [
+            "1) Apague la máquina. Reinstale la unidad de fusión. Luego, encienda la máquina. ¿Desapareció el mensaje de error?",
+            "2) Si el problema persiste, apague la máquina y retire la unidad de fusión.",
+            "   • Verifique si el conector de la unidad de fusión está conectado correctamente.",
+            "   • Verifique si el voltaje de entrada es normal.",
+            "   • Verifique si el termistor está torcido o contaminado; y está en contacto con el Rodillo de Calor.",
+            "3) Después de confirmar la continuidad en el conector de la unidad de fusión y el problema persiste; pida una SMPS/HVPS y Unidad de Fusión e instale según sea necesario.",
+            "   • HVPS: JC44-00197A",
+            "   • SMPS: JC44-00097E (110V) / JC44-00090E (220V)",
+            "   • Unidad de Fusión: JC91-01023A (110V) / JC91-01024A (220V)"
+          ]
+        },
+        "U2-1112,U2-1113": {
+          "Impresora": "Samsung 4072",
+          "Error": "Error #U2-1111 Apague y vuelva a encender / Error #U2-1113 Apague y vuelva a encender",
+          "Sintoma": "El motor LSU no funciona normalmente.",
+          "Solucion": [
+            "1) Ejecute la prueba del motor LSU en el modo EDC. Verifique el sonido de operación del motor LSU.",
+            "2) Si no hay sonido, retire la cubierta derecha. Verifique si el cable del LSU está conectado correctamente en la placa base.",
+            "3) Si está bien, retire la cubierta superior. Verifique si el cable del LSU está conectado correctamente en la placa del LSU.",
+            "4) Verifique si el cable del LSU está defectuoso.",
+            "5) Vuelva a conectar el cable del LSU y luego ejecute nuevamente la prueba del motor LSU.",
+            "6) Si el problema persiste, reemplace el LSU (JC97-04065A).",
+            "7) Si el problema persiste después de reemplazar el LSU, reemplace la placa base."
+          ]
+        },
+        "U3-3113,U3-3313,U3-3314,U3-3413,U3-3513,U3-3514": {
+          "Impresora": "Samsung 4072",
+          "Error": "Atasco de documentos / Atasco de documentos dentro del escáner. Retire el atasco",
+          "Sintoma": "Se detectó un atasco de documento en la unidad ADF.",
+          "Solucion": [
+            "1) Elimine el papel atascado de la unidad ADF.",
+            "2) Si el error persiste, apague la máquina y vuelva a encenderla.",
+            "3) Si el atasco de documentos ocurre continuamente, abra la cubierta superior del ADF. Verifique si el rodillo de recogida ADF está contaminado o desgastado. Límpielo o reemplácelo.",
+            "4) Si el rodillo de recogida está bien, verifique lo siguiente:",
+            "   • Verifique si el motor ADF está funcionando normalmente.",
+            "   • Verifique si el conector en la placa de unión ADF está conectado correctamente.",
+            "5) Si el problema persiste, reemplace la unidad ADF."
+          ]
+        },
+        "U3-4110": {
+          "Impresora": "Samsung 4072",
+          "Error": "Puerta del escáner abierta.",
+          "Sintoma": "La cubierta superior del ADF está abierta.",
+          "Solucion": [
+            "1) Cierre la cubierta superior del ADF."
+          ]
+        }
+      }
+    },
+    "Samsung 4580": {
+      "errors": {
+        "11-2T01": {
+          "Impresora": "Samsung 4580",
+          "Error": "Desajuste de papel en la bandeja",
+          "Sintoma": "El papel en la bandeja no coincide con la configuración de papel de la máquina.",
+          "Solucion": [
+            "Verifica y cambia la configuración de papel de la bandeja correspondiente adecuadamente."
+          ]
+        },
+        "11-2T11": {
+          "Impresora": "Samsung 4580",
+          "Error": "Desajuste de papel en la bandeja 1",
+          "Sintoma": "El papel en la bandeja 1 no coincide con la configuración de papel de la máquina.",
+          "Solucion": [
+            "Verifica y cambia la configuración de papel de la bandeja 1 adecuadamente."
+          ]
+        },
+        "11-2T21": {
+          "Impresora": "Samsung 4580",
+          "Error": "Desajuste de papel en la bandeja 2",
+          "Sintoma": "El papel en la bandeja 2 no coincide con la configuración de papel de la máquina.",
+          "Solucion": [
+            "Verifica y cambia la configuración de papel de la bandeja 2 adecuadamente."
+          ]
+        },
+        "11-2T31": {
+          "Impresora": "Samsung 4580",
+          "Error": "Desajuste de papel en la bandeja 3",
+          "Sintoma": "El papel en la bandeja 3 no coincide con la configuración de papel de la máquina.",
+          "Solucion": [
+            "Verifica y cambia la configuración de papel de la bandeja 3 adecuadamente."
+          ]
+        },
+        "11-2T41": {
+          "Impresora": "Samsung 4580",
+          "Error": "Desajuste de papel en la bandeja 4",
+          "Sintoma": "El papel en la bandeja 4 no coincide con la configuración de papel de la máquina.",
+          "Solucion": [
+            "Verifica y cambia la configuración de papel de la bandeja 4 adecuadamente."
+          ]
+        },
+        "11-2T61": {
+          "Impresora": "Samsung 4580",
+          "Error": "Desajuste de papel en la bandeja MP",
+          "Sintoma": "El papel en la bandeja MP no coincide con la configuración de papel de la máquina.",
+          "Solucion": [
+            "Verifica y cambia la configuración de papel de la bandeja MP adecuadamente."
+          ]
+        },
+        "61-1111": {
+          "Impresora": "Samsung 4580",
+          "Error": "Fallo de arranque: #61-1111. Apaga y enciende. Llama para servicio si el problema persiste",
+          "Sintoma": "La creación de la imagen de hibernación ha fallado.",
+          "Solucion": [
+            "Enciende la máquina con un arranque normal.",
+            "Ingresa al modo SVC. Selecciona ‘Hibernación Activada’ nuevamente."
+          ]
+        },
+        "A1-1112": {
+          "Impresora": "Samsung 4580",
+          "Error": "Fallo del motor: #A1-1112. Apaga y enciende. Llama para servicio si el problema persiste",
+          "Sintoma": "El funcionamiento del motor principal (de alimentación/fuser) es anormal.",
+          "Solucion": [
+            "Apaga la máquina. Verifica si hay sustancias extrañas o papel alrededor del camino del papel.",
+            "Retira la cubierta derecha.",
+            "Verifica si el conector del motor principal está conectado correctamente.",
+            "Si la conexión está correcta, enciende la máquina. Ingresa al modo SVC. Selecciona la prueba del motor principal. (Diagnósticos > Diagnósticos del motor > Rutinas de prueba del motor)",
+            "Si el motor no funciona:",
+            "Verifica la señal y la energía con el DVM.",
+            "Si el resultado verificado es normal, reemplaza el motor principal (JC31–00144B).",
+            "Si el resultado verificado es anormal, verifica lo siguiente:",
+            "- Si no se genera 24V de energía, reemplaza la placa SMPS (JC44-00092C (220V) / JC44-00091C (110V)).",
+            "- Si la señal de control es anormal, reemplaza la placa principal (JC92–02722A).",
+            "Si el motor está en funcionamiento:",
+            "Verifica el Pin No 8. Si el valor es anormal, reemplaza la placa principal. Si el valor es normal, reemplaza el cableado.",
+            "Si el funcionamiento del motor principal es normal, retira la unidad de fuser. Verifica si la unidad de fuser tiene algún problema. Reemplaza la unidad de fuser (JC91–01177A (220V) / JC91–01176A (110V))."
+          ]
+        },
+        "A1-1113": {
+          "Impresora": "Samsung 4580",
+          "Error": "Fallo del motor: #A1-1113. Apaga y enciende. Llama para servicio si el problema persiste",
+          "Sintoma": "El motor principal (de alimentación/fuser) está funcionando pero la máquina lo reconoce como 'Detenido'.",
+          "Solucion": [
+            "Apaga la máquina. Verifica si hay sustancias extrañas o papel alrededor del camino del papel.",
+            "Retira la cubierta derecha.",
+            "Verifica si el conector del motor principal está conectado correctamente.",
+            "Si la conexión está correcta, enciende la máquina. Ingresa al modo SVC. Selecciona la prueba del motor principal. (Diagnósticos > Diagnósticos del motor > Rutinas de prueba del motor)",
+            "Si el motor no funciona:",
+            "Verifica la señal y la energía con el DVM.",
+            "Si el resultado verificado es normal, reemplaza el motor principal (JC31–00144B).",
+            "Si el resultado verificado es anormal, verifica lo siguiente:",
+            "- Si no se genera 24V de energía, reemplaza la placa SMPS (JC44-00092C (220V) / JC44-00091C (110V)).",
+            "- Si la señal de control es anormal, reemplaza la placa principal (JC92–02722A).",
+            "Si el motor está en funcionamiento:",
+            "Verifica el Pin No 8. Si el valor es anormal, reemplaza la placa principal. Si el valor es normal, reemplaza el cableado.",
+            "Si el funcionamiento del motor principal es normal, retira la unidad de fuser. Verifica si la unidad de fuser tiene algún problema. Reemplaza la unidad de fuser (JC91–01177A (220V) / JC91–01176A (110V))."
+          ]
+        },
+        "A1-2112": {
+          "Impresora": "Samsung 4580",
+          "Error": "Fallo del motor: #A1-2112. Apaga y enciende. Llama para servicio si el problema persiste",
+          "Sintoma": "El funcionamiento del motor OPC/Deve es anormal.",
+          "Solucion": [
+            "Apaga la máquina. Verifica si hay sustancias extrañas o papel alrededor del camino del papel.",
+            "Retira la cubierta derecha.",
+            "Verifica si el conector del motor OPC/Deve está conectado correctamente.",
+            "Si la conexión está correcta, enciende la máquina. Ingresa al modo SVC. Selecciona la prueba del motor OPC/Deve. (Diagnósticos > Diagnósticos del motor > Rutinas de prueba del motor)",
+            "Si el motor OPC/Deve no funciona:",
+            "Verifica la señal y la energía con el DVM.",
+            "Si el resultado verificado es normal, reemplaza el motor OPC/Deve (JC31–00075C).",
+            "Si el resultado verificado es anormal, verifica lo siguiente:",
+            "- Si no se genera 24V de energía, reemplaza la placa SMPS (JC44-00092C (220V) / JC44-00091C (110V)).",
+            "- Si la señal de control es anormal, reemplaza la placa principal (JC92–02722A).",
+            "Si el motor OPC/Deve está en funcionamiento:",
+            "Verifica el Pin No 8. Si el valor es anormal, reemplaza la placa principal. Si el valor es normal, reemplaza el cableado.",
+            "Si el funcionamiento del motor OPC/Deve es normal, retira la unidad de imagen. Verifica si la unidad de imagen tiene algún problema. Reemplaza la unidad de imagen."
+          ]
+        },
+        "A1-2113": {
+          "Impresora": "Samsung 4580",
+          "Error": "Fallo del motor: #A1-2113. Apaga y enciende. Llama para servicio si el problema persiste",
+          "Sintoma": "El motor OPC/Deve está funcionando pero la máquina lo reconoce como 'Detenido'.",
+          "Solucion": [
+            "Apaga la máquina. Verifica si hay sustancias extrañas o papel alrededor del camino del papel.",
+            "Retira la cubierta derecha.",
+            "Verifica si el conector del motor OPC/Deve está conectado correctamente.",
+            "Si la conexión está correcta, enciende la máquina. Ingresa al modo SVC. Selecciona la prueba del motor OPC/Deve. (Diagnósticos > Diagnósticos del motor > Rutinas de prueba del motor)",
+            "Si el motor OPC/Deve no funciona:",
+            "Verifica la señal y la energía con el DVM.",
+            "Si el resultado verificado es normal, reemplaza el motor OPC/Deve (JC31–00075C).",
+            "Si el resultado verificado es anormal, verifica lo siguiente:",
+            "- Si no se genera 24V de energía, reemplaza la placa SMPS (JC44-00092C (220V) / JC44-00091C (110V)).",
+            "- Si la señal de control es anormal, reemplaza la placa principal (JC92–02722A).",
+            "Si el motor OPC/Deve está en funcionamiento:",
+            "Verifica el Pin No 8. Si el valor es anormal, reemplaza la placa principal. Si el valor es normal, reemplaza el cableado.",
+            "Si el funcionamiento del motor OPC/Deve es normal, retira la unidad de imagen. Verifica si la unidad de imagen tiene algún problema. Reemplaza la unidad de imagen."
+          ]
+        },
+        "A1-5110": {
+          "Impresora": "Samsung 4580",
+          "Error": "Fallo del motor: #A1-5110. Apaga y enciende. Llama para servicio si el problema persiste",
+          "Sintoma": "El funcionamiento del motor de suministro es anormal.",
+          "Solucion": [
+            "Apaga la máquina.",
+            "Retira la cubierta derecha.",
+            "Verifica si el conector del motor DC (motor de suministro de toner) en la unidad principal está conectado correctamente.",
+            "Si la conexión está correcta, enciende la máquina. Ingresa al modo SVC. Selecciona la prueba del motor DC. (Diagnósticos > Diagnósticos del motor > Rutinas de prueba del motor)",
+            "Si el motor DC no funciona:",
+            "Verifica la señal y la energía con el DVM.",
+            "Si el resultado verificado es normal, reemplaza el motor DC (JC31-00078A) o la unidad principal (JC93–00923A).",
+            "Si el resultado verificado es anormal, verifica lo siguiente:",
+            "- Si no se genera 24V de energía, reemplaza la placa SMPS (JC44-00092C (220V) / JC44-00091C (110V)).",
+            "- Si la señal de control es anormal, reemplaza la placa principal (JC92–02722A).",
+            "Si el motor DC está en funcionamiento:",
+            "Si el valor en la placa principal es anormal, reemplaza la placa principal. Si el valor es normal, reemplaza el cableado."
+          ]
+        },
+        "A2–1210": {
+          "Impresora": "Samsung 4580",
+          "Error": "Fallo del ventilador SMPS",
+          "Sintoma": "El ventilador SMPS no está operativo.",
+          "Solucion": [
+            "Apaga la máquina.",
+            "Verifica si el conector del ventilador SMPS está correctamente conectado.",
+            "Entra en el modo SVC y ejecuta la prueba del ventilador.",
+            "Si el ventilador no está operativo, mide la potencia del ventilador.",
+            "Si se genera 24V, reemplaza el ventilador defectuoso (JC31–00153A).",
+            "Si no se genera 24V, mide la potencia de 24V en la placa SMPS. Si la placa SMPS está defectuosa, reemplázala (JC44-00092C (220V) / JC44-00091C (110V)).",
+            "Si la placa SMPS está normal, reemplaza la placa principal (JC92–02722A).",
+            "Si la operación del ventilador es normal pero persiste el error, verifica la señal de la línea amarilla con DVM y revisa la operación del ventilador conectado o desconectado."
+          ]
+        },
+        "A2–2110": {
+          "Impresora": "Samsung 4580",
+          "Error": "Fallo del ventilador principal (Fuser)",
+          "Sintoma": "El ventilador principal (Fuser) no está operativo.",
+          "Solucion": [
+            "Apaga la máquina.",
+            "Verifica si el conector del ventilador principal está correctamente conectado.",
+            "Entra en el modo SVC y ejecuta la prueba del ventilador.",
+            "Si el ventilador no está operativo, mide la potencia del ventilador.",
+            "Si se genera 24V, reemplaza el ventilador defectuoso (JC31–00088A).",
+            "Si no se genera 24V, mide la potencia de 24V en la placa SMPS. Si la placa SMPS está defectuosa, reemplázala (JC44-00092C (220V) / JC44-00091C (110V)).",
+            "Si la placa SMPS está normal, reemplaza la placa principal (JC92–02722A).",
+            "Si la operación del ventilador es normal pero persiste el error, verifica la señal de la línea amarilla con DVM y revisa la operación del ventilador conectado o desconectado."
+          ]
+        },
+        "A2–2410": {
+          "Impresora": "Samsung 4580",
+          "Error": "Fallo del ventilador LSU",
+          "Sintoma": "El ventilador LSU no está operativo.",
+          "Solucion": [
+            "Apaga la máquina.",
+            "Verifica si el conector del ventilador LSU está correctamente conectado.",
+            "Entra en el modo SVC y ejecuta la prueba del ventilador.",
+            "Si el ventilador no está operativo, mide la potencia del ventilador.",
+            "Si se genera 24V, reemplaza el ventilador defectuoso (JC31–00086A).",
+            "Si no se genera 24V, mide la potencia de 24V en la placa SMPS. Si la placa SMPS está defectuosa, reemplázala (JC44-00092C (220V) / JC44-00091C (110V)).",
+            "Si la placa SMPS está normal, reemplaza la placa principal (JC92–02722A).",
+            "Si la operación del ventilador es normal pero persiste el error, verifica la señal de la línea amarilla con DVM y revisa la operación del ventilador conectado o desconectado."
+          ]
+        },
+        "A2–2610": {
+          "Impresora": "Samsung 4580",
+          "Error": "Fallo del ventilador Deve",
+          "Sintoma": "El ventilador Deve no está operativo.",
+          "Solucion": [
+            "Apaga la máquina.",
+            "Verifica si el conector del ventilador Deve está correctamente conectado.",
+            "Entra en el modo SVC y ejecuta la prueba del ventilador.",
+            "Si el ventilador no está operativo, mide la potencia del ventilador.",
+            "Si se genera 24V, reemplaza el ventilador defectuoso (JC31–00086A).",
+            "Si no se genera 24V, mide la potencia de 24V en la placa SMPS. Si la placa SMPS está defectuosa, reemplázala (JC44-00092C (220V) / JC44-00091C (110V)).",
+            "Si la placa SMPS está normal, reemplaza la placa principal (JC92–02722A).",
+            "Si la operación del ventilador es normal pero persiste el error, verifica la señal de la línea amarilla con DVM y revisa la operación del ventilador conectado o desconectado."
+          ]
+        },
+        "A3–3212": {
+          "Impresora": "Samsung 4580",
+          "Error": "Fallo del sensor interno",
+          "Sintoma": "El sensor de temperatura interno está defectuoso.",
+          "Solucion": [
+            "Entra en el modo SVC y ejecuta la prueba del sensor.",
+            "Mide el valor de resistencia del conector en ambos extremos. Si el valor no está en 47.5KΩ ~ 52.5KΩ (@ 25 °C), reemplaza el sensor de temperatura interno (1404-001417).",
+            "Si el sensor está normal, reemplaza la placa principal (JC92–02722A)."
+          ]
+        },
+        "A3–3312": {
+          "Impresora": "Samsung 4580",
+          "Error": "Fallo del sensor externo",
+          "Sintoma": "El sensor de temperatura/humedad externo está defectuoso.",
+          "Solucion": [
+            "Entra en el modo SVC y ejecuta la prueba del sensor.",
+            "Mide el valor de resistencia del conector en ambos extremos. Si el valor no está en 47.5KΩ ~ 52.5KΩ (@ 25 °C), reemplaza el sensor de temperatura/humedad externo (JC32-00005A).",
+            "Si el arnés y el sensor están normales, reemplaza la placa principal (JC92–02722A)."
+          ]
+        },
+        "A3–3320": {
+          "Impresora": "Samsung 4580",
+          "Error": "Temperatura de la habitación no adecuada",
+          "Sintoma": "La temperatura de la habitación no es adecuada para el uso de este dispositivo.",
+          "Solucion": [
+            "Ajusta la temperatura de la habitación."
+          ]
+        },
+        "A4-1110": {
+          "Impresora": "Samsung 4580",
+          "Error": "Fallo de lámpara: #A4-1110. Abra la puerta y luego ciérrela. Llame para servicio si el problema persiste",
+          "Sintoma": "La lámpara de borrado no se enciende.",
+          "Solucion": [
+            "1) Acceda al modo SVC. Ejecute la prueba de la lámpara de borrado.",
+            "2) Si la lámpara de borrado no se enciende, reemplácela (JC92-02373A)."
+          ]
+        },
+        "C1-1110,C1-111A": {
+          "Impresora": "Samsung 4580",
+          "Error": "Prepare nuevo cartucho de tóner / Agite el cartucho de tóner y luego instálelo. Reemplace el cartucho de tóner si el problema persiste",
+          "Sintoma": "El cartucho de tóner está casi vacío.",
+          "Solucion": [
+            "1) Abra la tapa frontal.",
+            "2) Retire el cartucho de tóner.",
+            "3) Agite el cartucho de tóner horizontalmente para distribuir el tóner uniformemente dentro del cartucho.",
+            "4) Reinstale el cartucho de tóner.",
+            "5) Cierre la tapa frontal.",
+            "6) Prepare un nuevo cartucho de tóner porque se agotará pronto."
+          ]
+        },
+        "C1-1120,C1-1140,C1-1160,C1-1170": {
+          "Impresora": "Samsung 4580",
+          "Error": "Reemplace con un nuevo cartucho de tóner. Fin de vida, Reemplace con un nuevo cartucho de tóner.",
+          "Sintoma": "El cartucho de tóner está al final de su vida útil.",
+          "Solucion": [
+            "1) Abra la tapa frontal.",
+            "2) Retire el cartucho de tóner.",
+            "3) Instale el nuevo cartucho de tóner.",
+            "4) Cierre la tapa frontal."
+          ]
+        },
+        "C1-1311,C1-1313,C1-1314": {
+          "Impresora": "Samsung 4580",
+          "Error": "Fallo del cartucho de tóner: #C1-1311. Instale el cartucho de tóner nuevamente. Agite el cartucho de tóner y luego instálelo. Llame para servicio si el problema persiste / No suministró suficiente tóner. Retire la cinta de sellado del cartucho de tóner o agítelo. Llame para servicio si el problema persiste",
+          "Sintoma": "El suministro de tóner es anormal.",
+          "Solucion": [
+            "1) Apague la máquina y vuelva a encenderla.",
+            "2) Abra la tapa frontal.",
+            "3) Retire el cartucho de tóner.",
+            "4) Agite el cartucho de tóner varias veces para distribuir el tóner uniformemente dentro del cartucho y reinstálelo.",
+            "5) Intente imprimir una página de muestra más de 20 páginas.",
+            "6) Verifique el cartucho de tóner:",
+            "   - Verifique si el cartucho de tóner está instalado correctamente.",
+            "   - Verifique si la cinta de sellado del tóner se ha retirado completamente.",
+            "   - Verifique si el obturador de suministro de tóner entre el cartucho de tóner y la unidad de imágen funciona normalmente.",
+            "7) Reemplace el cartucho de tóner y imprima una página de muestra.",
+            "8) Verifique la operación del motor de suministro de tóner.",
+            "   - Verifique la señal y la potencia con el DVM.",
+            "   - Si el resultado es normal, reemplace el motor de corriente continua (JC31-00078A) o la unidad de transmisión principal (JC93-00923A)."
+          ]
+        },
+        "C1-1411": {
+          "Impresora": "Samsung 4580",
+          "Error": "El cartucho de tóner no está instalado. Instale el cartucho.",
+          "Sintoma": "El cartucho de tóner no está instalado correctamente.",
+          "Solucion": [
+            "1) Abra la tapa frontal.",
+            "2) Si el cartucho de tóner no está instalado, instálelo. Intente probar la máquina nuevamente.",
+            "3) Si el cartucho de tóner está instalado, retírelo. Verifique si el conector modular está contaminado o roto.",
+            "4) Limpie el conector modular o reemplace el cartucho de tóner.",
+            "5) Si está en buen estado, verifique la conexión del arnés CN22 en la placa principal.",
+            "6) Si el arnés está defectuoso, reemplácelo.",
+            "7) Apague la máquina y vuelva a encenderla. Intente probar la máquina."
+          ]
+        },
+        "C1-1512": {
+          "Impresora": "Samsung 4580",
+          "Error": "El cartucho de tóner no es compatible. Consulte la guía del usuario.",
+          "Sintoma": "El cartucho de tóner no es compatible.",
+          "Solucion": [
+            "1) Abra la tapa frontal. Retire el cartucho de tóner.",
+            "2) Verifique si la información de la etiqueta del cartucho de tóner coincide con la del equipo (ej. /SEE).",
+            "3) Si la información de la etiqueta es diferente a la del equipo o el cartucho de tóner no es original de Samsung, reemplácelo por uno nuevo."
+          ]
+        },
+        "C1-1712": {
+          "Impresora": "Samsung 4580",
+          "Error": "Falla del cartucho de tóner: #C1-1712. Llame al servicio técnico",
+          "Sintoma": "Los datos del CRUM no se detectan. / El CRUM está defectuoso.",
+          "Solucion": [
+            "1) Abra la cubierta frontal. Verifique si el cartucho de tóner está instalado.",
+            "2) Retire y vuelva a instalar el cartucho de tóner.",
+            "3) Si el problema persiste, verifique si el conector modular del cartucho de tóner está contaminado o deformado.",
+            "4) Reemplace el cartucho de tóner con uno nuevo."
+          ]
+        },
+        "C3-1110": {
+          "Impresora": "Samsung 4580",
+          "Error": "Prepare nueva unidad de imagen.",
+          "Sintoma": "La unidad de imagen está a punto de agotarse.",
+          "Solucion": [
+            "Prepare la nueva unidad de imagen porque la actual se agotará pronto."
+          ]
+        },
+        "C3-1120,C3-1140,C3-1150,C3-1170": {
+          "Impresora": "Samsung 4580",
+          "Error": "Reemplace con nueva unidad de imagen.",
+          "Sintoma": "La unidad de imagen está al final de su vida útil.",
+          "Solucion": [
+            "Abra la tapa frontal.",
+            "Retire la unidad de imagen y reemplácela por una nueva.",
+            "Cierre la tapa frontal."
+          ]
+        },
+        "C3-1312": {
+          "Impresora": "Samsung 4580",
+          "Error": "Falla en la unidad de imagen: #C3-1312. Instale la unidad de imagen nuevamente.",
+          "Sintoma": "El sensor de tóner está defectuoso. La máquina no puede detectar la señal del sensor en la unidad de imagen normalmente.",
+          "Solucion": [
+            "Instale la unidad de imagen genuina de Samsung.",
+            "Si la unidad de imagen ya está instalada, verifique lo siguiente:",
+            "• Reinstale el cartucho de tóner y la unidad de imagen.",
+            "• Verifique si el conector CRUM está en buen estado.",
+            "• Apague la máquina y luego enciéndala."
+          ]
+        },
+        "C3-1330,C3-1411,C3-1414": {
+          "Impresora": "Samsung 4580",
+          "Error": "Falla en la unidad de imagen: #C3-1330. Instale la unidad de imagen nuevamente. / La unidad de imagen no está instalada. Instale la unidad / Falla en la unidad de imagen: #C3-1414. Instale la unidad de imagen nuevamente.",
+          "Sintoma": "La unidad de imagen no está instalada correctamente.",
+          "Solucion": [
+            "Abra la tapa frontal.",
+            "Si la unidad de imagen no está instalada, instálela. Intente probar la máquina nuevamente.",
+            "Si la unidad de imagen está instalada, retírela. Verifique si el conector modular está contaminado o roto.",
+            "Limpie el conector modular o reemplace la unidad de imagen.",
+            "Si está en buen estado, verifique la conexión del cable CN22 en la placa principal.",
+            "Si el cable está defectuoso, reemplácelo.",
+            "Apague la máquina y luego enciéndala. Intente probar la máquina."
+          ]
+        },
+        "C3-1512": {
+          "Impresora": "Samsung 4580",
+          "Error": "La unidad de imagen no es compatible. Consulte el manual del usuario.",
+          "Sintoma": "La unidad de imagen no es compatible.",
+          "Solucion": [
+            "Abra la tapa frontal.",
+            "Retire y reinstale la unidad de imagen.",
+            "Cierre la tapa frontal.",
+            "Si el problema persiste, reemplace la unidad de imagen por una nueva."
+          ]
+        },
+        "C3-1712": {
+          "Impresora": "Samsung 4580",
+          "Error": "Falla en la unidad de imagen: #C3-1712. Llame al servicio técnico.",
+          "Sintoma": "No se detecta la información de CRUM.",
+          "Solucion": [
+            "Abra la tapa frontal.",
+            "Retire la unidad de imagen y verifique si su conector modular está contaminado o deformado.",
+            "Si está defectuoso, reemplácelo por uno nuevo.",
+            "Cierre la tapa frontal."
+          ]
+        },
+        "C6-1120": {
+          "Impresora": "Samsung 4580",
+          "Error": "Reemplace la unidad de fusor con una nueva.",
+          "Sintoma": "La unidad de fusor está al final de su vida útil.",
+          "Solucion": [
+            "Apague la máquina.",
+            "Abra y retire la tapa trasera.",
+            "Retire la unidad de fusor (JC91–01177A (220V) / JC91–01176A (110V)) y reemplácela por una nueva.",
+            "Cierre la tapa trasera."
+          ]
+        },
+        "H1-1210,H1-1211,H1-1212,H1-1213": {
+          "Impresora": "Samsung 4580",
+          "Error": "Atasco de papel en la Bandeja 2.",
+          "Sintoma": "Se ha producido un atasco de papel en la bandeja 2.",
+          "Solucion": [
+            "Retire el papel atascado. Si el problema persiste, verifique lo siguiente:",
+            "• Verifique si el papel está cargado correctamente en la bandeja 2.",
+            "• Verifique si los rodillos de recogida/avance/reversa (JC97–02259A) de la bandeja 2 están defectuosos o desgastados.",
+            "• Verifique si el sensor Empty/ Pick up/ Regi-Act de la bandeja 2 está funcionando correctamente.",
+            "• Verifique la conexión entre el motor/embrague y la placa SCF. Reconecte el cable.",
+            "• Verifique si el AS-SPRING_ES está deformado o ensamblado correctamente.",
+            "• Si el problema persiste después de verificar los puntos 1 a 7, reemplace la placa SCF (JC92-02754A).",
+            "• Si el problema persiste, reemplace el cable del conector Drop."
+          ]
+        },
+        "H1-1222": {
+          "Impresora": "Samsung 4580",
+          "Error": "La bandeja 2 está extraída. Insértela correctamente.",
+          "Sintoma": "La bandeja 2 está extraída o el conector del sensor de detección de cassette no está conectado o está roto.",
+          "Solucion": [
+            "Retire e inserte la bandeja 2 correctamente.",
+            "Si el problema persiste, retire la bandeja 2 nuevamente.",
+            "Verifique si el cable del sensor de detección de cassette está conectado correctamente. Desconéctelo y vuelva a conectarlo.",
+            "Si la conexión está correcta, reemplace el sensor de detección de cassette (JC34-00001A).",
+            "Si el problema persiste, reemplace la placa SCF (JC92-02754A)."
+          ]
+        },
+        "H1-1230,H1-1240": {
+          "Impresora": "Samsung 4580",
+          "Error": "Falla en el sistema de entrada: #H1-1230. Verifique la conexión de la bandeja 2. / La bandeja 2 no está instalada. Instale la bandeja.",
+          "Sintoma": "Se ha producido un error de comunicación entre la bandeja 2 y la máquina principal.",
+          "Solucion": [
+            "Apague la máquina.",
+            "Verifique la conexión en la placa SCF. Reconecte el cable.",
+            "Si el conector del cajón está deformado o roto, reemplácelo. (AS-HARNESS HSCF : JC81–09742A / HOLDER-CONNECTOR_SCF : JC61–01742A)",
+            "Si el problema persiste, reemplace la placa principal SCF (JC92-02754A)."
+          ]
+        },
+        "H1-1251,H1-1252,H1-1254": {
+          "Impresora": "Samsung 4580",
+          "Error": "El papel está bajo en la bandeja 2. Cargue papel. / El papel está vacío en la bandeja 2. Cargue papel.",
+          "Sintoma": "El papel en la bandeja 2 es menor al 10% de la especificación. / El sensor fotoeléctrico está defectuoso.",
+          "Solucion": [
+            "Retire la bandeja 2. Cargue papel en la bandeja 2.",
+            "Si el papel está cargado pero el mensaje de error no desaparece, verifique lo siguiente:",
+            "• Verifique si el sensor de papel vacío está contaminado. Si es así, límpielo.",
+            "• Si el sensor de papel vacío (0604-001325) está defectuoso, reemplácelo.",
+            "• Si el actuador vacío (JC66–02613A) está defectuoso, reemplácelo."
+          ]
+        },
+        "H1-1253": {
+          "Impresora": "Samsung 4580",
+          "Error": "Falla en el sistema de entrada #H1-1253: Extraiga la bandeja 2 e insértela.",
+          "Sintoma": "El papel no se alimenta desde la bandeja 2.",
+          "Solucion": [
+            "Verifique si el Gear-Idle Lift está roto.",
+            "Verifique si el cable del sensor de detección de cassette está conectado correctamente. Desconéctelo y vuelva a conectarlo.",
+            "Si la conexión está correcta, reemplace el sensor de detección de cassette (JC34-00001A).",
+            "Verifique si el conector del Lift-Motor está conectado adecuadamente.",
+            "Si el problema persiste, reemplace el Lift-Motor (JC81-08705A)."
+          ]
+        },
+        "H1-1310,H1-1311,H1-1312,H1-1313": {
+          "Impresora": "Samsung 4580",
+          "Error": "Atasco de papel en la Bandeja 3.",
+          "Sintoma": "Se ha producido un atasco de papel en la bandeja 3.",
+          "Solucion": [
+            "Retire el papel atascado. Si el problema persiste, verifique lo siguiente:",
+            "• Verifique si el papel está cargado correctamente en la bandeja 3.",
+            "• Verifique si los rodillos de recogida/avance/reversa (JC97–02259A) de la bandeja 3 están defectuosos o desgastados.",
+            "• Verifique si el sensor Empty/ Pick up/ Regi-Act de la bandeja 3 está funcionando correctamente.",
+            "• Verifique la conexión entre el motor/embrague y la placa SCF. Reconecte el cable.",
+            "• Verifique si el AS-SPRING_ES está deformado o ensamblado correctamente.",
+            "• Si el problema persiste después de verificar los puntos anteriores, reemplace la placa SCF (JC92-02754A).",
+            "• Si el problema persiste, reemplace el cable del conector Drop."
+          ]
+        },
+        "H1-1322": {
+          "Impresora": "Samsung 4580",
+          "Error": "La bandeja 3 está extraída. Insértela correctamente.",
+          "Sintoma": "La bandeja 3 está extraída o el conector del sensor de detección de cassette no está conectado o está roto.",
+          "Solucion": [
+            "Retire e inserte la bandeja 3 correctamente.",
+            "Si el problema persiste, retire la bandeja 3 nuevamente.",
+            "Verifique si el cable del sensor de detección de cassette está conectado correctamente. Desconéctelo y vuelva a conectarlo.",
+            "Si la conexión está correcta, reemplace el sensor de detección de cassette (JC34-00001A).",
+            "Si el problema persiste, reemplace la placa SCF (JC92-02754A)."
+          ]
+        },
+        "H1-1330,H1-1340": {
+          "Impresora": "Samsung 4580",
+          "Error": "Falla en el sistema de entrada: #H1-1330. Verifique la conexión de la bandeja 3. / La bandeja 3 no está instalada. Instale la bandeja.",
+          "Sintoma": "Se ha producido un error de comunicación entre la bandeja 3 y la máquina principal.",
+          "Solucion": [
+            "Apague la máquina.",
+            "Verifique la conexión en la placa SCF. Reconecte el cable.",
+            "Si el conector del cajón está deformado o roto, reemplácelo. (AS-HARNESS HSCF : JC81–09742A / HOLDER-CONNECTOR_SCF : JC61–01742A)",
+            "Si el problema persiste, reemplace la placa principal SCF (JC92-02754A)."
+          ]
+        },
+        "H1-1351,H1-1352,H1-1354": {
+          "Impresora": "Samsung 4580",
+          "Error": "El papel está bajo en la bandeja 3. Cargue papel. / El papel está vacío en la bandeja 3. Cargue papel.",
+          "Sintoma": "El papel en la bandeja 3 es menor al 10% de la especificación. / El sensor fotoeléctrico está defectuoso.",
+          "Solucion": [
+            "Retire la bandeja 3. Cargue papel en la bandeja 3.",
+            "Si el papel está cargado pero el mensaje de error no desaparece, verifique lo siguiente:",
+            "• Verifique si el sensor de papel vacío está contaminado. Si es así, límpielo.",
+            "• Si el sensor de papel vacío (0604-001325) está defectuoso, reemplácelo.",
+            "• Si el actuador vacío (JC66–02613A) está defectuoso, reemplácelo."
+          ]
+        },
+        "H1-1353": {
+          "Impresora": "Samsung 4580",
+          "Error": "Falla en el sistema de entrada #H1-1353: Extraiga la bandeja 3 e insértela.",
+          "Sintoma": "El papel no se alimenta desde la bandeja 3.",
+          "Solucion": [
+            "Verifique si el Gear-Idle Lift está roto.",
+            "Verifique si el cable del sensor de detección de cassette está conectado correctamente. Desconéctelo y vuelva a conectarlo.",
+            "Si la conexión está correcta, reemplace el sensor de detección de cassette (JC34-00001A).",
+            "Verifique si el conector del Lift-Motor está conectado adecuadamente.",
+            "Si el problema persiste, reemplace el Lift-Motor (JC81-08705A)."
+          ]
+        },
+        "H1-1410,H1-1411,H1-1412,H1-1413": {
+          "Impresora": "Samsung 4580",
+          "Error": "Atasco de papel en la Bandeja 4.",
+          "Sintoma": "Se ha producido un atasco de papel en la bandeja 4.",
+          "Solucion": [
+            "Retire el papel atascado. Si el problema persiste, verifique lo siguiente:",
+            "• Verifique si el papel está cargado correctamente en la bandeja 4.",
+            "• Verifique si los rodillos de recogida/avance/reversa (JC97–02259A) de la bandeja 4 están defectuosos o desgastados.",
+            "• Verifique si el sensor Empty/ Pick up/ Regi-Act de la bandeja 4 está funcionando correctamente.",
+            "• Verifique la conexión entre el motor/embrague y la placa SCF. Reconecte el cable.",
+            "• Verifique si el AS-SPRING_ES está deformado o ensamblado correctamente.",
+            "• Verifique si el Press D-cut del Gear-Lifting (JC81-08478A) está roto.",
+            "• Si el problema persiste después de verificar los puntos anteriores, reemplace la placa SCF (JC92-02754A).",
+            "• Si el problema persiste, reemplace el cable del conector Drop."
+          ]
+        },
+        "H1-1422": {
+          "Impresora": "Samsung 4580",
+          "Error": "La bandeja 4 está extraída. Insértela correctamente.",
+          "Sintoma": "La bandeja 4 está extraída o el conector del sensor de detección de cassette no está conectado o está roto.",
+          "Solucion": [
+            "Retire e inserte la bandeja 4 correctamente.",
+            "Si el problema persiste, retire la bandeja 4 nuevamente.",
+            "Verifique si el cable del sensor de detección de cassette está conectado correctamente. Desconéctelo y vuelva a conectarlo.",
+            "Si la conexión está correcta, reemplace el sensor de detección de cassette (JC34-00001A).",
+            "Si el problema persiste, reemplace la placa SCF (JC92-02754A)."
+          ]
+        },
+        "H1-1430,H1-1440": {
+          "Impresora": "Samsung 4580",
+          "Error": "Falla en el sistema de entrada: #H1-1430. Verifique la conexión de la bandeja 4. / La bandeja 4 no está instalada. Instale la bandeja.",
+          "Sintoma": "Se ha producido un error de comunicación entre la bandeja 4 y la máquina principal.",
+          "Solucion": [
+            "Apague la máquina.",
+            "Verifique la conexión en la placa SCF. Reconecte el cable.",
+            "Si el conector del cajón está deformado o roto, reemplácelo. (AS-HARNESS HSCF : JC81–09742A / HOLDER-CONNECTOR_SCF : JC61–01742A)",
+            "Si el problema persiste, reemplace la placa principal SCF (JC92-02754A)."
+          ]
+        },
+        "H1-1451,H1-1452,H1-1454": {
+          "Impresora": "Samsung 4580",
+          "Error": "Papel bajo en la Bandeja 4. Cargue papel.",
+          "Sintoma": "El papel en la bandeja 4 es menor al 10% de la especificación. / El sensor de papel está defectuoso.",
+          "Solucion": [
+            "Retire la bandeja 2. Cargue el papel en la bandeja 4.",
+            "Si el papel está cargado pero el mensaje de error no desaparece, verifique lo siguiente:",
+            "• Verifique si el sensor de papel vacío está contaminado. Si es así, límpielo.",
+            "• Si el sensor de papel vacío (0604-001325) está defectuoso, reemplácelo.",
+            "• Si el actuador de vacío (JC66–02613A) está defectuoso, reemplácelo."
+          ]
+        },
+        "H1-1453": {
+          "Impresora": "Samsung 4580",
+          "Error": "Falla en el sistema de entrada #H1-1453: Retire la bandeja 4 e instálela.",
+          "Sintoma": "El papel no se alimenta desde la bandeja 4.",
+          "Solucion": [
+            "Verifique si el Gear-Idle Lift está roto.",
+            "Verifique si el cable del sensor de detección de cassette está conectado correctamente. Desconéctelo y vuelva a conectarlo.",
+            "Si la conexión está correcta, reemplace el sensor de detección de cassette (JC34-00001A).",
+            "Verifique si el conector del Lift-Motor está conectado correctamente.",
+            "Si el problema persiste, reemplace el Lift-Motor (JC81-08705A)."
+          ]
+        },
+        "M1-1110": {
+          "Impresora": "Samsung 4580",
+          "Error": "Atasco de papel en la Bandeja 1.",
+          "Sintoma": "Se ha producido un atasco de papel en la bandeja 1.",
+          "Solucion": [
+            "Retire la bandeja 1. Retire el papel atascado e instale la bandeja de nuevo.",
+            "Si el problema persiste, verifique lo siguiente:",
+            "• Verifique si el papel cargado en la bandeja es el adecuado. Si no lo es, reemplace el papel.",
+            "• Verifique si los rodillos de recogida/avanzado/reversa (JC97–02259A) están contaminados o desgastados. Reemplace estos rodillos.",
+            "• Verifique si el levantamiento del cassette está funcionando normalmente. Si no es así, verifique la unidad de alimentación (JC93–00350A).",
+            "• Verifique si el conector del motor principal (de alimentación/fusor) está conectado correctamente.",
+            "• Si la conexión está correcta, entre en el modo de servicio. Seleccione la prueba del motor principal (de alimentación/fusor). (Diagnóstico > Diagnóstico del motor > Rutinas de prueba del motor)",
+            "  - Si el motor principal (de alimentación/fusor) no funciona:",
+            "    • Verifique la señal y la potencia con el DVM.",
+            "    • Si el resultado de la verificación es normal, reemplace el motor principal (de alimentación/fusor) (JC31–00144B).",
+            "    • Si el resultado de la verificación es anormal, verifique lo siguiente:",
+            "      - Si no se genera 24V de energía, reemplace la placa SMPS (JC44-00092C (220V) / JC44-00091C (110V)).",
+            "      - Si la señal de control es anormal, reemplace la placa principal (JC92–02722A).",
+            "  - Si el motor principal (de alimentación/fusor) está operativo:",
+            "    • Verifique el Pin No 8. Si el valor es anormal, reemplace la placa principal. Si el valor es normal, reemplace el cableado.",
+            "• Verifique la conexión del embrague de recogida. Si el embrague de recogida (JC47-00033E) está defectuoso, reemplácelo."
+          ]
+        },
+        "M1-1610": {
+          "Impresora": "Samsung 4580",
+          "Error": "Atasco de papel en la Bandeja MP.",
+          "Sintoma": "Se ha producido un atasco de papel en la bandeja MP.",
+          "Solucion": [
+            "Retire el papel atascado de la bandeja MP.",
+            "Si el problema persiste, verifique lo siguiente:",
+            "• Verifique si el papel cargado en la bandeja es el adecuado. Si no lo es, reemplace el papel.",
+            "• Verifique si el rodillo de recogida MP está contaminado o desgastado. Reemplace el conjunto del rodillo de recogida MP.",
+            "• Verifique la conexión del embrague de recogida MP. Si el embrague de recogida MP está defectuoso, reemplácelo.",
+            "• Verifique si el conector del motor principal (de alimentación/fusor) está conectado correctamente.",
+            "• Si la conexión está correcta, entre en el modo de servicio. Seleccione la prueba del motor principal (de alimentación/fusor). (Diagnóstico > Diagnóstico del motor > Rutinas de prueba del motor)",
+            "  - Si el motor principal (de alimentación/fusor) no está operativo:",
+            "    • Verifique la señal y la potencia con el DVM.",
+            "    • Si el resultado de la verificación es normal, reemplace el motor principal (de alimentación/fusor) (JC31–00144B).",
+            "    • Si el resultado de la verificación es anormal, verifique lo siguiente:",
+            "      - Si no se genera 24V de energía, reemplace la placa SMPS (JC44-00092C (220V) / JC44-00091C (110V)).",
+            "      - Si la señal de control es anormal, reemplace la placa principal (JC92–02722A).",
+            "  - Si el motor principal (de alimentación/fusor) está operativo:",
+            "    • Verifique el Pin No 8. Si el valor es anormal, reemplace la placa principal. Si el valor es normal, reemplace el cableado."
+          ]
+        },
+        "M1-3122": {
+          "Impresora": "Samsung 4580",
+          "Error": "La bandeja 1 está retirada. Inserte la bandeja correctamente.",
+          "Sintoma": "La bandeja 1 no está instalada correctamente.",
+          "Solucion": [
+            "Instale la bandeja 1. Si la bandeja 1 ya está instalada, retírela y vuelva a instalarla.",
+            "Verifique si la conexión del cable para la detección de la bandeja es normal. Reconéctelo. Si el cable está defectuoso, reemplácelo.",
+            "Verifique si el sensor de detección de la bandeja (JC34-00001A) está defectuoso, reemplácelo."
+          ]
+        },
+        "M1-4111": {
+          "Impresora": "Samsung 4580",
+          "Error": "Fallo de bandeja: #M1-4111. Retire la bandeja 1 y vuelva a insertarla. Llame al servicio si el problema persiste.",
+          "Sintoma": "El papel se ha atascado en el camino o no puede ser alimentado.",
+          "Solucion": [
+            "Verifique si los rodillos de recogida/avance/reversa (JC97–02259A) están contaminados o desgastados. Reemplace el rodillo defectuoso.",
+            "Verifique la unidad de accionamiento para el levantamiento de la bandeja.",
+            "• Verifique si el engranaje está desgastado o roto.",
+            "• Verifique si el motor DC funciona normalmente.",
+            "Si alguna parte está defectuosa, reemplácela o reemplace la unidad de accionamiento (JC93–00350A).",
+            "Verifique la conexión del embrague de recogida. Si el embrague de recogida (JC47-00033E) está defectuoso, reemplácelo."
+          ]
+        },
+        "M1-5111": {
+          "Impresora": "Samsung 4580",
+          "Error": "Papel bajo en la bandeja 1. Cargue papel.",
+          "Sintoma": "El papel está bajo en la bandeja 1.",
+          "Solucion": [
+            "Verifique si el papel está cargado en la bandeja 1. Cargue el papel.",
+            "Verifique si el actuador vacío (JC66-02905A) del conjunto de recogida está ensamblado correctamente. Si está roto o deformado, reemplácelo.",
+            "Verifique si el cable del sensor vacío está conectado correctamente. Si el cable está defectuoso, reemplácelo.",
+            "Si el sensor vacío (0604-001325) está defectuoso, reemplácelo."
+          ]
+        },
+        "M1-5112": {
+          "Impresora": "Samsung 4580",
+          "Error": "El papel está vacío en la bandeja 1. Cargue papel.",
+          "Sintoma": "El papel está vacío en la bandeja 1.",
+          "Solucion": [
+            "Verifique si el papel está cargado en la bandeja 1. Cargue el papel.",
+            "Verifique si el actuador vacío (JC66-02905A) del conjunto de recogida está ensamblado correctamente. Si está roto o deformado, reemplácelo.",
+            "Verifique si el cable del sensor vacío está conectado correctamente. Si el cable está defectuoso, reemplácelo.",
+            "Si el sensor vacío (0604-001325) está defectuoso, reemplácelo."
+          ]
+        },
+        "M1-5113": {
+          "Impresora": "Samsung 4580",
+          "Error": "El papel está vacío en la bandeja 1. Cargue papel.",
+          "Sintoma": "El papel está vacío en la bandeja 1.",
+          "Solucion": [
+            "Verifique si el papel está cargado en la bandeja 1. Cargue el papel.",
+            "Verifique si el actuador vacío (JC66-02905A) del conjunto de recogida está ensamblado correctamente. Si está roto o deformado, reemplácelo.",
+            "Verifique si el cable del sensor vacío está conectado correctamente. Si el cable está defectuoso, reemplácelo.",
+            "Si el sensor vacío (0604-001325) está defectuoso, reemplácelo."
+          ]
+        },
+        "M1-5120": {
+          "Impresora": "Samsung 4580",
+          "Error": "Papel vacío en todas las bandejas. Cargue papel.",
+          "Sintoma": "El papel está vacío en todas las bandejas.",
+          "Solucion": [
+            "Verifique si el papel está cargado en la bandeja 1 y en la bandeja MP. Cargue el papel.",
+            "Verifique si el actuador vacío está ensamblado correctamente. Si está roto o deformado, reemplácelo.",
+            "Verifique si el cable del sensor vacío está conectado correctamente. Si el cable está defectuoso, reemplácelo.",
+            "Si el sensor vacío está defectuoso, reemplácelo."
+          ]
+        },
+        "M1-5612": {
+          "Impresora": "Samsung 4580",
+          "Error": "Papel vacío en todas las bandejas. Cargue papel.",
+          "Sintoma": "El papel está vacío en la bandeja MP.",
+          "Solucion": [
+            "Verifique si el papel está cargado en la bandeja MP. Cargue el papel.",
+            "Verifique si el actuador vacío de la bandeja MP está ensamblado correctamente. Si está roto o deformado, reemplácelo.",
+            "Verifique si el cable del sensor vacío de la bandeja MP está conectado correctamente. Si el cable está defectuoso, reemplácelo.",
+            "Si el sensor vacío de la bandeja MP está defectuoso, reemplácelo."
+          ]
+        },
+        "M2-1110": {
+          "Impresora": "Samsung 4580",
+          "Error": "Atasco de papel en la bandeja.",
+          "Sintoma": "El papel se ha atascado en el sensor de alimentación.",
+          "Solucion": [
+            "Retire la bandeja 1. Retire el papel atascado y vuelva a instalar la bandeja.",
+            "Si el problema persiste, verifique lo siguiente:",
+            "Verifique si el conector del sensor de alimentación está conectado correctamente.",
+            "Verifique si el rodillo de registro está contaminado o desgastado.",
+            "Verifique la conexión del embrague de registro. Si el embrague de registro (JC47-00033E) está defectuoso, reemplácelo.",
+            "Verifique la conexión del embrague de recogida. Si el embrague de recogida (JC47-00033E) está defectuoso, reemplácelo."
+          ]
+        },
+        "M2-1111": {
+          "Impresora": "Samsung 4580",
+          "Error": "Atasco de papel dentro de la máquina.",
+          "Sintoma": "El papel se ha atascado en el sensor de alimentación.",
+          "Solucion": [
+            "Retire la bandeja 1. Retire el papel atascado y vuelva a instalar la bandeja.",
+            "Si el problema persiste, verifique lo siguiente:",
+            "Verifique si el conector del sensor de alimentación está conectado correctamente.",
+            "Verifique si el rodillo de registro está contaminado o desgastado.",
+            "Verifique la conexión del embrague de registro. Si el embrague de registro (JC47-00033E) está defectuoso, reemplácelo.",
+            "Verifique la conexión del embrague de recogida. Si el embrague de recogida (JC47-00033E) está defectuoso, reemplácelo."
+          ]
+        },
+        "M2-1210": {
+          "Impresora": "Samsung 4580",
+          "Error": "Atasco de papel en la bandeja.",
+          "Sintoma": "El papel se ha atascado en el sensor de alimentación.",
+          "Solucion": [
+            "Retire la bandeja 1. Retire el papel atascado y vuelva a instalar la bandeja.",
+            "Si el problema persiste, verifique lo siguiente:",
+            "Verifique si el conector del sensor de alimentación está conectado correctamente.",
+            "Verifique si el rodillo de registro está contaminado o desgastado.",
+            "Verifique la conexión del embrague de registro. Si el embrague de registro (JC47-00033E) está defectuoso, reemplácelo.",
+            "Verifique la conexión del embrague de recogida. Si el embrague de recogida (JC47-00033E) está defectuoso, reemplácelo."
+          ]
+        },
+        "M2-2211": {
+          "Impresora": "Samsung 4580",
+          "Error": "Atasco de papel en el camino del dúplex.",
+          "Sintoma": "El papel no entró en el camino del dúplex y se ha atascado.",
+          "Solucion": [
+            "Retire el papel atascado. Si el error persiste, verifique lo siguiente:",
+            "Verifique si hay obstáculos o contaminación en el camino del dúplex.",
+            "Verifique si el actuador de salida (JC66-02850A) de la unidad de fusión funciona normalmente.",
+            "Verifique si el motor de salida funciona normalmente y su conector está conectado correctamente.",
+            "Si el motor de salida está defectuoso, reemplácelo o reemplace la unidad de accionamiento de salida (JC93-00349A).",
+            "Verifique si el embrague del dúplex funciona normalmente y su conector está conectado correctamente.",
+            "Si el embrague del dúplex (JC47-00033E) está defectuoso, reemplácelo."
+          ]
+        },
+        "M2-2212": {
+          "Impresora": "Samsung 4580",
+          "Error": "Atasco de papel en la parte superior del camino del dúplex.",
+          "Sintoma": "El papel no entró en el camino del dúplex y se ha atascado.",
+          "Solucion": [
+            "Retire el papel atascado. Si el error persiste, verifique lo siguiente:",
+            "Verifique si hay obstáculos o contaminación en el camino del dúplex.",
+            "Verifique si el actuador de salida (JC66-02850A) de la unidad de fusión funciona normalmente.",
+            "Verifique si el motor de salida funciona normalmente y su conector está conectado correctamente.",
+            "Si el motor de salida está defectuoso, reemplácelo o reemplace la unidad de accionamiento de salida (JC93-00349A).",
+            "Verifique si el embrague del dúplex funciona normalmente y su conector está conectado correctamente.",
+            "Si el embrague del dúplex (JC47-00033E) está defectuoso, reemplácelo."
+          ]
+        },
+        "M2-2214": {
+          "Impresora": "Samsung 4580",
+          "Error": "Atasco de papel en la parte inferior del camino del dúplex.",
+          "Sintoma": "El papel no entró en el camino del dúplex y se ha atascado.",
+          "Solucion": [
+            "Retire el papel atascado. Si el error persiste, verifique lo siguiente:",
+            "Verifique si hay obstáculos o contaminación en el camino del dúplex.",
+            "Verifique si el actuador de salida (JC66-02850A) de la unidad de fusión funciona normalmente.",
+            "Verifique si el motor de salida funciona normalmente y su conector está conectado correctamente.",
+            "Si el motor de salida está defectuoso, reemplácelo o reemplace la unidad de accionamiento de salida (JC93-00349A).",
+            "Verifique si el embrague del dúplex funciona normalmente y su conector está conectado correctamente.",
+            "Si el embrague del dúplex (JC47-00033E) está defectuoso, reemplácelo."
+          ]
+        },
+        "M2-2310": {
+          "Impresora": "Samsung 4580",
+          "Error": "Atasco de papel en el camino del dúplex.",
+          "Sintoma": "El papel no entró en el camino del dúplex y se ha atascado.",
+          "Solucion": [
+            "Retire el papel atascado. Si el error persiste, verifique lo siguiente:",
+            "Verifique si hay obstáculos o contaminación en el camino del dúplex.",
+            "Verifique si el actuador de salida (JC66-02850A) de la unidad de fusión funciona normalmente.",
+            "Verifique si el motor de salida funciona normalmente y su conector está conectado correctamente.",
+            "Si el motor de salida está defectuoso, reemplácelo o reemplace la unidad de accionamiento de salida (JC93-00349A).",
+            "Verifique si el embrague del dúplex funciona normalmente y su conector está conectado correctamente.",
+            "Si el embrague del dúplex (JC47-00033E) está defectuoso, reemplácelo."
+          ]
+        },
+        "M3-1110": {
+          "Impresora": "Samsung 4580",
+          "Error": "Atasco de papel en el área de salida.",
+          "Sintoma": "El papel se ha atascado en el área de salida.",
+          "Solucion": [
+            "Retire el papel atascado. Si el error persiste, verifique lo siguiente:",
+            "Verifique si hay obstáculos o contaminación en el camino del dúplex.",
+            "Verifique si el actuador de salida (JC66-02850A) de la unidad de fusión funciona normalmente.",
+            "Verifique si el motor de salida funciona normalmente y su conector está conectado correctamente.",
+            "Si el motor de salida está defectuoso, reemplácelo o reemplace la unidad de accionamiento de salida (JC93-00349A).",
+            "Retire la unidad de accionamiento de salida. Verifique si el engranaje está desgastado o roto. Si es necesario, reemplace la unidad de accionamiento de salida.",
+            "Retire la unidad de fusión. Si hay alguna pieza rota o defectuosa en la unidad de fusión, reemplácela o reemplace la unidad de fusión (JC91–01177A (220V) / JC91–01176A (110V))."
+          ]
+        },
+        "M3-1111": {
+          "Impresora": "Samsung 4580",
+          "Error": "Atasco de papel dentro de la máquina.",
+          "Sintoma": "El papel se ha atascado en el área de salida.",
+          "Solucion": [
+            "Retire el papel atascado. Si el error persiste, verifique lo siguiente:",
+            "Verifique si hay obstáculos o contaminación en el camino del dúplex.",
+            "Verifique si el actuador de salida (JC66-02850A) de la unidad de fusión funciona normalmente.",
+            "Verifique si el motor de salida funciona normalmente y su conector está conectado correctamente.",
+            "Si el motor de salida está defectuoso, reemplácelo o reemplace la unidad de accionamiento de salida (JC93-00349A).",
+            "Retire la unidad de accionamiento de salida. Verifique si el engranaje está desgastado o roto. Si es necesario, reemplace la unidad de accionamiento de salida.",
+            "Retire la unidad de fusión. Si hay alguna pieza rota o defectuosa en la unidad de fusión, reemplácela o reemplace la unidad de fusión (JC91–01177A (220V) / JC91–01176A (110V))."
+          ]
+        },
+        "M3-1112": {
+          "Impresora": "Samsung 4580",
+          "Error": "Atasco de papel en el área de salida.",
+          "Sintoma": "El papel se ha atascado en el área de salida.",
+          "Solucion": [
+            "Retire el papel atascado. Si el error persiste, verifique lo siguiente:",
+            "Verifique si hay obstáculos o contaminación en el camino del dúplex.",
+            "Verifique si el actuador de salida (JC66-02850A) de la unidad de fusión funciona normalmente.",
+            "Verifique si el motor de salida funciona normalmente y su conector está conectado correctamente.",
+            "Si el motor de salida está defectuoso, reemplácelo o reemplace la unidad de accionamiento de salida (JC93-00349A).",
+            "Retire la unidad de accionamiento de salida. Verifique si el engranaje está desgastado o roto. Si es necesario, reemplace la unidad de accionamiento de salida.",
+            "Retire la unidad de fusión. Si hay alguna pieza rota o defectuosa en la unidad de fusión, reemplácela o reemplace la unidad de fusión (JC91–01177A (220V) / JC91–01176A (110V))."
+          ]
+        },
+        "M3-2130": {
+          "Impresora": "Samsung 4580",
+          "Error": "Demasiado papel en el bandeja de salida. Retire el papel impreso.",
+          "Sintoma": "Hay demasiado papel en la bandeja de salida.",
+          "Solucion": [
+            "Retire el papel en la bandeja de salida.",
+            "Si el error persiste, verifique lo siguiente:",
+            "a) Verifique si el sensor y el actuador de la bandeja llena están ensamblados correctamente.",
+            "b) Verifique si el sensor de la bandeja llena está defectuoso."
+          ]
+        },
+        "S2-1110": {
+          "Impresora": "Samsung 4580",
+          "Error": "Fallo del motor: #S2-1110. Llame al servicio si el problema persiste.",
+          "Sintoma": "El CPU en la placa principal tiene algún problema (error de arranque, error de comunicación, etc.).",
+          "Solucion": [
+            "Apague y encienda la máquina.",
+            "Si el problema persiste, reemplace la placa principal (JC92–02722A)."
+          ]
+        },
+        "S2-331C": {
+          "Impresora": "Samsung 4580",
+          "Error": "Calibrando... Por favor, espere.",
+          "Sintoma": "Este error muestra el estado del motor.",
+          "Solucion": [
+            "Espere hasta que este error desaparezca."
+          ]
+        },
+        "S2-331D": {
+          "Impresora": "Samsung 4580",
+          "Error": "Esperando el tiempo de retardo para la temperatura de fijación baja...",
+          "Sintoma": "Este error muestra el estado del motor.",
+          "Solucion": [
+            "Espere hasta que este error desaparezca."
+          ]
+        },
+        "S2-3321": {
+          "Impresora": "Samsung 4580",
+          "Error": "Suministrando y mezclando tóner en la unidad de desarrollo. Por favor, espere...",
+          "Sintoma": "Este error muestra el estado del motor.",
+          "Solucion": [
+            "Espere hasta que este error desaparezca."
+          ]
+        },
+        "S2-4210": {
+          "Impresora": "Samsung 4580",
+          "Error": "Puerta frontal abierta. Ciérrela.",
+          "Sintoma": "La cubierta frontal está abierta.",
+          "Solucion": [
+            "Abra la cubierta frontal y ciérrela correctamente.",
+            "Abra la cubierta frontal.",
+            "Verifique si el contacto del interruptor de la cubierta frontal está deformado.",
+            "Retire la cubierta derecha.",
+            "Verifique la conexión entre el sensor de apertura de la cubierta y la placa de unión. Reconecte el cable. Si el cable está defectuoso, reemplácelo.",
+            "Abra la cubierta frontal. Verifique si el mensaje cambia al presionar el microinterruptor (sensor de apertura de la cubierta).",
+            "Si el sensor de apertura de la cubierta está defectuoso, reemplácelo."
+          ]
+        },
+        "S2-4310": {
+          "Impresora": "Samsung 4580",
+          "Error": "Puerta trasera abierta. Ciérrela.",
+          "Sintoma": "La cubierta trasera está abierta.",
+          "Solucion": [
+            "Abra la cubierta trasera y ciérrela correctamente.",
+            "Abra la cubierta trasera.",
+            "Verifique si el contacto del interruptor de la cubierta trasera está deformado.",
+            "Retire la cubierta izquierda.",
+            "Verifique la conexión entre el sensor de apertura de la cubierta y la placa HVPS. Reconecte el cable. Si el cable está defectuoso, reemplácelo.",
+            "Abra la cubierta trasera. Verifique si el mensaje cambia al presionar el microinterruptor (sensor de apertura de la cubierta).",
+            "Si el sensor de apertura de la cubierta está defectuoso, reemplácelo."
+          ]
+        },
+        "S3-3121": {
+          "Impresora": "Samsung 4580",
+          "Error": "Escáner bloqueado.",
+          "Sintoma": "El módulo del escáner no se mueve. / Ha ocurrido un error de bloqueo del escáner.",
+          "Solucion": [
+            "Verifique si la unidad CIS se mueve al encender el equipo.",
+            "Verifique si el cable plano está conectado a la unidad CIS correctamente. Reconecte o reemplace el cable.",
+            "Si el CIS (0609-001573) está defectuoso, reemplácelo.",
+            "Verifique si hay alguna pieza defectuosa en la unidad del escáner (engranaje, correa, motor, etc.).",
+            "• Engranaje-Correa (6602-003602)",
+            "• Unidad de escaneo (JC97-04170A)"
+          ]
+        },
+        "S7-1110": {
+          "Impresora": "Samsung 4580",
+          "Error": "Fallo del sistema del motor: #S7-1110. Apague y encienda.",
+          "Sintoma": "La línea de 24V está anormal.",
+          "Solucion": [
+            "Verifique el pin de 24V en la placa SMPS. Si está anormal, reemplace la placa SMPS (JC44-00092C (220V) / JC44-00091C (110V)).",
+            "Verifique el cable relacionado.",
+            "Si la SMPS está normal, reemplace la placa principal (JC92–02722A)."
+          ]
+        },
+        "S7-2110": {
+          "Impresora": "Samsung 4580",
+          "Error": "Fallo del fusor: #S7-2110. Apague y encienda.",
+          "Sintoma": "El relé de control del calentador está anormal.",
+          "Solucion": [
+            "Apague la máquina. Reinstale la unidad de fusor y luego encienda la máquina.",
+            "Si el problema persiste, reemplace la placa de conducción del fusor (FDB).",
+            "Si el problema persiste, reemplace la unidad de fusor (JC91–01177A (220V) / JC91–01176A (110V))."
+          ]
+        },
+        "U1-2115,U1-2116": {
+          "Impresora": "Samsung 4580",
+          "Error": "Fallo en la unidad de fusión",
+          "Sintoma": "El control de presión (unidad de cam) de la unidad de fusión es anormal.",
+          "Solucion": [
+            "1) Después de verificar la instalación de la unidad de fusión, apague la máquina y vuelva a encenderla.",
+            "2) Abra la cubierta trasera. Levante el lado derecho y libere la cubierta trasera.",
+            "3) Si no hay ningún problema, retire los 4 tornillos.",
+            "4) Levante ambos levantadores. Luego retire la unidad de fusión.",
+            "5) Retire la cubierta lateral L/R de la unidad de fusión. Verifique si el Actuator cam y Gear cam están ensamblados correctamente.",
+            "6) Si no hay problemas en los pasos anteriores, ensamble e instale de nuevo la unidad de fusión. Luego, encienda la máquina.",
+            "7) Si persiste el mismo error, realice una limpieza de memoria (respaldar los datos en SWS primero); si eso no funciona, intente reinstalar el firmware.",
+            "8) Si persiste el mismo error, reemplace la unidad de fusión (JC91–01177A (220V) / JC91–01176A (110V)) por una nueva.",
+            "9) Si persiste el mismo error, reemplace la placa base (JC92–02722A)."
+          ]
+        },
+        "U1-2117": {
+          "Impresora": "Samsung 4580",
+          "Error": "Fallo en la unidad de fusión",
+          "Sintoma": "La máquina no puede detectar que la unidad de fusión está instalada.",
+          "Solucion": [
+            "1) Después de verificar la instalación de la unidad de fusión, apague la máquina y vuelva a encenderla.",
+            "2) Abra la cubierta trasera. Levante el lado derecho y libere la cubierta trasera.",
+            "3) Si no hay ningún problema, retire los 4 tornillos.",
+            "4) Levante ambos levantadores. Luego retire la unidad de fusión.",
+            "5) Si no hay problemas en los pasos anteriores, ensamble e instale de nuevo la unidad de fusión. Luego, encienda la máquina.",
+            "6) Si persiste el mismo error, realice una limpieza de memoria.",
+            "7) Si persiste el mismo error, reemplace la unidad de fusión (JC91–01177A (220V) / JC91–01176A (110V)) por una nueva.",
+            "8) Si persiste el mismo error, reemplace la placa base (JC92–02722A)."
+          ]
+        },
+        "U1-2316,U1-2317,U1-2320,U1-2321,U1-2323,U1-2332,U1-2339,U1-2341,U1-2342,U1-2343,U1-234H": {
+          "Impresora": "Samsung 4580",
+          "Error": "Fallo en la unidad de fusión",
+          "Sintoma": "El control de temperatura de la unidad de fusión es anormal. (Error de temperatura abierta, Error de baja temperatura o Error de sobrecalentamiento) / El termistor está defectuoso. / La conexión de la unidad de fusión es mala.",
+          "Solucion": [
+            "1) Después de verificar la instalación de la unidad de fusión, apague la máquina y vuelva a encenderla.",
+            "2) Abra la cubierta trasera. Levante el lado derecho y libere la cubierta trasera.",
+            "3) Si no hay problemas, retire los 4 tornillos.",
+            "4) Levante ambos levantadores. Luego retire la unidad de fusión.",
+            "5) Retire la cubierta superior del marco después de quitar 2 tornillos. Mida la continuidad del termostato. Verifique si el termostato está abierto.",
+            "6) Mida el valor de resistencia de la lámpara halógena desde el centro y ambos lados. Verifique si tiene continuidad.",
+            "7) Verifique si el cable del conector de extracción está correcto. Verifique su color.",
+            "8) Verifique si los 2 conectores del termistor están conectados correctamente.",
+            "9) Mida el valor de resistencia del termistor desde el centro y ambos lados. Verifique si tiene continuidad.",
+            "10) Verifique si el conector del termistor en la placa base está conectado correctamente.",
+            "11) Verifique si el conector FDB está conectado correctamente.",
+            "12) Verifique si el voltaje en el entorno del usuario está en este rango (80V ~ 140V, 160V ~ 260V).",
+            "13) Si no hay problemas en los pasos anteriores, actualice el firmware.",
+            "14) Reemplace el FDB (JC44-00204A (220V) / JC44-00203A (110V)). Si el problema persiste, reemplace el SMPS (JC44-00092C (220V) / JC44-00091C (110V)). Si el problema persiste, reemplace la placa base (JC92-02722A)."
+          ]
+        },
+        "U2-1111,U2-1112,U2-1113,U2-1114": {
+          "Impresora": "Samsung 4580",
+          "Error": "Fallo en LSU",
+          "Sintoma": "El motor LSU no funciona o funciona de manera anormal. / La señal de preparación del motor LSU es anormal.",
+          "Solucion": [
+            "1) Apague la máquina y vuelva a encenderla. Verifique el sonido de operación del motor LSU durante el calentamiento.",
+            "2) Imprima una página de demostración para verificar que la máquina funcione normalmente.",
+            "3) Si el problema persiste, verifique lo siguiente:",
+            "   • Si el motor LSU emite un sonido,",
+            "     a) Ingrese al modo SVC para verificar la señal de preparación del motor LSU.",
+            "        (Diagnósticos > Diagnósticos del motor > Rutinas de prueba del motor)",
+            "     b) Seleccione 'LSU Motor1 Run Ready'. ( Diagnósticos > Diagnósticos del motor > Rutinas de prueba del motor > 110-0000)",
+            "     c) Presione el botón 'Iniciar'. Verifique que el estado haya cambiado a 'Ejecutando -> Bajo -> Alto'.",
+            "     d) Si el estado no ha cambiado, la señal de preparación del motor es anormal. Reemplace el LSU.",
+            "   • Si el motor LSU no emite un sonido,",
+            "     a) Apague la máquina y abra la cubierta lateral. Desconecte y vuelva a conectar el cable LSU. Verifique que el motor LSU emita un sonido después de encender la máquina.",
+            "     b) Si el cable LSU está defectuoso, reemplácelo. Verifique que el motor LSU emita un sonido después de encender la máquina.",
+            "     c) Si el problema persiste, reemplace el LSU (JC97-03877A)."
+          ]
+        },
+        "U3-3313,U3-3314": {
+          "Impresora": "Samsung 4580",
+          "Error": "Atasco de papel original dentro del escáner",
+          "Sintoma": "El original se ha atascado en el camino del papel.",
+          "Solucion": [
+            "1) Verifique si el motor de recogida funciona normalmente.",
+            "2) Abra la cubierta DSDF. Verifique si se ha producido un atasco de papel.",
+            "3) Retire el papel atascado.",
+            "4) Verifique si hay obstáculos o contaminación en el camino del papel. Retírelos.",
+            "5) Si el problema persiste, verifique lo siguiente:",
+            "   a) Separe la unidad DSDF.",
+            "   b) Retire el tornillo. Verifique la conexión del sensor. Si la conexión está OK, reemplace el sensor.",
+            "6) Empuje la barra blanca. Verifique si regresa a su condición original.",
+            "7) Cierre la unidad DSDF."
+          ]
+        },
+        "U3-4210": {
+          "Impresora": "Samsung 4580",
+          "Error": "Puerta superior del escáner abierta",
+          "Sintoma": "La cubierta DSDF está abierta.",
+          "Solucion": [
+            "1) Cierre la cubierta DSDF correctamente.",
+            "2) Si este error ocurre continuamente, verifique lo siguiente:",
+            "   a) Verifique el sensor de apertura de la cubierta DSDF y su cableado. Si hay alguna pieza defectuosa, reemplácela.",
+            "   b) Si ambos están normales, verifique el Rib de Apertura de la Cubierta. Si está roto, reemplace la Cubierta de Apertura."
+          ]
+        }
+      }
+    },
+    "Samsung 5370": {
+      "errors": {
+        "11-2T01, 11-2T11, 11-2T21, 11-2T31, 11-2T41, 11-2T61": {
+          "Impresora": "Samsung 5370",
+          "Error": "Cargar la bandeja con papel tamaño Carta, tipo Normal",
+          "Sintoma": "El papel en la bandeja no coincide con la configuración de papel de la máquina.",
+          "Solucion": [
+            "Verifique y cambie correctamente la configuración de papel de la bandeja correspondiente."
+          ]
+        },
+        "61-1111": {
+          "Impresora": "Samsung 5370",
+          "Error": "Error de arranque: #61-1111. Apague y vuelva a encender. Llame al servicio técnico si el problema persiste.",
+          "Sintoma": "La creación de la imagen de hibernación falló.",
+          "Solucion": [
+            "Encienda la máquina con un arranque normal.",
+            "Ingrese al modo de servicio y seleccione 'Hibernación activada' nuevamente."
+          ]
+        },
+        "A1-1111, A1-1112, A1-1113": {
+          "Impresora": "Samsung 5370",
+          "Error": "Fallo del motor: #A1-111x. Apague y vuelva a encender. Llame al servicio técnico si el problema persiste.",
+          "Sintoma": "El funcionamiento del motor principal es anormal.",
+          "Solucion": [
+            "A1–1111: El motor principal está detenido, pero la máquina lo reconoce como operativo.",
+            "A1–1112: El motor principal no se opera para la tarea de impresión.",
+            "A1–1113: El motor principal está operando, pero la máquina lo reconoce como 'Detenido'.",
+            "1) Apague la máquina. Verifique si hay sustancias extrañas o papel alrededor de la ruta del papel.",
+            "2) Retire la cubierta trasera después de quitar 6 tornillos.",
+            "3) Verifique si el conector del motor principal está correctamente conectado.",
+            "4) Si la conexión está bien, encienda la máquina. Ingrese al modo de servicio (SVC). Seleccione la prueba del motor principal.",
+            "a) Si el motor no funciona:",
+            "• Verifique la señal y la potencia con el multímetro (DVM).",
+            "• Si el resultado es normal, reemplace el motor principal (JC31-00090A).",
+            "• Si el resultado es anormal, verifique lo siguiente:",
+            "- Si no se genera energía de 24V, reemplace la placa SMPS (JC44-00100C (220V) / JC44-00093C (110V)).",
+            "- Si la señal de control es anormal, reemplace la placa principal (JC92-02661A).",
+            "b) Si el motor está operativo:",
+            "• Verifique el Pin No 8. Si el valor es anormal, reemplace la placa principal. Si el valor es normal, reemplace el arnés."
+          ]
+        },
+        "A1-3111, A1-3112, A1-3113": {
+          "Impresora": "Samsung 5370",
+          "Error": "Fallo del motor: #A1-311x. Apague y vuelva a encender. Llame al servicio técnico si el problema persiste.",
+          "Sintoma": "El funcionamiento del motor de desarrollo (Dev) es anormal.",
+          "Solucion": [
+            "A1–3111: El motor de desarrollo está detenido, pero la máquina lo reconoce como operativo.",
+            "A1–3112: El motor de desarrollo no se opera para la tarea de impresión.",
+            "A1–3113: El motor de desarrollo está operando, pero la máquina lo reconoce como 'Detenido'.",
+            "1) Apague la máquina. Verifique si hay sustancias extrañas o papel alrededor de la unidad de imagen.",
+            "2) Retire la cubierta trasera después de quitar 6 tornillos.",
+            "3) Verifique si el conector del motor de desarrollo está correctamente conectado.",
+            "4) Si la conexión está bien, encienda la máquina. Ingrese al modo de servicio (SVC). Seleccione la prueba del motor de desarrollo.",
+            "a) Si el motor no funciona:",
+            "• Verifique la señal y la potencia con el multímetro (DVM).",
+            "• Si el resultado es normal, reemplace el motor de desarrollo (JC31-00090A).",
+            "• Si el resultado es anormal, verifique lo siguiente:",
+            "- Si no se genera energía de 24V, reemplace la placa SMPS (JC44-00100C (220V) / JC44-00093C (110V)).",
+            "- Si la señal de control es anormal, reemplace la placa principal (JC92-02661A).",
+            "b) Si el motor está operativo:",
+            "• Verifique el Pin No 8. Si el valor es anormal, reemplace la placa principal. Si el valor es normal, reemplace el arnés."
+          ]
+        },
+        "A3-2113": {
+          "Impresora": "Samsung 5370",
+          "Error": "El sensor CTD está sucio. Por favor, límpielo con un paño suave o papel.",
+          "Sintoma": "El sensor CTD está defectuoso o la calibración del sensor CTD es anormal.",
+          "Solucion": [
+            "1) Apague la máquina.",
+            "2) Abra la cubierta lateral.",
+            "3) Verifique si la ventana del sensor CTD está contaminada. Si es así, limpie la ventana con un paño suave.",
+            "4) Cierre la cubierta lateral.",
+            "5) Encienda la máquina.",
+            "6) Si el problema persiste, reemplace el sensor CTD (JC32-00014A)."
+          ]
+        },
+        "A3-3210, A3-3211, A3-3212": {
+          "Impresora": "Samsung 5370",
+          "Error": "Fallo del sensor: #A3-32xx. Apague y vuelva a encender. Llame al servicio técnico si el problema persiste.",
+          "Sintoma": "El sensor de temperatura interna está defectuoso.",
+          "Solucion": [
+            "A3-3210: El valor del sensor de temperatura interna es anormal.",
+            "A3-3211: El sensor de temperatura interna está en estado de cortocircuito.",
+            "A3-3212: El sensor de temperatura interna está en estado de circuito abierto.",
+            "1) Ingrese al modo de servicio (SVC). Ejecute la prueba del sensor para verificar el funcionamiento del sensor.",
+            "2) Abra la cubierta lateral. Mida el valor de resistencia del conector en ambos extremos.",
+            "• Si el valor no es 10KΩ ± 1% (@ 25 °C), reemplace el sensor de temperatura interna.",
+            "3) Si el sensor es normal, reemplace la placa principal (JC92-02661A)."
+          ]
+        },
+        "A3-3310, A3-3311, A3-3312, A3-3320": {
+          "Impresora": "Samsung 5370",
+          "Error": "Fallo del sensor: #A3-33xx. Apague y vuelva a encender. Llame al servicio técnico si el problema persiste.",
+          "Sintoma": "El sensor de temperatura externa está defectuoso.",
+          "Solucion": [
+            "A3-3310 / A3-3311 / A3-3312 / A3-3320: La función de temperatura del sensor es anormal.",
+            "1) Ingrese al modo de servicio (SVC). Ejecute la prueba del sensor para verificar su funcionamiento.",
+            "2) Retire la cubierta izquierda. Mida el valor de resistencia del conector en ambos extremos.",
+            "• Si el valor no es de 47.5KΩ ~ 52.5KΩ (@ 25 °C), reemplace el sensor de temperatura/humedad externo (JC32–00015A).",
+            "3) Si el arnés y el sensor son normales, reemplace la placa principal (JC92-02661A)."
+          ]
+        },
+        "A3-3410, A3-3411, A3-3412": {
+          "Impresora": "Samsung 5370",
+          "Error": "Fallo del sensor: #A3-34xx. Apague y vuelva a encender. Llame al servicio técnico si el problema persiste.",
+          "Sintoma": "El sensor de humedad externa está defectuoso.",
+          "Solucion": [
+            "A3-3410 / A3-3411 / A3-3412: La función de humedad del sensor es anormal.",
+            "1) Ingrese al modo de servicio (SVC). Ejecute la prueba del sensor para verificar su funcionamiento.",
+            "2) Retire la cubierta izquierda. Mida el valor de resistencia del conector en ambos extremos.",
+            "• Si el valor no es de 47.5KΩ ~ 52.5KΩ (@ 25 °C), reemplace el sensor de temperatura/humedad externo (JC32–00015A).",
+            "3) Si el arnés y el sensor son normales, reemplace la placa principal (JC92-02661A)."
+          ]
+        },
+        "A4-1110": {
+          "Impresora": "Samsung 5370",
+          "Error": "Fallo de la lámpara: #A4-1110. Abra la puerta y luego ciérrela. Llame al servicio técnico si el problema persiste.",
+          "Sintoma": "La lámpara de borrado no se enciende.",
+          "Solucion": [
+            "1) Ingrese al modo de servicio (SVC). Ejecute la prueba de la lámpara de borrado.",
+            "2) Si la lámpara de borrado no se enciende, reemplácela (JC92-01959B)."
+          ]
+        },
+        "C1-1110": {
+          "Impresora": "Samsung 5370",
+          "Error": "Prepare new toner cartridge",
+          "Sintoma": "El cartucho de tóner está casi vacío.",
+          "Solucion": [
+            "1) Prepare un nuevo cartucho de tóner, ya que se agotará pronto."
+          ]
+        },
+        "C1-111A, C1-1313, C1-1314": {
+          "Impresora": "Samsung 5370",
+          "Error": "Agite el cartucho de tóner y luego instálelo. Si el problema persiste, reemplace el cartucho.",
+          "Sintoma": "El suministro de tóner es anormal o el tóner restante en el cartucho es bajo.",
+          "Solucion": [
+            "1) Abra la cubierta frontal y lateral.",
+            "2) Retire el cartucho de tóner.",
+            "3) Verifique si la cinta de sellado del cartucho ha sido retirada. Si no, retírela.",
+            "4) Agite el cartucho de tóner horizontalmente para distribuir el tóner de manera uniforme dentro del cartucho.",
+            "5) Reinstale el cartucho de tóner.",
+            "6) Si el problema persiste, reemplace el cartucho de tóner."
+          ]
+        },
+        "C1-1140, C1-1160, C1-1170": {
+          "Impresora": "Samsung 5370",
+          "Error": "Fin de la vida útil del cartucho de tóner. Reemplácelo por uno nuevo.",
+          "Sintoma": "El cartucho de tóner ha llegado al final de su vida útil.",
+          "Solucion": [
+            "1) Abra la cubierta frontal y lateral.",
+            "2) Retire el cartucho de tóner.",
+            "3) Instale un nuevo cartucho de tóner.",
+            "4) Cierre la cubierta frontal."
+          ]
+        },
+        "C1-1410": {
+          "Impresora": "Samsung 5370",
+          "Error": "Instale el cartucho de tóner.",
+          "Sintoma": "El cartucho de tóner no está instalado.",
+          "Solucion": [
+            "1) Abra la cubierta frontal y lateral. Verifique si el cartucho de tóner está instalado.",
+            "2) Retire y vuelva a instalar el cartucho de tóner.",
+            "3) Si el problema persiste, verifique si el conector modular del cartucho de tóner está contaminado o deformado.",
+            "4) Reemplace el cartucho de tóner por uno nuevo."
+          ]
+        },
+        "C1-1512": {
+          "Impresora": "Samsung 5370",
+          "Error": "El cartucho de tóner no es compatible. Consulte la guía del usuario.",
+          "Sintoma": "El cartucho de tóner no es compatible.",
+          "Solucion": [
+            "1) Abra la cubierta frontal y lateral. Retire el cartucho de tóner.",
+            "2) Verifique si la información de la etiqueta del cartucho de tóner es la misma que la de la máquina (ej. /SEE).",
+            "3) Si la información de la etiqueta es diferente a la de la máquina o si el cartucho de tóner no es original de Samsung, reemplácelo por uno nuevo."
+          ]
+        },
+        "C1-1710, C1-1711, C1-1712": {
+          "Impresora": "Samsung 5370",
+          "Error": "Fallo del cartucho de tóner: #C1-1710. Llame al servicio técnico.",
+          "Sintoma": "Los datos de CRUM no se detectan. / CRUM está defectuoso.",
+          "Solucion": [
+            "Abra la cubierta frontal y la cubierta lateral. Verifique si el cartucho de tóner está instalado.",
+            "Retire y vuelva a instalar el cartucho de tóner.",
+            "Si el problema persiste, verifique si el conector modular del cartucho de tóner está contaminado o deformado.",
+            "Reemplace el cartucho de tóner con uno nuevo."
+          ]
+        },
+        "C3-1110": {
+          "Impresora": "Samsung 5370",
+          "Error": "Prepare una nueva unidad de imagen.",
+          "Sintoma": "La unidad de imagen está casi al final de su vida útil.",
+          "Solucion": [
+            "Prepare la nueva unidad de imagen porque se agotará pronto."
+          ]
+        },
+        "C3-1140, C3-1150, C3-1170": {
+          "Impresora": "Samsung 5370",
+          "Error": "Fin de vida útil, reemplace con una nueva unidad de imagen.",
+          "Sintoma": "La unidad de imagen ha llegado al final de su vida útil.",
+          "Solucion": [
+            "Abra la cubierta frontal y la cubierta lateral.",
+            "Retire el cartucho de tóner.",
+            "Retire la unidad de imagen y reemplácela con una nueva.",
+            "Instale el cartucho de tóner.",
+            "Cierre la cubierta lateral y la cubierta frontal."
+          ]
+        },
+        "C3-1210": {
+          "Impresora": "Samsung 5370",
+          "Error": "Fallo de la unidad de imagen: #C3-1210. Apague y vuelva a encender.",
+          "Sintoma": "Error de calibración del sensor que detecta la densidad del tóner para el control de estabilización de imagen.",
+          "Solucion": [
+            "Abra la cubierta frontal y la cubierta lateral.",
+            "Retire el cartucho de tóner.",
+            "Retire y vuelva a instalar la unidad de imagen.",
+            "Instale el cartucho de tóner.",
+            "Cierre la cubierta lateral y la cubierta frontal.",
+            "Si el problema persiste, reemplace la unidad de imagen."
+          ]
+        },
+        "C3-1314, C3-1315, C3-1316": {
+          "Impresora": "Samsung 5370",
+          "Error": "Fallo de la unidad de imagen: #C3-1314. Instale la unidad de imagen nuevamente.",
+          "Sintoma": "El suministro de tóner es anormal.",
+          "Solucion": [
+            "Abra la cubierta frontal y la cubierta lateral.",
+            "Retire el cartucho de tóner.",
+            "Retire y vuelva a instalar la unidad de imagen.",
+            "Instale el cartucho de tóner.",
+            "Cierre la cubierta lateral y la cubierta frontal.",
+            "Si el problema persiste, reemplace la unidad de imagen.",
+            "Verifique si el motor relacionado con el suministro de tóner está funcionando normalmente. Si no, reemplace el motor."
+          ]
+        },
+        "C3-1410, C3-1414, C3-1512": {
+          "Impresora": "Samsung 5370",
+          "Error": "La unidad de imagen no está instalada. Instale la unidad.",
+          "Sintoma": "La unidad de imagen no está instalada correctamente. / La máquina no puede leer el valor de resistencia del cargador desde la unidad de imagen. / La unidad de imagen no es compatible.",
+          "Solucion": [
+            "Abra la cubierta frontal y la cubierta lateral.",
+            "Retire el cartucho de tóner.",
+            "Retire y vuelva a instalar la unidad de imagen.",
+            "Instale el cartucho de tóner.",
+            "Cierre la cubierta lateral y la cubierta frontal.",
+            "Si el problema persiste, reemplace la unidad de imagen con una nueva."
+          ]
+        },
+        "C3-1710, C3-1711, C3-1712": {
+          "Impresora": "Samsung 5370",
+          "Error": "Fallo de la unidad de imagen: #C3-1710. Llame al servicio técnico.",
+          "Sintoma": "Los datos de CRUM no se detectan.",
+          "Solucion": [
+            "Abra la cubierta frontal y la cubierta lateral.",
+            "Retire la unidad de imagen y verifique si su conector modular está contaminado o deformado.",
+            "Si está defectuoso, reemplácelo con uno nuevo.",
+            "Cierre la cubierta lateral y la cubierta frontal."
+          ]
+        },
+        "C6-1120": {
+          "Impresora": "Samsung 5370",
+          "Error": "Reemplace con una nueva unidad de fusor.",
+          "Sintoma": "La vida útil de la unidad de fusor está a punto de expirar o ha expirado.",
+          "Solucion": [
+            "Abra la cubierta lateral.",
+            "Retire y reemplace la unidad de fusor con una nueva.",
+            "Cierre la cubierta frontal.",
+            "PRECAUCIÓN: La temperatura en las proximidades de la unidad de fusor es alta. Al reemplazarla, puede sufrir quemaduras. Asegúrese de que la unidad de fusor se haya enfriado antes de reemplazarla."
+          ]
+        },
+        "C9-1112, C9-1122, C9-1132, C9-1142": {
+          "Impresora": "Samsung 5370",
+          "Error": "Reemplace el rodillo de alimentación de la bandeja 1/2/3/4.",
+          "Sintoma": "La vida útil del rodillo de alimentación/inversión/avance de la bandeja 1/2/3/4 ha expirado.",
+          "Solucion": [
+            "Abra la cubierta lateral.",
+            "Retire la bandeja.",
+            "Levante la pequeña pestaña y retire el rodillo de alimentación/inversión/avance.",
+            "Instale el nuevo rodillo de alimentación/inversión/avance.",
+            "Ingrese al modo SVC.",
+            "Seleccione 'Rodillo' (INFORMACIÓN > Estado del suministro > Unidad de reemplazo en campo > Rodillo).",
+            "Seleccione 'Kit de rodillos de alimentación - bandeja 1~4'. Se activará el botón 'RESET'. Haga clic en 'RESET' para restablecer el rodillo correspondiente.",
+            "Salga del modo SVC presionando el botón de inicio."
+          ]
+        },
+        "C9-1162": {
+          "Impresora": "Samsung 5370",
+          "Error": "Reemplace el rodillo de alimentación MP.",
+          "Sintoma": "La vida útil del rodillo MP está por expirar o ha expirado.",
+          "Solucion": [
+            "Apague la impresora.",
+            "Retire la unidad MP.",
+            "Libere y reemplace el caucho de alimentación MP de la unidad MP.",
+            "Vuelva a ensamblar la unidad MP.",
+            "Ingrese al modo SVC.",
+            "Seleccione 'Rodillo' (INFORMACIÓN > Estado del suministro > Unidad de reemplazo en campo > Rodillo).",
+            "Seleccione 'Rodillo de alimentación MP'. Se activará el botón 'RESET'. Haga clic en 'RESET' para restablecer el rodillo de alimentación MP.",
+            "Salga del modo SVC presionando el botón de inicio."
+          ]
+        },
+        "C9-2120": {
+          "Impresora": "Samsung 5370",
+          "Error": "Reemplace el rodillo de transferencia.",
+          "Sintoma": "La vida útil del rodillo de transferencia (T2) está por expirar o ha expirado.",
+          "Solucion": [
+            "Abra la cubierta lateral.",
+            "Reemplace el rodillo de transferencia (T2) por uno nuevo.",
+            "Cierre la cubierta lateral.",
+            "Ingrese al modo SVC.",
+            "Seleccione 'TRANSFER' (INFORMACIÓN > Estado del suministro > Unidad de reemplazo en campo > TRANSFER).",
+            "Seleccione 'Rodillo T2'. Se activará el botón 'RESET'. Haga clic en 'RESET' para restablecer el rodillo T2.",
+            "Salga del modo SVC presionando el botón de inicio."
+          ]
+        },
+        "C9-2220": {
+          "Impresora": "Samsung 5370",
+          "Error": "Fallo del rodillo de transferencia: #C9-2220. Reinstale el rodillo de transferencia.",
+          "Sintoma": "El rodillo de transferencia no está instalado correctamente.",
+          "Solucion": [
+            "Abra la cubierta lateral.",
+            "Retire y vuelva a instalar el rodillo de transferencia (T2).",
+            "Cierre la cubierta lateral.",
+            "Ingrese al modo SVC.",
+            "Seleccione 'TRANSFER' (INFORMACIÓN > Estado del suministro > Unidad de reemplazo en campo > TRANSFER).",
+            "Seleccione 'Rodillo T2'. Se activará el botón 'RESET'. Haga clic en 'RESET' para restablecer el rodillo T2.",
+            "Salga del modo SVC presionando el botón de inicio."
+          ]
+        },
+        "H1-1211, H1-1213, H1-1217, H1-1218, H1-1219": {
+          "Impresora": "Samsung 5370",
+          "Error": "Atasco de papel en la bandeja 2.",
+          "Sintoma": "Ocurrió un atasco de papel en la bandeja 2. (La conexión de la unidad de alimentación está defectuosa. / Los rodillos de alimentación están defectuosos. / El sensor de alimentación está defectuoso.)",
+          "Solucion": [
+            "Retire la bandeja 2. Retire el papel atascado. Y reinstale la bandeja 2.",
+            "Si el problema persiste, verifique lo siguiente:",
+            "Verifique si el papel adecuado está cargado en la bandeja. Si no es así, reemplace el papel.",
+            "Verifique si los rodillos de alimentación/reversa/avance están contaminados o desgastados. Reemplace estos rodillos.",
+            "Verifique la unidad de alimentación de la bandeja 2.",
+            "Verifique si el sensor y el actuador están ensamblados correctamente. Cuando el papel o algo está sobre el sensor, verifique la salida del sensor. Verifique si el valor cambia a 3.3V de ancho. Si no es así, reemplace el sensor.",
+            "Si hay una pieza defectuosa como un actuador, resorte, etc., reemplácelo o reemplace la unidad de alimentación de la bandeja 2.",
+            "Verifique si el conector del motor de alimentación de la bandeja 2 está conectado correctamente.",
+            "Si el motor de alimentación está defectuoso, reemplácelo.",
+            "Verifique si el conector del embrague de alimentación de la bandeja 2 está conectado correctamente."
+          ]
+        },
+        "H1-1220": {
+          "Impresora": "Samsung 5370",
+          "Error": "La puerta de la bandeja 2 está abierta. Ciérrela.",
+          "Sintoma": "La puerta derecha de la bandeja 2 está abierta. / El sensor de puerta abierta está defectuoso.",
+          "Solucion": [
+            "Abra y cierre la puerta de la bandeja 2.",
+            "Si el problema persiste, verifique el sensor de puerta abierta.",
+            "Verifique si el conector del sensor de puerta abierta está conectado correctamente.",
+            "Si el funcionamiento del sensor es anormal, reemplácelo."
+          ]
+        },
+        "H1-1222, H1-1240": {
+          "Impresora": "Samsung 5370",
+          "Error": "La bandeja 2 ha sido retirada. Insértela correctamente.",
+          "Sintoma": "La bandeja 2 ha sido retirada o el conector del sensor de detección de la bandeja no está conectado o está roto.",
+          "Solucion": [
+            "Retire e inserte correctamente la bandeja 2.",
+            "Si el problema persiste, retire nuevamente la bandeja 2.",
+            "Verifique si el cable del sensor de detección de la bandeja está conectado correctamente. Desconéctelo y vuelva a conectarlo.",
+            "Si la conexión es correcta, reemplace el sensor de detección de la bandeja.",
+            "Si el problema persiste, reemplace la placa SCF."
+          ]
+        },
+        "H1-1230": {
+          "Impresora": "Samsung 5370",
+          "Error": "Fallo del sistema de entrada: #H1-1230. Verifique la conexión de la bandeja 2.",
+          "Sintoma": "Se produjo un error de comunicación entre la bandeja 2 y la máquina principal.",
+          "Solucion": [
+            "Verifique si el conector de la unidad SCF está conectado correctamente a la máquina. Vuelva a conectarlo.",
+            "Si el conector del cajón está deformado, reemplácelo."
+          ]
+        },
+        "H1-1251, H1-1252": {
+          "Impresora": "Samsung 5370",
+          "Error": "El papel en la bandeja 2 está bajo. Cargue papel. / La bandeja 2 está vacía. Cargue papel.",
+          "Sintoma": "El papel en la bandeja 2 es menos del 10% de la capacidad especificada. / El fotosensor está defectuoso.",
+          "Solucion": [
+            "Retire la bandeja 2. Cargue papel en la bandeja 2.",
+            "Si el papel está cargado pero el mensaje de error no ha desaparecido, realice las siguientes acciones:",
+            "a) Retire la unidad de recogida de la bandeja 2.",
+            "b) Verifique si el sensor de papel vacío está contaminado. Si es así, límpielo.",
+            "c) Si el sensor de papel vacío está defectuoso, reemplácelo.",
+            "d) Si el actuador de papel vacío está defectuoso, reemplácelo."
+          ]
+        },
+        "H1-1253": {
+          "Impresora": "Samsung 5370",
+          "Error": "Fallo del sistema de entrada #H1-1253: Extraiga la bandeja 2 e insértela nuevamente.",
+          "Sintoma": "El papel no se alimenta desde la bandeja 2.",
+          "Solucion": [
+            "Apague y encienda la máquina.",
+            "Si el problema persiste, apague la máquina.",
+            "Verifique si la conexión entre la unidad de recogida de la bandeja 2 y la placa SCF es correcta.",
+            "Si la conexión es correcta, reemplace la unidad de recogida de la bandeja 2.",
+            "Si el problema persiste, realice las siguientes acciones:",
+            "a) Retire la unidad de recogida de la bandeja 2.",
+            "b) Verifique si el sensor de recogida está contaminado, límpielo.",
+            "c) Si el sensor de recogida está defectuoso, reemplácelo."
+          ]
+        },
+        "H1-1311, H1-1313, H1-1317, H1-1318, H1-1319": {
+          "Impresora": "Samsung 5370",
+          "Error": "Atasco de papel en la bandeja 3. / La bandeja 3 o la puerta de la bandeja están abiertas.",
+          "Sintoma": "Se ha producido un atasco de papel en la bandeja 3. (La conexión de la unidad de recogida es defectuosa. / Los rodillos de recogida están defectuosos. / El sensor de recogida está defectuoso.)",
+          "Solucion": [
+            "Retire la bandeja 3. Retire el papel atascado. E instale la bandeja 3 nuevamente.",
+            "Si el problema persiste, verifique lo siguiente:",
+            "1) Verifique si el papel adecuado está cargado en la bandeja. Si no, reemplace el papel.",
+            "2) Verifique si los rodillos de recogida/inversión/avance están contaminados o desgastados. Reemplace estos rodillos.",
+            "3) Verifique la unidad de recogida de la bandeja 3.",
+            "4) Verifique si el sensor y el actuador están ensamblados correctamente. Si algo obstruye el sensor, verifique si el valor cambia a un ancho de 3.3V. Si no, reemplace el sensor.",
+            "5) Si alguna parte como el actuador o el resorte están defectuosos, reemplácelos o reemplace la unidad de recogida de la bandeja 3.",
+            "6) Verifique el motor de recogida de la bandeja 3.",
+            "7) Verifique si el cable del motor de recogida de la bandeja 3 está conectado correctamente.",
+            "8) Si la conexión es correcta, reemplace la unidad de recogida de la bandeja 3."
+          ]
+        },
+        "H1-1320": {
+          "Impresora": "Samsung 5370",
+          "Error": "La puerta de la bandeja 3 está abierta. Ciérrela.",
+          "Sintoma": "La puerta derecha de la bandeja 3 está abierta. / El sensor de puerta abierta está defectuoso.",
+          "Solucion": [
+            "Abra y cierre la puerta de la bandeja 3.",
+            "Si el problema persiste, verifique el sensor de puerta abierta.",
+            "1) Verifique si el conector del sensor de puerta abierta está conectado correctamente.",
+            "2) Si la operación del sensor es anormal, reemplácelo."
+          ]
+        },
+        "H1-1322, H1-1340": {
+          "Impresora": "Samsung 5370",
+          "Error": "La bandeja 3 está retirada. Insértela correctamente. / La bandeja 3 no está instalada. Instálela.",
+          "Sintoma": "La bandeja 3 está retirada o el conector del sensor de detección del cassette no está conectado o está roto.",
+          "Solucion": [
+            "Retire e inserte correctamente la bandeja 3.",
+            "Si el problema persiste, retire la bandeja 3 nuevamente.",
+            "1) Verifique si el cable del sensor de detección del cassette está conectado correctamente. Desconéctelo y vuelva a conectarlo.",
+            "2) Si la conexión es correcta, reemplace el sensor de detección del cassette.",
+            "3) Si el problema persiste, reemplace la placa SCF."
+          ]
+        },
+        "H1-1332": {
+          "Impresora": "Samsung 5370",
+          "Error": "Fallo en la bandeja: #H1-1332. Verifique la conexión de la bandeja.",
+          "Sintoma": "Se ha producido un error de comunicación entre la bandeja 3 y la máquina principal.",
+          "Solucion": [
+            "Verifique si el conector de la unidad SCF está conectado correctamente a la máquina. Vuelva a conectarlo.",
+            "Si el conector del cajón está deformado, reemplácelo."
+          ]
+        },
+        "H1-1351, H1-1352": {
+          "Impresora": "Samsung 5370",
+          "Error": "Poca cantidad de papel en la bandeja 3. / La bandeja 3 está vacía. Cargue papel.",
+          "Sintoma": "La cantidad de papel en la bandeja 3 es inferior al 10% de la especificación. / El sensor de fotos está defectuoso.",
+          "Solucion": [
+            "Retire la bandeja 3. Cargue papel en la bandeja 3.",
+            "Si el papel está cargado y el mensaje de error no desaparece, verifique lo siguiente:",
+            "1) Retire la unidad de recogida de la bandeja 3.",
+            "2) Verifique si el sensor de papel vacío está contaminado. Si es así, límpielo.",
+            "3) Si el sensor de papel vacío está defectuoso, reemplácelo.",
+            "4) Si el actuador del sensor de vacío está defectuoso, reemplácelo."
+          ]
+        },
+        "H1-1353": {
+          "Impresora": "Samsung 5370",
+          "Error": "Fallo del sistema de entrada #H1-1353: Extraiga la bandeja 3 y vuelva a insertarla.",
+          "Sintoma": "El papel no se alimenta desde la bandeja 3.",
+          "Solucion": [
+            "Apague y encienda la máquina.",
+            "Si el problema persiste, apague la máquina nuevamente.",
+            "1) Verifique si la conexión entre la unidad de recogida de la bandeja 3 y la placa SCF es correcta.",
+            "2) Si la conexión es correcta, reemplace la unidad de recogida de la bandeja 3.",
+            "Si el problema persiste, verifique lo siguiente:",
+            "a) Retire la unidad de recogida de la bandeja 3.",
+            "b) Verifique si el sensor de recogida está contaminado, límpielo.",
+            "c) Si el sensor de recogida está defectuoso, reemplácelo."
+          ]
+        },
+        "H1-1411, H1-1413, H1-1417, H1-1418, H1-1419": {
+          "Impresora": "Samsung 5370",
+          "Error": "Atasco de papel en la bandeja 4. / Atasco de papel en la bandeja 4 o la puerta de la bandeja está abierta.",
+          "Sintoma": "Ha ocurrido un atasco de papel en la bandeja 4. (La conexión de la unidad de recogida es defectuosa. / Los rodillos de recogida están defectuosos. / El sensor de recogida está defectuoso.)",
+          "Solucion": [
+            "1) Retire la bandeja 4. Quite el papel atascado y vuelva a instalar la bandeja.",
+            "2) Si el problema persiste, verifique lo siguiente:",
+            "3) Verifique si el papel adecuado está cargado en la bandeja. Si no, reemplácelo.",
+            "4) Verifique si los rodillos de recogida/reversa/avanzada están contaminados o desgastados. Reemplace estos rodillos.",
+            "5) Verifique la unidad de recogida de la bandeja 4.",
+            "• Verifique si el sensor y el actuador están correctamente ensamblados. Cuando el papel o algún objeto toque el sensor, verifique si la salida del sensor cambia a 3.3V de ancho. Si no, reemplace el sensor.",
+            "• Si hay una pieza defectuosa como un actuador, resorte, etc., reemplácelo o reemplace la unidad de recogida de la bandeja 4.",
+            "6) Verifique el motor de recogida de la bandeja 4.",
+            "• Verifique si el cable del motor de recogida de la bandeja 4 está correctamente conectado.",
+            "• Si la conexión está bien, reemplace la unidad de accionamiento de recogida de la bandeja 4."
+          ]
+        },
+        "H1-1420": {
+          "Impresora": "Samsung 5370",
+          "Error": "La puerta de la bandeja 4 está abierta. Ciérrela.",
+          "Sintoma": "La puerta derecha de la bandeja 4 está abierta. / El sensor de la puerta abierta está defectuoso.",
+          "Solucion": [
+            "1) Abra y cierre la puerta de la bandeja 4.",
+            "2) Si el problema persiste, verifique el sensor de puerta abierta.",
+            "• Verifique si el conector del sensor de puerta abierta está correctamente conectado.",
+            "• Si el funcionamiento del sensor es anormal, reemplácelo."
+          ]
+        },
+        "H1-1422": {
+          "Impresora": "Samsung 5370",
+          "Error": "La bandeja 4 está retirada. Inserte la bandeja correctamente.",
+          "Sintoma": "La bandeja 4 está retirada o el conector del sensor de detección del cassette no está conectado o está roto.",
+          "Solucion": [
+            "1) Retire e inserte correctamente la bandeja 4.",
+            "2) Si el problema persiste, retire nuevamente la bandeja 4.",
+            "3) Verifique si el cable del sensor de detección del cassette está correctamente conectado. Desconéctelo y vuelva a conectarlo.",
+            "4) Si la conexión es correcta, reemplace el sensor de detección del cassette.",
+            "5) Si el problema persiste, reemplace la placa SCF."
+          ]
+        },
+        "H1-1434": {
+          "Impresora": "Samsung 5370",
+          "Error": "Fallo de la bandeja: #H1-1434. Verifique la conexión de la bandeja.",
+          "Sintoma": "Ha ocurrido un error de comunicación entre la bandeja 4 y la máquina principal.",
+          "Solucion": [
+            "1) Verifique si el conector de la unidad SCF está conectado correctamente a la máquina. Reconéctelo.",
+            "2) Si el conector del cajón está deformado, reemplácelo."
+          ]
+        },
+        "H1-1451, H1-1452": {
+          "Impresora": "Samsung 5370",
+          "Error": "Poca cantidad de papel en la bandeja 4. / No hay papel en la bandeja 4.",
+          "Sintoma": "El papel en la bandeja 4 es inferior al 10% de la capacidad especificada. / El sensor de fotos está defectuoso.",
+          "Solucion": [
+            "1) Retire la bandeja 4. Cargue el papel en la bandeja.",
+            "2) Si el papel está cargado pero el mensaje de error no ha desaparecido, verifique lo siguiente:",
+            "a) Retire la unidad de recogida de la bandeja 4.",
+            "b) Verifique si el sensor de papel vacío está contaminado. Si es así, límpielo.",
+            "c) Si el sensor de papel vacío está defectuoso, reemplácelo.",
+            "d) Si el actuador de vacío está defectuoso, reemplácelo."
+          ]
+        },
+        "H1-1453": {
+          "Impresora": "Samsung 5370",
+          "Error": "Fallo del sistema de entrada #H1-1453: Retire la bandeja 4 y vuelva a insertarla.",
+          "Sintoma": "El papel no se alimenta desde la bandeja 4.",
+          "Solucion": [
+            "1) Apague y encienda la máquina.",
+            "2) Si el problema persiste, apague la máquina.",
+            "3) Verifique si la conexión entre la unidad de recogida de la bandeja 4 y la placa SCF es correcta.",
+            "4) Si la conexión está bien, reemplace la unidad de recogida de la bandeja 4.",
+            "5) Si el problema persiste, verifique lo siguiente:",
+            "a) Retire la unidad de recogida de la bandeja 4.",
+            "b) Verifique si el sensor de recogida está contaminado, límpielo.",
+            "c) Si el sensor de recogida está defectuoso, reemplácelo."
+          ]
+        },
+        "H1-2211, H1-2213, H1-2217, H1-2218, H1-2219": {
+          "Impresora": "Samsung 5370",
+          "Error": "Atasco de papel en el HCF 2. / Atasco de papel en la bandeja 2 o la puerta de la bandeja está abierta.",
+          "Sintoma": "Se ha producido un atasco de papel en el primer HCF. (Conexión de la unidad de recogida defectuosa. / Rodillos de recogida defectuosos. / Sensor de recogida defectuoso.)",
+          "Solucion": [
+            "1) Retire el cassette del primer HCF. Elimine el papel atascado y vuelva a instalar el cassette del primer HCF.",
+            "2) Si el problema persiste, verifique lo siguiente:",
+            "   a) Verifique si el papel adecuado está cargado en el cassette. Si no es así, reemplace el papel.",
+            "   b) Verifique si los rodillos de recogida/reversa/avanzado están contaminados o desgastados. Reemplace estos rodillos.",
+            "   c) Verifique la unidad de recogida del primer HCF.",
+            "      • Verifique si el sensor y el actuador están montados correctamente. Cuando el papel u otro objeto está en el sensor, verifique la salida del sensor. Verifique si el valor cambia a 3.3V de ancho. Si no, reemplace el sensor.",
+            "      • Si hay una pieza defectuosa como un actuador, resorte, etc., reemplácela o reemplace la unidad de recogida del primer HCF.",
+            "   d) Verifique el motor de recogida del primer HCF.",
+            "      • Verifique si el cable del motor de recogida del primer HCF está conectado correctamente.",
+            "      • Si la conexión está bien, reemplace la unidad de accionamiento del primer HCF."
+          ]
+        },
+        "H1-2220": {
+          "Impresora": "Samsung 5370",
+          "Error": "Puerta del HCF 2 abierta. Ciérrela.",
+          "Sintoma": "La puerta derecha del primer HCF está abierta. / El sensor de puerta abierta está defectuoso.",
+          "Solucion": [
+            "1) Abra y cierre la puerta del primer HCF.",
+            "2) Si el problema persiste, verifique el sensor de puerta abierta.",
+            "   • Verifique si el conector del sensor de puerta abierta está conectado correctamente.",
+            "   • Si la operación del sensor es anormal, reemplácelo."
+          ]
+        },
+        "H1-2222, H1-2240": {
+          "Impresora": "Samsung 5370",
+          "Error": "El cassette del HCF 2 está extraído. Insértelo correctamente. / HCF 2 no está instalado. Instale el HCF.",
+          "Sintoma": "El cassette del primer HCF está extraído o el conector del sensor de detección del cassette no está conectado o está dañado.",
+          "Solucion": [
+            "1) Retire e inserte el cassette del primer HCF correctamente.",
+            "2) Si el problema persiste, retire el cassette del primer HCF nuevamente.",
+            "3) Verifique si el cable del sensor de detección del cassette está conectado correctamente. Desenchúfelo y vuelva a conectarlo.",
+            "4) Si la conexión está bien, reemplace el sensor de detección del cassette.",
+            "5) Si el problema persiste, reemplace la placa del HCF."
+          ]
+        },
+        "H1-2230": {
+          "Impresora": "Samsung 5370",
+          "Error": "Fallo del sistema de entrada: #H1-2230. Verifique la conexión del HCF 2.",
+          "Sintoma": "Se ha producido un error de comunicación entre el primer HCF y la máquina principal.",
+          "Solucion": [
+            "1) Verifique si el conector de la unidad HCF está conectado a la máquina correctamente. Vuelva a conectarlo.",
+            "2) Si el conector del cajón está deformado, reemplácelo."
+          ]
+        },
+        "H1-2251, H1-2252": {
+          "Impresora": "Samsung 5370",
+          "Error": "Papel bajo en el HCF 2. Cargue papel. / Papel vacío en el HCF 2. Cargue papel.",
+          "Sintoma": "El papel en el cassette del primer HCF es menos del 10% de la especificación. / El sensor fotoeléctrico está defectuoso.",
+          "Solucion": [
+            "1) Retire el cassette del primer HCF. Cargue el papel en el cassette del primer HCF.",
+            "2) Si se carga el papel pero el mensaje de error no desaparece, verifique lo siguiente:",
+            "   a) Retire la unidad de recogida del primer HCF.",
+            "   b) Verifique si el sensor de papel vacío está contaminado. Si es así, límpielo.",
+            "   c) Si el sensor de papel vacío está defectuoso, reemplácelo.",
+            "   d) Si el actuador de vacío está defectuoso, reemplácelo."
+          ]
+        },
+        "H1-2253": {
+          "Impresora": "Samsung 5370",
+          "Error": "Fallo del sistema de entrada #H1-2253: Retire el HCF 2 y vuelva a insertarlo.",
+          "Sintoma": "El papel no se alimenta desde el HCF.",
+          "Solucion": [
+            "1) Apague la máquina y vuelva a encenderla.",
+            "2) Si el problema persiste, apague la máquina.",
+            "3) Verifique si la conexión entre el motor de recogida del primer HCF y la placa del HCF es correcta.",
+            "4) Si la conexión está bien, reemplace la unidad de accionamiento del primer HCF.",
+            "5) Si el problema persiste, verifique lo siguiente:",
+            "   a) Retire la unidad de recogida del primer HCF.",
+            "   b) Verifique si el sensor de recogida está contaminado, límpielo.",
+            "   c) Si el sensor de recogida está defectuoso, reemplácelo."
+          ]
+        },
+        "M1-1113": {
+          "Impresora": "Samsung 5370",
+          "Error": "Atasco de papel en la bandeja 1.",
+          "Sintoma": "Se ha producido un atasco de papel en la bandeja 1.",
+          "Solucion": [
+            "1) Retire la bandeja 1. Retire el papel atascado y vuelva a instalar la bandeja.",
+            "2) Si el problema persiste, verifique lo siguiente:",
+            "   a) Verifique si el papel adecuado está cargado en la bandeja. Si no es así, reemplace el papel.",
+            "   b) Verifique si los rodillos de recogida/reversa/avance están contaminados o desgastados. Reemplace estos rodillos.",
+            "   c) Verifique que el actuador del sensor de registro se mueva libremente y no esté dañado. Si es necesario, instale un nuevo conjunto de actuador del sensor de registro.",
+            "   d) Verifique la conexión entre el sensor de registro y la placa principal. Si es necesario, instale un nuevo sensor de registro.",
+            "   e) Verifique que el actuador del sensor de alimentación se mueva libremente y no esté dañado. Si es necesario, instale un nuevo conjunto de actuador del sensor de alimentación.",
+            "   f) Verifique la conexión entre el sensor de alimentación y la placa principal. Si es necesario, instale un nuevo sensor de alimentación.",
+            "   g) Verifique si el motor de recogida funciona normalmente. Si es necesario, reemplace el motor de recogida.",
+            "   h) Verifique el embrague de recogida. Si es necesario, reemplace el embrague de recogida."
+          ]
+        },
+        "M1-1613": {
+          "Impresora": "Samsung 5370",
+          "Error": "Atasco de papel en la bandeja MP.",
+          "Sintoma": "Se ha producido un atasco de papel en la bandeja MP.",
+          "Solucion": [
+            "1) Abra la cubierta lateral.",
+            "2) Retire el papel atascado.",
+            "3) Si el problema persiste, verifique lo siguiente:",
+            "   a) Verifique si el papel adecuado está cargado en la bandeja. Si no es así, reemplace el papel.",
+            "   b) Verifique si el rodillo de recogida/reversa de MP o la almohadilla de fricción MP están contaminados o desgastados. Reemplace la pieza defectuosa.",
+            "   c) Verifique que el actuador del sensor de alimentación se mueva libremente y no esté dañado. Si es necesario, instale un nuevo conjunto de actuador del sensor de alimentación.",
+            "   d) Verifique la conexión entre el sensor de alimentación y la placa principal. Si es necesario, instale un nuevo sensor de alimentación.",
+            "   e) Verifique si el motor de recogida funciona normalmente. Si es necesario, reemplace el motor de recogida.",
+            "   f) Verifique el embrague MP. Si es necesario, reemplace el embrague MP."
+          ]
+        },
+        "M1-3122": {
+          "Impresora": "Samsung 5370",
+          "Error": "La cassette de la bandeja 1 está retirada. Inserte correctamente.",
+          "Sintoma": "La bandeja 1 está retirada.",
+          "Solucion": [
+            "1) Retire e instale nuevamente la bandeja 1.",
+            "2) Retire la bandeja 1. Verifique si la bandeja 1 está dañada.",
+            "3) Verifique la conexión entre el sensor de detección de la bandeja 1 y la placa principal.",
+            "4) Verifique si el sensor de detección de la bandeja 1 está dañado. Si es necesario, reemplace el sensor.",
+            "5) Si es necesario, reemplace la placa principal."
+          ]
+        },
+        "M1-4111": {
+          "Impresora": "Samsung 5370",
+          "Error": "Fallo del tray: #M1-4111. Retire el tray 1 y vuelva a insertarlo. Llame al servicio si el problema persiste.",
+          "Sintoma": "El funcionamiento del motor de elevación es anormal.",
+          "Solucion": [
+            "1) Retire e instale nuevamente el tray 1.",
+            "2) Retire la cubierta trasera.",
+            "3) Verifique la conexión entre el motor de elevación del tray 1 y la placa principal.",
+            "4) Verifique el funcionamiento del motor de elevación del tray 1. Si es necesario, reemplace el motor.",
+            "5) Si es necesario, reemplace la placa principal."
+          ]
+        },
+        "M1-5111, M1-5112, M1-5120": {
+          "Impresora": "Samsung 5370",
+          "Error": "Papel bajo en el tray 1. Cargue papel / Papel vacío en el tray 1. Cargue papel / Papel vacío en todos los trays. Cargue papel.",
+          "Sintoma": "Tray 1 está casi vacío. / Tray 1 está vacío.",
+          "Solucion": [
+            "1) Retire el tray 1.",
+            "2) Verifique si hay papel cargado. Si está vacío, cargue el papel.",
+            "3) Verifique la conexión entre el sensor de vacío y la placa principal. Si es necesario, instale un nuevo sensor de vacío.",
+            "4) Verifique que el actuador del sensor de vacío se mueva libremente y no esté dañado. Si es necesario, instale un nuevo conjunto de actuador del sensor de vacío.",
+            "5) Verifique la conexión entre el motor de elevación del tray 1 y la placa principal.",
+            "6) Verifique el funcionamiento del motor de elevación del tray 1. Si es necesario, reemplace el motor.",
+            "7) Si es necesario, reemplace la placa principal."
+          ]
+        },
+        "M1-5612": {
+          "Impresora": "Samsung 5370",
+          "Error": "Papel vacío en el tray MP. Cargue papel.",
+          "Sintoma": "El tray MP está vacío.",
+          "Solucion": [
+            "1) Verifique la conexión entre el sensor de vacío del MP y la placa principal. Si es necesario, instale un nuevo sensor de vacío del MP.",
+            "2) Verifique que el actuador del sensor de vacío del MP se mueva libremente y no esté dañado. Si es necesario, instale un nuevo conjunto de actuador del sensor de vacío del MP.",
+            "3) Si es necesario, reemplace la placa principal."
+          ]
+        },
+        "M2-1111, M2-1114": {
+          "Impresora": "Samsung 5370",
+          "Error": "Atasco de papel dentro de la máquina.",
+          "Sintoma": "Se ha producido un atasco de papel en el sensor de alimentación.",
+          "Solucion": [
+            "1) Apague la máquina y luego enciéndala.",
+            "2) Abra la cubierta lateral. Retire el papel atascado.",
+            "3) Si el problema persiste, verifique lo siguiente:",
+            "   a) Verifique que el actuador del sensor de registro se mueva libremente y no esté dañado. Si es necesario, instale un nuevo conjunto de actuador del sensor de registro.",
+            "   b) Verifique la conexión entre el sensor de registro y la placa principal. Si es necesario, instale un nuevo sensor de registro.",
+            "   c) Verifique si el rodillo de registro está dañado. Si es necesario, reemplace el rodillo de registro.",
+            "   d) Verifique que el actuador del sensor de alimentación se mueva libremente y no esté dañado. Si es necesario, instale un nuevo conjunto de actuador del sensor de alimentación.",
+            "   e) Verifique la conexión entre el sensor de alimentación y la placa principal. Si es necesario, instale un nuevo sensor de alimentación.",
+            "   f) Verifique si el motor de recogida funciona normalmente. Si es necesario, reemplace el motor de recogida.",
+            "   g) Verifique el embrague de recogida. Si es necesario, reemplace el embrague de recogida."
+          ]
+        },
+        "M2-1117, M2-2111, M2-2112, M2-2114, M2-2311, M2-2312, M2-2314": {
+          "Impresora": "Samsung 5370",
+          "Error": "Atasco de papel en la parte inferior del camino del dúplex / Atasco de papel en la parte superior del camino del dúplex.",
+          "Sintoma": "Se ha producido un atasco de papel en el sensor de alimentación.",
+          "Solucion": [
+            "1) Apague la máquina y luego enciéndala.",
+            "2) Abra la cubierta lateral. Retire el papel atascado.",
+            "3) Si el problema persiste, verifique lo siguiente:",
+            "   a) Verifique que el actuador del sensor de atasco del dúplex se mueva libremente y no esté dañado. Si es necesario, instale un nuevo conjunto de actuador del sensor de atasco del dúplex.",
+            "   b) Verifique la conexión entre el sensor de atasco del dúplex y la placa principal. Si es necesario, instale un nuevo sensor de atasco del dúplex.",
+            "   c) Verifique si el motor de recogida funciona normalmente. Si es necesario, reemplace el motor de recogida.",
+            "   d) Verifique el motor del dúplex. Si es necesario, reemplace el motor del dúplex.",
+            "   e) Verifique el embrague del dúplex. Si es necesario, reemplace el embrague del dúplex."
+          ]
+        },
+        "M3-1111, M3-1112, M3-1114": {
+          "Impresora": "Samsung 5370",
+          "Error": "Atasco de papel en el área de salida / Atasco de papel dentro de la máquina.",
+          "Sintoma": "Se ha producido un atasco de papel alrededor de la unidad de fusor.",
+          "Solucion": [
+            "1) Abra la cubierta lateral. Retire el papel atascado.",
+            "2) Si este atasco ocurre continuamente, verifique lo siguiente:",
+            "   a) Verifique la conexión entre el motor del fusor y la placa principal.",
+            "   b) Verifique el motor del fusor/salida. Si la operación es anormal, reemplace el motor.",
+            "   c) Retire la unidad del fusor. Verifique si la unidad del fusor tiene alguna pieza defectuosa. Reemplace la unidad del fusor.",
+            "   d) Retire la unidad de salida. Verifique si el sensor de salida está ensamblado correctamente. Si está defectuoso, reemplácelo."
+          ]
+        },
+        "M3-2130": {
+          "Impresora": "Samsung 5370",
+          "Error": "El papel en el contenedor de salida está lleno. Retire el papel impreso.",
+          "Sintoma": "Hay demasiados papeles en la bandeja de salida.",
+          "Solucion": [
+            "1) Retire el papel en la bandeja de salida.",
+            "2) Si este error ocurre continuamente, verifique lo siguiente:",
+            "   a) Verifique si el sensor y el actuador de contenedor lleno están ensamblados correctamente.",
+            "   b) Verifique si el sensor de contenedor lleno está defectuoso."
+          ]
+        },
+        "S1-1313": {
+          "Impresora": "Samsung 5370",
+          "Error": "El reloj volvió a la hora inicial. Configure la hora nuevamente.",
+          "Sintoma": "La hora guardada es inválida.",
+          "Solucion": [
+            "1) Configure la hora y reinicie la máquina.",
+            "   a) Seleccione 'Configuración de la máquina' en la pantalla táctil.",
+            "   b) Seleccione 'Configuración general'.",
+            "   c) Seleccione 'Fecha y hora' y configure la hora.",
+            "2) Si el problema persiste, verifique lo siguiente:",
+            "   a) Retire la cubierta trasera.",
+            "   b) Mida el voltaje de la batería. Si la batería es normal, el valor medido es superior a 3V.",
+            "3) Si la batería es normal, reemplace la placa principal."
+          ]
+        },
+        "S1-2411": {
+          "Impresora": "Samsung 5370",
+          "Error": "Fallo del sistema HDD: #S1-2411. Apague y encienda nuevamente. Llame al servicio si el problema persiste.",
+          "Sintoma": "El disco duro no está instalado en la máquina. / Disco duro defectuoso.",
+          "Solucion": [
+            "1) Verifique si el HDD está instalado correctamente.",
+            "   a) Retire la cubierta trasera.",
+            "   b) Verifique si el cable del HDD está conectado correctamente.",
+            "2) Si el problema persiste, reemplace el HDD."
+          ]
+        },
+        "S1-2433, S1-244x": {
+          "Impresora": "Samsung 5370",
+          "Error": "Fallo del sistema: #S1-2433. Llame al servicio. / Fallo del sistema HDD #S1-244x: Llame al servicio.",
+          "Sintoma": "La memoria del sistema está corrupta. / Ha ocurrido un error inesperado de software.",
+          "Solucion": [
+            "1) Acceda al modo SVC (técnico). Seleccione 'Recuperación del sistema' en el menú de funciones de servicio.",
+            "2) Ejecute el formateo del disco duro y la reinstalación del firmware.",
+            "3) Si el problema persiste, reemplace el HDD."
+          ]
+        },
+        "S1-2434, S1-2435, S1-2436, S1-2437, S1-2438, S1-2439": {
+          "Impresora": "Samsung 5370",
+          "Error": "Error de HDD #S1-2434. Consulte la guía del usuario. / Error de HDD #S1-2435. Consulte la guía del usuario. / Error de HDD #S1-2436. Consulte la guía del usuario. / Error de HDD #S1-2437. Consulte la guía del usuario. / Error de HDD #S1-2438. Consulte la guía del usuario. / Error de HDD #S1-2439. Consulte la guía del usuario.",
+          "Sintoma": "La partición del HDD o la memoria está llena.",
+          "Solucion": [
+            "• S1-2434 : Direcciones en la libreta de direcciones / Datos de usuario en el perfil de usuario",
+            "• S1-2435 : Documentos en la caja de documentos / Trabajos en la lista de trabajos seguros / Fuentes / Formularios",
+            "• S1-2436 : Registros del sistema",
+            "• S1-2438/2439 : Error de impresión / Sin papel en el cassette",
+            "1) Acceda al modo SVC. Seleccione 'Mantenimiento del disco duro' en el menú de funciones de servicio.",
+            "2) Ejecute el formateo del disco duro.",
+            "3) Si el problema persiste, reemplace el HDD."
+          ]
+        },
+        "S1-2510, S1-2521, S1-2523, S1-2530": {
+          "Impresora": "Samsung 5370",
+          "Error": "Fallo de MSOK: #S1-2510. Llame al servicio y cambie MSOK / Fallo de MSOK: #S1-2521. Llame al servicio / Los datos de PPM son incorrectos. Llame al servicio y cambie MSOK / Fallo del sistema del motor: #S2-1211. Apague y encienda nuevamente",
+          "Sintoma": "MSOK está defectuoso. / Los datos de MSOK son incorrectos.",
+          "Solucion": [
+            "1) Apague y encienda la máquina.",
+            "2) Si el problema persiste, apague la máquina nuevamente.",
+            "3) Retire la cubierta trasera.",
+            "4) Verifique si el MSOK está insertado correctamente. Retírelo e instálelo nuevamente.",
+            "5) Si el problema persiste, comuníquese con el equipo de soporte técnico."
+          ]
+        },
+        "S2-1211": {
+          "Impresora": "Samsung 5370",
+          "Error": "Fallo del sistema del motor: #S2-1211. Apague y encienda nuevamente",
+          "Sintoma": "Error de comunicación entre el ASIC en la placa base y el IC del microcontrolador.",
+          "Solucion": [
+            "1) Apague y encienda la máquina.",
+            "2) Si el problema persiste, apague la máquina nuevamente.",
+            "3) Retire la cubierta trasera.",
+            "4) Reemplace la placa base.",
+            "5) Vuelva a montar la cubierta trasera. Encienda la máquina."
+          ]
+        },
+        "S2-331D": {
+          "Impresora": "Samsung 5370",
+          "Error": "Espere el tiempo de demora para la temperatura de fijación inferior...",
+          "Sintoma": "El trabajo de impresión se detiene debido a una alta temperatura dentro de la unidad de fusión.",
+          "Solucion": [
+            "1) Abra la cubierta lateral. Enfríe la máquina y cierre la cubierta lateral.",
+            "2) Si el problema persiste, reemplace la unidad de fusión."
+          ]
+        },
+        "S2-3321": {
+          "Impresora": "Samsung 5370",
+          "Error": "Suministrando y mezclando tóner a la unidad de desarrollo. Por favor, espere...",
+          "Sintoma": "Este error muestra el estado del motor.",
+          "Solucion": [
+            "1) Espere hasta que el mensaje de error desaparezca.",
+            "2) Si el problema persiste, revise el cartucho de tóner y la unidad de imagen. Si hay alguna pieza defectuosa, reemplácela."
+          ]
+        },
+        "S2-3421": {
+          "Impresora": "Samsung 5370",
+          "Error": "Calibrando la densidad de imagen. Por favor, espere...",
+          "Sintoma": "Este error muestra el estado del motor.",
+          "Solucion": [
+            "1) Espere hasta que el mensaje de error desaparezca.",
+            "2) Si el problema persiste, revise el cartucho de tóner y la unidad de imagen. Si hay alguna pieza defectuosa, reemplácela."
+          ]
+        },
+        "S2-4120": {
+          "Impresora": "Samsung 5370",
+          "Error": "Puerta derecha está abierta. Ciérrela",
+          "Sintoma": "La cubierta lateral está abierta.",
+          "Solucion": [
+            "1) Cierre correctamente la cubierta lateral.",
+            "2) Verifique si el conector del sensor de apertura de la cubierta está conectado correctamente. Reconéctelo.",
+            "3) Si el sensor está defectuoso, reemplácelo."
+          ]
+        },
+        "S3-3121": {
+          "Impresora": "Samsung 5370",
+          "Error": "Escáner bloqueado u ocurrió otro problema.",
+          "Sintoma": "El módulo del escáner no se mueve.",
+          "Solucion": [
+            "1) Abra la unidad DSDF.",
+            "2) Verifique si el interruptor de bloqueo del escáner está en estado de bloqueo. Libérelo. Cierre la unidad DSDF.",
+            "3) Retire la cubierta trasera. Verifique si el conector en la placa base está conectado correctamente.",
+            "4) Retire el cristal de escaneo.",
+            "5) Verifique si el cable del sensor de posición de origen está conectado correctamente.",
+            "6) Si el problema persiste, reemplace la placa base."
+          ]
+        },
+        "S3-3211": {
+          "Impresora": "Samsung 5370",
+          "Error": "Fallo del sistema de escaneo #S3-3211: Apague y encienda.",
+          "Sintoma": "La placa DSDF no está conectada o hay un error de comunicación entre la placa DSDF y la placa base.",
+          "Solucion": [
+            "1) Apague la máquina y luego enciéndala. Si el problema persiste, verifique lo siguiente.",
+            "2) Apague la máquina nuevamente.",
+            "3) Retire la cubierta trasera del escáner. Verifique si el conector en la placa de unión del escáner está conectado correctamente.",
+            "4) Retire la cubierta trasera. Verifique si el conector en la placa base está conectado correctamente.",
+            "5) Retire la cubierta trasera del DSDF. Verifique si el conector en la placa DSDF está conectado correctamente.",
+            "6) Si la conexión está correcta, reemplace la placa DSDF.",
+            "7) Si el problema persiste después de reemplazar la placa DSDF, reemplace la placa base."
+          ]
+        },
+        "S5-3111": {
+          "Impresora": "Samsung 5370",
+          "Error": "Fallo del sistema UI #S5-3111: Apague y encienda.",
+          "Sintoma": "Error de comunicación entre la placa base y la placa OPE.",
+          "Solucion": [
+            "1) Retire la cubierta del hub de OPE.",
+            "2) Verifique si el cable de OPE Assy está conectado correctamente a la placa hub de OPE.",
+            "3) Si la conexión está correcta, reemplace el OPE Assy.",
+            "4) Si el OPE Assy está en buen estado, reemplace la placa hub de OPE."
+          ]
+        },
+        "S6-3122": {
+          "Impresora": "Samsung 5370",
+          "Error": "Cable de red desconectado. Verifíquelo.",
+          "Sintoma": "El cable de red está desconectado.",
+          "Solucion": [
+            "1) Verifique si el cable de red está conectado al puerto de red.",
+            "2) Verifique si el LED verde del puerto de red está encendido.",
+            "3) Si no está encendido, desconecte y vuelva a conectar el cable de red.",
+            "4) Verifique si la red está funcionando correctamente. Conecte el cable de red a otro dispositivo de red.",
+            "5) Si la red está en orden, reemplace la placa base."
+          ]
+        },
+        "S6-3123": {
+          "Impresora": "Samsung 5370",
+          "Error": "Esta dirección IP entra en conflicto con la de otro sistema. Verifíquelo.",
+          "Sintoma": "La red tiene problemas. (La dirección IP entra en conflicto con la de otro sistema.)",
+          "Solucion": [
+            "1) Cambie la dirección IP de la máquina.",
+            "2) Seleccione 'Configuración de la máquina' en la pantalla táctil.",
+            "3) Seleccione 'Configuración de red'.",
+            "4) Inicie sesión.",
+            "5) Seleccione 'TCP/IP'.",
+            "6) Seleccione el ítem adecuado para su máquina.",
+            "7) Seleccione 'Configuración de IP'.",
+            "8) Seleccione el ítem adecuado para su máquina.",
+            "9) Cambie la dirección IP."
+          ]
+        },
+        "S6-3229": {
+          "Impresora": "Samsung 5370",
+          "Error": "La dirección IPv4 asignada a la LAN inalámbrica entra en conflicto con la de otro sistema. Verifíquelo.",
+          "Sintoma": "La red tiene problemas de conflicto de dirección IPv4.",
+          "Solucion": [
+            "1) Cambie la dirección IP de la máquina.",
+            "2) Seleccione 'Configuración de la máquina' en la pantalla táctil.",
+            "3) Seleccione 'Configuración de red'.",
+            "4) Inicie sesión.",
+            "5) Seleccione 'TCP/IP'.",
+            "6) Seleccione el ítem adecuado para su máquina.",
+            "7) Seleccione 'Configuración de IP'.",
+            "8) Seleccione el ítem adecuado para su máquina.",
+            "9) Cambie la dirección IP."
+          ]
+        },
+        "S6-322A": {
+          "Impresora": "Samsung 5370",
+          "Error": "La dirección IPv6 asignada a la LAN inalámbrica entra en conflicto con la de otro sistema. Verifíquelo.",
+          "Sintoma": "La red tiene problemas de conflicto de dirección IPv6.",
+          "Solucion": [
+            "1) Cambie la dirección IP de la máquina.",
+            "2) Seleccione 'Configuración de la máquina' en la pantalla táctil.",
+            "3) Seleccione 'Configuración de red'.",
+            "4) Inicie sesión.",
+            "5) Seleccione 'TCP/IP'.",
+            "6) Seleccione el ítem adecuado para su máquina.",
+            "7) Seleccione 'Configuración de IP'.",
+            "8) Seleccione el ítem adecuado para su máquina.",
+            "9) Cambie la dirección IP."
+          ]
+        },
+        "S6-3128": {
+          "Impresora": "Samsung 5370",
+          "Error": "Fallo en la autenticación 802.1x: #S6-3128. Contacte al administrador del sistema.",
+          "Sintoma": "Error de red. (Un autenticador (por ejemplo, switch) rechazó la autenticación. / No hay respuesta al verificar la prueba de ping.)",
+          "Solucion": [
+            "1) Cambie las credenciales de 802.1x de la máquina.",
+            "   a) Seleccione 'Configuración de máquina' en la pantalla táctil.",
+            "   b) Seleccione 'Seguridad'.",
+            "   c) Seleccione '802.1x'.",
+            "   d) Seleccione el modo de autenticación adecuado para su entorno de red.",
+            "   e) Ingrese credenciales válidas.",
+            "2) El administrador del sistema debe verificar si el puerto Ethernet y el servidor de autenticación están configurados correctamente."
+          ]
+        },
+        "S6-3224, S6-3225, S6-3226, S6-3227": {
+          "Impresora": "Samsung 5370",
+          "Error": "Error BOOTP en LAN inalámbrica: #S6-3224. Cambio a IP automática. / Error BOOTP en LAN inalámbrica: #S6-3225. Reconfigure DHCP o IP estática. / Error DHCP en LAN inalámbrica: #S6-3226. Cambio a IP automática. / Error DHCP en LAN inalámbrica: #S6-3227. Reconfigure BOOTP o IP estática.",
+          "Sintoma": "Problema con el servidor BOOTP o DHCP o asignación anormal de IP.",
+          "Solucion": [
+            "1) Verifique el servidor BOOTP o DHCP.",
+            "2) Si el servidor está en orden, verifique la configuración de red."
+          ]
+        },
+        "S7-1110, S7-1210": {
+          "Impresora": "Samsung 5370",
+          "Error": "Fallo: #S7-1110. Apague y encienda nuevamente / Fallo: #S7-1210. Apague y encienda nuevamente",
+          "Sintoma": "La potencia para la placa principal es anormal (24V menor de 1.5V / 5V menor de 0.88V).",
+          "Solucion": [
+            "1) Apague la máquina.",
+            "2) Desconecte el cable de alimentación.",
+            "3) Retire la cubierta trasera.",
+            "4) Reemplace la placa SMPS.",
+            "5) Monte la cubierta trasera. Encienda la máquina."
+          ]
+        },
+        "S7-2110": {
+          "Impresora": "Samsung 5370",
+          "Error": "Fallo del fusor: #S7-2110. Apague y encienda nuevamente",
+          "Sintoma": "Se ha detectado un control anormal del calentador por la placa principal. Por lo tanto, la placa principal ha apagado el relé principal.",
+          "Solucion": [
+            "1) Apague la máquina. Reinstale la unidad del fusor y luego encienda la máquina.",
+            "2) Si el problema persiste, apague la máquina.",
+            "3) Reemplace la placa de control del fusor.",
+            "4) Si el problema persiste, reemplace la placa principal."
+          ]
+        },
+        "U1-2115": {
+          "Impresora": "Samsung 5370",
+          "Error": "Fallo de la unidad del fusor: #U1-2115. Apague y encienda nuevamente. Llame al servicio si el problema persiste",
+          "Sintoma": "El control de presión de la unidad del fusor (unidad de leva) es anormal.",
+          "Solucion": [
+            "ADVERTENCIA: La temperatura alrededor de la unidad del fusor puede ser alta. Para prevenir quemaduras, asegúrese de que el área de la unidad del fusor esté fría antes de realizar este procedimiento.",
+            "1) Apague la máquina y luego enciéndala.",
+            "2) Apague la máquina. Reinstale la unidad del fusor. Luego encienda la máquina.",
+            "3) Si el problema persiste, retire la cubierta trasera. Verifique si el conector del fusor está conectado correctamente.",
+            "4) Si la conexión está correcta, retire la unidad del fusor.",
+            "5) Verifique la unidad de control de presión del fusor.",
+            "6) Si el problema persiste, reemplace la unidad del fusor.",
+            "7) Si el problema persiste, reemplace el motor de presión del fusor.",
+            "8) Si el problema persiste, reemplace la placa principal."
+          ]
+        },
+        "U1-2117, U1-212x, U1-213x, U1-23xx": {
+          "Impresora": "Samsung 5370",
+          "Error": "Fallo de la unidad del fusor: #U1-21xx. Apague y encienda nuevamente / Fallo de la unidad del fusor: #U1-23xx. Apague y encienda nuevamente",
+          "Sintoma": "El control de temperatura de la unidad del fusor es anormal. La temperatura del fusor ha caído por debajo del valor normal.",
+          "Solucion": [
+            "ADVERTENCIA: La temperatura alrededor de la unidad del fusor puede ser alta. Para prevenir quemaduras, asegúrese de que el área de la unidad del fusor esté fría antes de realizar este procedimiento.",
+            "1) Apague la máquina y luego enciéndala.",
+            "2) Apague la máquina. Reinstale la unidad del fusor. Luego encienda la máquina.",
+            "3) Si el problema persiste, retire la unidad del fusor.",
+            "4) Verifique los componentes del fusor:",
+            "   • Verifique si el termistor está ensamblado correctamente.",
+            "   • Verifique si el termostato está conectado.",
+            "   • Verifique si las lámparas centrales y laterales están en estado de cortocircuito (mida el valor de resistencia entre el centro-común y el lado-común).",
+            "5) Si hay piezas defectuosas en el paso 4, reemplace la unidad del fusor.",
+            "6) Si el problema persiste, reemplace las siguientes partes en el orden regular:",
+            "   • Placa de control del fusor",
+            "   • Placa principal",
+            "   • Placa SMPS"
+          ]
+        },
+        "U1-234J, U1-234P": {
+          "Impresora": "Samsung 5370",
+          "Error": "Fallo de la unidad del fusor: #U1-234J. Apague y encienda nuevamente / Fallo de la unidad del fusor: #U1-234P. Apague y encienda nuevamente",
+          "Sintoma": "El control de temperatura de la unidad del fusor es anormal. La temperatura del fusor ha subido por encima del valor normal.",
+          "Solucion": [
+            "ADVERTENCIA: La temperatura alrededor de la unidad del fusor puede ser alta. Para prevenir quemaduras, asegúrese de que el área de la unidad del fusor esté fría antes de realizar este procedimiento.",
+            "1) Apague la máquina y luego enciéndala.",
+            "2) Apague la máquina. Reinstale la unidad del fusor. Luego encienda la máquina.",
+            "3) Si el problema persiste, retire la unidad del fusor.",
+            "4) Verifique los componentes del fusor:",
+            "   • Verifique si el termistor está ensamblado correctamente.",
+            "   • Verifique si el termostato está conectado.",
+            "   • Verifique si las lámparas centrales y laterales están en estado de cortocircuito (mida el valor de resistencia entre el centro-común y el lado-común).",
+            "5) Si hay piezas defectuosas en el paso 4, reemplace la unidad del fusor.",
+            "6) Si el problema persiste, reemplace las siguientes partes en el orden regular:",
+            "   • Placa de control del fusor",
+            "   • Placa principal",
+            "   • Placa SMPS"
+          ]
+        },
+        "U2-1112": {
+          "Impresora": "Samsung 5370",
+          "Error": "Fallo de LSU: #U2-1112. Apague y encienda nuevamente.",
+          "Sintoma": "El motor LSU no funciona o funciona de manera anormal. La señal de preparación del motor es anormal.",
+          "Solucion": [
+            "1) Apague la máquina y luego enciéndala. Verifique el sonido de operación del motor LSU durante el calentamiento.",
+            "2) Imprima una página de demostración para verificar que la máquina funcione normalmente.",
+            "3) Si el problema persiste, verifique lo siguiente:",
+            "   • Si el motor LSU emite un sonido:",
+            "     a) Ingrese al modo SVC para verificar la señal de preparación del motor LSU.",
+            "     b) Seleccione 'LSU Motor1 Run Ready'. (Diagnósticos > Diagnósticos del motor > Rutinas de prueba del motor > 110-0000)",
+            "     c) Presione el botón 'Inicio'. Verifique que el estado haya cambiado a 'Ejecutando -> Bajo -> Alto'.",
+            "     d) Si el estado no ha cambiado, la señal del motor listo es anormal. Reemplace el LSU.",
+            "   • Si el motor LSU no emite un sonido:",
+            "     a) Apague la máquina. Desenchufe y vuelva a conectar el cable LSU.",
+            "     b) Verifique que el motor LSU emita un sonido después de encender la máquina.",
+            "     c) Si el cable LSU está defectuoso, reemplácelo. Verifique que el motor LSU emita un sonido después de encender la máquina.",
+            "     d) Si el problema persiste, reemplace el LSU."
+          ]
+        },
+        "U2-1113": {
+          "Impresora": "Samsung 5370",
+          "Error": "Fallo de LSU: #U2-1113. Apague y encienda nuevamente.",
+          "Sintoma": "La señal LSU Hsync no se puede detectar correctamente. La señal LSU Hsync es anormal.",
+          "Solucion": [
+            "1) Apague la máquina y luego enciéndala.",
+            "2) Imprima una página de demostración para verificar que la máquina funcione normalmente.",
+            "3) Si el problema persiste, verifique lo siguiente:",
+            "   a) Ingrese al modo SVC para verificar la señal LSU Hsync.",
+            "   b) Seleccione 'LSU Hsync4'. (Diagnósticos > Diagnósticos del motor > Rutinas de prueba del motor > 110-0170)",
+            "   c) Presione el botón 'Inicio'. Verifique que el estado haya cambiado a 'Ejecutando -> Bajo -> Alto'.",
+            "   d) Si el estado no ha cambiado, la señal LSU Hsync es anormal.",
+            "   e) Apague la máquina. Desenchufe y vuelva a conectar el cable LSU. Verifique la señal LSU Hsync nuevamente.",
+            "   f) Si el problema persiste, reemplace el LSU."
+          ]
+        },
+        "U3-3211, U3-3213, U3-3214": {
+          "Impresora": "Samsung 5370",
+          "Error": "Atasco de papel original dentro del escáner",
+          "Sintoma": "Atasco del original alrededor del rodillo de escaneo y el rodillo de registro.",
+          "Solucion": [
+            "1) Verifique si el motor de recogida funciona normalmente.",
+            "   a) Verifique si el atasco de papel ha ocurrido en la bandeja DSDF.",
+            "2) Abra la tapa DSDF. Retire el papel de la guía de recogida.",
+            "3) Verifique si el actuador y el ensamblaje de recogida funcionan normalmente.",
+            "   a) Verifique el funcionamiento del sensor de registro.",
+            "   b) Si el funcionamiento del sensor de registro es correcto, verifique lo siguiente:",
+            "     i) Retire un tornillo y empuje el gancho.",
+            "     ii) Libere el apilador tirándolo en la dirección de la flecha.",
+            "     iii) Libere la cubierta trasera.",
+            "     iv) Retire la bisagra del soporte.",
+            "     v) Retire el ensamblaje de la cubierta de apertura. Retire 6 tornillos y retire la cubierta inferior.",
+            "     vi) Verifique si el sensor y el actuador están ensamblados correctamente.",
+            "   c) Al levantar el ensamblaje de recogida, verifique que los 2 rodillos contacten normalmente.",
+            "4) Verifique si hay algún obstáculo o contaminación en el camino del papel. Elimínelo.",
+            "5) Cierre la tapa DSDF.",
+            "6) Abra la unidad DSDF. Verifique si la película de reflexión está contaminada. Límpiela.",
+            "7) Cierre la unidad DSDF."
+          ]
+        },
+        "U3-3311, U3-3313, U3-3314, U3-3511, U3-3513, U3-3514": {
+          "Impresora": "Samsung 5370",
+          "Error": "Atasco de papel original dentro del escáner",
+          "Sintoma": "El atasco del original ha ocurrido alrededor del rodillo de escaneo y el rodillo regi.",
+          "Solucion": [
+            "1) Verifique si el motor de recogida funciona normalmente.",
+            "   a) Verifique si el atasco de papel ha ocurrido en la bandeja DSDF.",
+            "2) Abra la cubierta DSDF. Retire el papel en la guía de recogida.",
+            "3) Verifique si el actuador y el conjunto de recogida funcionan normalmente.",
+            "   a) Verifique el funcionamiento del actuador del sensor regi y el actuador del sensor de salida.",
+            "   b) Si el funcionamiento del sensor regi es correcto, verifique lo siguiente:",
+            "4) Verifique si hay obstáculos o contaminación en el camino del papel. Retírelos.",
+            "5) Cierre la cubierta DSDF.",
+            "6) Abra la unidad DSDF.",
+            "   a) Verifique si el film de reflexión está contaminado. Límpielo.",
+            "   b) Si el problema persiste, verifique lo siguiente:",
+            "      i) Abra la cubierta DSDF.",
+            "      ii) Tire de la palanca y libere el conjunto de recogida.",
+            "      iii) Empuje y libere el conjunto de apilamiento.",
+            "      iv) Retire la guía de recogida superior después de quitar 4 tornillos.",
+            "      v) Verifique si el sensor está ensamblado correctamente. Si el sensor está defectuoso, reemplácelo.",
+            "7) Verifique si el conector del sensor de escaneo simplex está conectado correctamente.",
+            "8) Cierre la unidad DSDF."
+          ]
+        },
+        "U3-3411, U3-3413, U3-3414": {
+          "Impresora": "Samsung 5370",
+          "Error": "Atasco de papel original dentro del escáner",
+          "Sintoma": "El atasco del original ha ocurrido alrededor del rodillo de escaneo y el rodillo regi.",
+          "Solucion": [
+            "1) Verifique si el motor de recogida funciona normalmente.",
+            "2) Abra la cubierta DSDF. Verifique si ha ocurrido un atasco de papel.",
+            "3) Tire de la palanca verde de la guía de salida inferior. Retire el papel atascado.",
+            "4) Verifique si hay obstáculos o contaminación en el camino del papel. Retírelos.",
+            "5) Si el problema persiste, verifique lo siguiente:",
+            "   a) Retire la unidad DSDF y la esponja blanca.",
+            "   b) Abra el conjunto de guía de salida inferior.",
+            "   c) Verifique el sensor.",
+            "   d) Retire el tornillo. Verifique la conexión del sensor. Si la conexión está bien, reemplace el sensor.",
+            "6) Empuje la barra blanca. Verifique si regresa a su condición original.",
+            "7) Cierre la unidad DSDF."
+          ]
+        },
+        "U3-3611, U3-3613, U3-3614, U3-3713, U3-3714": {
+          "Impresora": "Samsung 5370",
+          "Error": "Atasco de papel original en el área de salida del escáner",
+          "Sintoma": "El atasco del original ha ocurrido alrededor del rodillo de escaneo y el rodillo regi.",
+          "Solucion": [
+            "1) Verifique si el motor de recogida funciona normalmente.",
+            "2) Abra la cubierta DSDF. Verifique si ha ocurrido un atasco de papel.",
+            "3) Tire de la palanca verde de la guía de salida inferior. Retire el papel atascado.",
+            "4) Verifique si hay obstáculos o contaminación en el camino del papel. Retírelos.",
+            "5) Si el problema persiste, verifique el sensor de salida y la conexión:",
+            "   a) Retire la unidad DSDF y la esponja blanca.",
+            "   b) Retire la salida inferior después de quitar 4 tornillos.",
+            "   c) Verifique si el sensor y el actuador están ensamblados correctamente.",
+            "6) Empuje la barra blanca. Verifique si regresa a su condición original.",
+            "7) Cierre la unidad DSDF."
+          ]
+        }
+      }
+    },
+    "Samsung k4350":{
+      
+    }
+  }
+}
