@@ -1,0 +1,189 @@
+/* Estilos generales */
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(244,148,31,1) 100%); /* Fondo degradado similar al login */
+    background-size: cover;
+    background-attachment: fixed;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+/* Encabezado */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #f4951f; /* Mismo color que el botón y otros elementos */
+}
+
+/* Estilos para contenedor de búsqueda */
+#searchContainer {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos en columna para pantallas más pequeñas */
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo transparente */
+    border-radius: 8px;
+    max-width: 600px; /* Ancho máximo igual al de #result */
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra similar al login */
+}
+
+/* Etiquetas */
+label {
+    font-weight: bold;
+    color: rgb(22, 105, 164); /* Mismo color que los labels en el login */
+}
+
+/* Campos de entrada */
+select, input[type="text"] {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px; /* Igual que los campos de entrada en el login */
+    margin-bottom: 15px; /* Igual que el margen en el login */
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075); /* Mismo estilo de sombra que en el login */
+    color: #555;
+    box-sizing: border-box;
+}
+
+/* Estilos para los resultados */
+#result {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo transparente similar al del login */
+    border: 1px solid #ddd;
+    max-width: 600px; /* Ancho máximo igual al de #searchContainer */
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra similar al login */
+}
+
+/* Ajustes para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    #searchContainer {
+        max-width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+    }
+
+    #result {
+        max-width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+    }
+}
+
+/* Estilos para sugerencias */
+#suggestions {
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo transparente similar al del login */
+    border: 1px solid #ddd;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1000;
+    max-height: 150px;
+    overflow-y: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra similar al login */
+}
+
+#suggestions li {
+    padding: 8px;
+    cursor: pointer;
+}
+
+#suggestions li:hover {
+    background-color: #f0f0f0;
+}
+
+/* Estilo para el botón de cerrar sesión */
+#logout-btn {
+    background-color: #f4951f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+/* Estilo al pasar el cursor por encima */
+#logout-btn:hover {
+    background-color: #ff8c00;
+}
+
+/* Estilos para el contenedor de información del usuario */
+#user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo transparente similar al del contenedor de búsqueda */
+    border-radius: 8px;
+    max-width: 600px; /* Igual al ancho máximo de los otros contenedores */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/* Estilo para el nombre de usuario */
+#user-info p {
+    margin: 0;
+    font-size: 11px;
+    color: rgb(22, 105, 164); /* Igual que el color de los labels */
+}
+
+/* Estilo para el enlace de salida */
+#logout-link {
+    display: block;
+    margin-top: 10px;
+    color: #f4951f;
+    text-decoration: none;
+    font-size: 11px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* Estilo al pasar el cursor por encima del enlace de salida */
+#logout-link:hover {
+    text-decoration: underline;
+    color: #ff8c00;
+}
+
+/* Contenedor del título con fondo blanco */
+.title-container {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Logo */
+.logo {
+    display: block;
+    margin: 0 auto 10px; /* Centra el logo horizontalmente y agrega un margen inferior */
+    max-width: 100px; /* Ajusta el tamaño máximo del logo */
+    height: auto; /* Mantiene la proporción del logo */
+}
+
+/* Estilos del título */
+h1 {
+    font-size: 24px;
+    color: rgb(22, 105, 164); /* Color del título */
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Pedido de Repuestos</title>
+    <link rel="stylesheet" href="CSS/style_form_repuestos.css">
+</head>
+<body>
+    <div class="container">
+        <img src="Assets/logo.png" alt="Logo" class="logo">
+        <h1>Formulario de Pedido de Repuestos</h1>
+        <form id="form">
+            <div class="field">
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" required>
+            </div>
+            <div class="field">
+                <label for="printer_model">Modelo de Impresora:</label>
+                <input type="text" name="printer_model" id="printer_model" required>
+            </div>
+            <div class="field">
+                <label for="repuesto_code">Código de Repuesto:</label>
+                <input type="text" name="repuesto_code" id="repuesto_code" required>
+            </div>
+            <div class="field">
+                <label for="problem_description">Descripción del Problema:</label>
+                <input type="text" name="problem_description" id="problem_description" required>
+            </div>
+            <div class="field">
+                <label for="shipping_address">Dirección de Envío:</label>
+                <input type="text" name="shipping_address" id="shipping_address" required>
+            </div>
+            <div class="field">
+                <label for="email">Correo de Contacto:</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <input type="submit" id="button" value="Enviar Pedido">
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="JS/app_form_repuestos.js"></script>
+</body>
+</html>
