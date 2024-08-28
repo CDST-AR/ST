@@ -1,7 +1,7 @@
 // Inicializa EmailJS con tu clave pública
 emailjs.init('abcCukMQrcQF9kmf4'); // Reemplaza con tu clave pública
 
-document.getElementById('form').addEventListener('submit', function(event) {
+document.getElementById('form').addEventListener('submit', function (event) {
     event.preventDefault();
 
     const btn = document.getElementById('button');
@@ -15,6 +15,8 @@ document.getElementById('form').addEventListener('submit', function(event) {
             console.log('Éxito:', response);
             btn.value = 'Enviar Pedido';
             alert('¡Pedido enviado exitosamente!');
+            // Redirigir a index.html
+            window.location.href = 'index.html';
         })
         .catch((err) => {
             console.error('Error:', err);
