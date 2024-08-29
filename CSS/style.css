@@ -275,4 +275,18 @@
   padding: 0px 0px;
 }
 
+@media (max-width: 768px) {
+  .quienes-somos {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), 
+                      linear-gradient(to bottom, #c4cfdc, #7b5f64, #999caa, #53272e); /* Gradiente con superposición negra */
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    color: white; 
+    text-align: start;
+    background-color: #E8E8E8;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
