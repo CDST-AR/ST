@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Pedido de Repuestos</title>
     <link rel="stylesheet" href="CSS/style_form_repuestos.css">
 </head>
+
 <body>
     <div class="container">
         <img src="Assets/logo.png" alt="Logo" class="logo">
@@ -23,17 +25,21 @@
                 <label for="printer_model">Modelo de Impresora:</label>
                 <input type="text" name="printer_model" id="printer_model" required>
             </div>
-            <div class="field">
-                <label for="articulo">Artículo:</label>
-                <input type="text" name="articulo" id="articulo" required>
-            </div>
-            <div class="field">
-                <label for="cantidad">Cantidad:</label>
-                <input type="number" name="cantidad" id="cantidad" required>
+            <div id="articulos-container">
+                <!-- El botón para agregar artículos -->
+                <div class="field">
+                    <button type="button" id="add-article-btn">Agregar Artículo</button>
+                </div>
             </div>
             <div class="field">
                 <label for="base_operativa">Base Operativa:</label>
                 <input type="text" name="base_operativa" id="base_operativa" required>
+            </div>
+
+            <!-- Campo de Observaciones -->
+            <div class="field">
+                <label for="observaciones">Observaciones:</label>
+                <textarea name="observaciones" id="observaciones" rows="4"></textarea>
             </div>
             <input type="submit" id="button" value="Enviar Pedido">
         </form>
@@ -41,5 +47,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="JS/app_form_repuestos.js"></script>
 </body>
+
 </html>
+
 
