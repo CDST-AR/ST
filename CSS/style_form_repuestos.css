@@ -10,7 +10,6 @@ body {
     min-height: 100vh; /* Cambiar a min-height para permitir que el contenido crezca */
 }
 
-
 .container {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
@@ -84,7 +83,7 @@ form {
     background-color: #ff8c00;
 }
 
-.recuadro-articulo-cantidad {
+.recuadro-repuesto-cantidad {
     border: 2px solid #f4951f;
     padding: 20px;
     border-radius: 10px;
@@ -93,11 +92,11 @@ form {
     /* Fondo opcional */
 }
 
-.recuadro-articulo-cantidad .field {
+.recuadro-repuesto-cantidad .field {
     margin-bottom: 15px;
 }
 
-.recuadro-articulo-cantidad .field label {
+.recuadro-repuesto-cantidad .field label {
     display: block;
     margin-bottom: 5px;
     font-size: 14px;
@@ -105,7 +104,7 @@ form {
     text-align: left;
 }
 
-.recuadro-articulo-cantidad .field input {
+.recuadro-repuesto-cantidad .field input {
     width: 100%;
     padding: 10px;
     border-radius: 4px;
@@ -114,7 +113,7 @@ form {
     font-size: 14px;
 }
 
-.articulo-container {
+.repuesto-container {
     margin-bottom: 15px;
 }
 
@@ -128,7 +127,7 @@ form {
     margin-right: 10px;
 }
 
-#add-article-btn {
+#add-repuesto-btn {
     background-color: transparent;
     border: none;
     font-size: 24px;
@@ -138,31 +137,11 @@ form {
     padding: 0;
 }
 
-.input-wrapper {
-    display: flex;
-    align-items: center;
-}
-
-.input-wrapper input {
-    flex-grow: 1;
-    margin-right: 10px;
-}
-
-#add-article-btn {
-    background-color: transparent;
-    border: none;
-    font-size: 24px;
-    color: #f4951f;
-    cursor: pointer;
-    line-height: 1;
-    padding: 0;
-}
-
-#add-article-btn:hover {
+#add-repuesto-btn:hover {
     color: #ff8c00;
 }
 
-.remove-article-btn {
+.remove-repuesto-btn {
     background-color: transparent;
     border: none;
     font-size: 24px;
@@ -172,7 +151,7 @@ form {
     padding: 0;
 }
 
-.remove-article-btn:hover {
+.remove-repuesto-btn:hover {
     color: #d40000;
 }
 
@@ -190,6 +169,7 @@ form {
     border-color: #5ca9e4;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) inset, 0 0 0 2px rgba(70, 161, 231, 0.3);
 }
+
 #user-info p {
     margin: 0;
     font-size: 11px;

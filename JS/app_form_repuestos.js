@@ -12,34 +12,33 @@ document.getElementById('form').addEventListener('submit', function (event) {
 
     const form = this;
 
-    // Crear una lista de artículos
-    const articles = document.querySelectorAll('.recuadro-articulo-cantidad');
-    let articleList = '';
+    // Crear una lista de repuestos
+    const repuestos = document.querySelectorAll('.recuadro-repuesto-cantidad');
+    let repuestoList = '';
 
-    articles.forEach((article, index) => {
-        const articleInput = article.querySelector('input[name^="articulo_"]');
-        const quantityInput = article.querySelector('input[name^="cantidad_"]');
-        
-        const articulo = articleInput ? articleInput.value : 'No especificado';
+    repuestos.forEach((repuesto, index) => {
+        const repuestoInput = repuesto.querySelector('input[name^="repuesto_"]');
+        const quantityInput = repuesto.querySelector('input[name^="cantidad_"]');
+
+        const repuestoValue = repuestoInput ? repuestoInput.value : 'No especificado';
         const cantidad = quantityInput ? quantityInput.value : 'No especificado';
-        
-        articleList += `Artículo: ${articulo}, Cantidad: ${cantidad}\n`;
+
+        repuestoList += `Repuesto: ${repuestoValue}, Cantidad: ${cantidad}\n`;
     });
 
-    // Añadir el listado de artículos al formulario
-    const articleListInput = document.createElement('input');
-    articleListInput.setAttribute('type', 'hidden');
-    articleListInput.setAttribute('name', 'article_list');
-    articleListInput.setAttribute('value', articleList);
-    form.appendChild(articleListInput);
+    // Añadir el listado de repuestos al formulario
+    const repuestoListInput = document.createElement('input');
+    repuestoListInput.setAttribute('type', 'hidden');
+    repuestoListInput.setAttribute('name', 'repuesto_list');
+    repuestoListInput.setAttribute('value', repuestoList);
+    form.appendChild(repuestoListInput);
 
     emailjs.sendForm(serviceID, templateID, form)
         .then((response) => {
             console.log('Éxito:', response);
             btn.value = 'Enviar Pedido';
             alert('¡Pedido enviado exitosamente!');
-            // Redirigir a index.html
-            window.location.href = 'index.html';
+            window.close();
         })
         .catch((err) => {
             console.error('Error:', err);
@@ -48,66 +47,66 @@ document.getElementById('form').addEventListener('submit', function (event) {
         });
 });
 
-let articleIndex = 1;  // Inicializa un índice para los artículos
+let repuestoIndex = 1;  // Inicializa un índice para los repuestos
 
-document.getElementById('add-article-btn').addEventListener('click', function () {
-    // Crear un nuevo bloque para el artículo y cantidad
+document.getElementById('add-repuesto-btn').addEventListener('click', function () {
+    // Crear un nuevo bloque para el repuesto y cantidad
     const container = document.createElement('div');
-    container.classList.add('recuadro-articulo-cantidad');
-    
-    const articleField = document.createElement('div');
-    articleField.classList.add('field', 'articulo-container');
-    
-    const articleLabel = document.createElement('label');
-    articleLabel.setAttribute('for', `articulo_${articleIndex}`);
-    articleLabel.textContent = 'Artículo:'; // Quitar el índice
-    
+    container.classList.add('recuadro-repuesto-cantidad');
+
+    const repuestoField = document.createElement('div');
+    repuestoField.classList.add('field', 'repuesto-container');
+
+    const repuestoLabel = document.createElement('label');
+    repuestoLabel.setAttribute('for', `repuesto_${repuestoIndex}`);
+    repuestoLabel.textContent = 'Repuesto:'; // Quitar el índice
+
     const inputWrapper = document.createElement('div');
     inputWrapper.classList.add('input-wrapper');
-    
-    const articleInput = document.createElement('input');
-    articleInput.setAttribute('type', 'text');
-    articleInput.setAttribute('name', `articulo_${articleIndex}`);
-    articleInput.setAttribute('id', `articulo_${articleIndex}`);
-    articleInput.setAttribute('required', 'required');
-    
+
+    const repuestoInput = document.createElement('input');
+    repuestoInput.setAttribute('type', 'text');
+    repuestoInput.setAttribute('name', `repuesto_${repuestoIndex}`);
+    repuestoInput.setAttribute('id', `repuesto_${repuestoIndex}`);
+    repuestoInput.setAttribute('required', 'required');
+
     const removeBtn = document.createElement('button');
     removeBtn.type = 'button';
-    removeBtn.classList.add('remove-article-btn');
+    removeBtn.classList.add('remove-repuesto-btn');
     removeBtn.textContent = '-';
-    
+
     removeBtn.addEventListener('click', function () {
-        container.remove(); // Eliminar el bloque de artículo y cantidad
+        container.remove(); // Eliminar el bloque de repuesto y cantidad
     });
-    
-    inputWrapper.appendChild(articleInput);
+
+    inputWrapper.appendChild(repuestoInput);
     inputWrapper.appendChild(removeBtn);
-    
-    articleField.appendChild(articleLabel);
-    articleField.appendChild(inputWrapper);
-    
+
+    repuestoField.appendChild(repuestoLabel);
+    repuestoField.appendChild(inputWrapper);
+
     const quantityField = document.createElement('div');
     quantityField.classList.add('field');
-    
+
     const quantityLabel = document.createElement('label');
-    quantityLabel.setAttribute('for', `cantidad_${articleIndex}`);
+    quantityLabel.setAttribute('for', `cantidad_${repuestoIndex}`);
     quantityLabel.textContent = 'Cantidad:'; // Quitar el índice
-    
+
     const quantityInput = document.createElement('input');
     quantityInput.setAttribute('type', 'number');
-    quantityInput.setAttribute('name', `cantidad_${articleIndex}`);
-    quantityInput.setAttribute('id', `cantidad_${articleIndex}`);
+    quantityInput.setAttribute('name', `cantidad_${repuestoIndex}`);
+    quantityInput.setAttribute('id', `cantidad_${repuestoIndex}`);
     quantityInput.setAttribute('required', 'required');
-    
+
     quantityField.appendChild(quantityLabel);
     quantityField.appendChild(quantityInput);
-    
-    container.appendChild(articleField);
+
+    container.appendChild(repuestoField);
     container.appendChild(quantityField);
-    
-    document.getElementById('articulos-container').appendChild(container);
-    
-    articleIndex++;  // Incrementa el índice
+
+    document.getElementById('repuestos-container').appendChild(container);
+
+    repuestoIndex++;  // Incrementa el índice
 });
 
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
@@ -161,4 +160,3 @@ onAuthStateChanged(auth, (user) => {
         window.location.href = 'index.html'; // Redirigir a la página de inicio de sesión si no está autenticado
     }
 });
-
