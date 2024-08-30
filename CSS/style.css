@@ -289,4 +289,33 @@
     padding-bottom: 70px;
   }
 }
+
+/* Estilos personalizados para el contenedor de usuario en el navbar */
+#username {
+  color: #f4941c;
+  font-weight: 700;
+  font-family: "Nunito", sans-serif;
+  
+}
+
+#user {
+  color: rgb(22, 105, 164);
+  font-weight: 700;
+  font-family: "Nunito", sans-serif;
+ 
+}
+
+#logout-link {
+  color: #f4941c;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+#logout-link:hover {
+  color: #e88d0f;
+  text-decoration: underline;
+}
+
 /*# sourceMappingURL=style.css.map */

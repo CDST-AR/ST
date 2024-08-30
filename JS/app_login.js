@@ -26,7 +26,7 @@ document.getElementById('login-form').addEventListener('submit', (e) => {
             const user = userCredential.user;
             console.log("Inicio de sesión exitoso:", user.email);
             // Redirige al usuario a la página deseada
-            window.location.href = 'dashboard.html'; // Cambia 'dashboard.html' por la página a la que desees redirigir
+            window.location.href = 'principal.html'; // Cambia 'dashboard.html' por la página a la que desees redirigir
         })
         .catch((error) => {
             console.error("Error al iniciar sesión:", error.message);
