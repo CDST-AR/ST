@@ -190,3 +190,39 @@ form {
     border-color: #5ca9e4;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) inset, 0 0 0 2px rgba(70, 161, 231, 0.3);
 }
+#user-info p {
+    margin: 0;
+    font-size: 11px;
+    color: rgb(22, 105, 164); /* Igual que el color de los labels */
+}
+
+/* Estilo para el enlace de salida */
+#logout-link {
+    display: block;
+    margin-top: 10px;
+    color: #f4951f;
+    text-decoration: none;
+    font-size: 11px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* Estilo al pasar el cursor por encima del enlace de salida */
+#logout-link:hover {
+    text-decoration: underline;
+    color: #ff8c00;
+}
+
+#user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo transparente similar al del contenedor de búsqueda */
+    border-radius: 8px;
+    max-width: 600px; /* Igual al ancho máximo de los otros contenedores */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
