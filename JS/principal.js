@@ -38,7 +38,7 @@ onAuthStateChanged(auth, (user) => {
                 event.preventDefault();
                 signOut(auth).then(() => {
                     console.log("Cierre de sesión exitoso");
-                    window.location.href = 'index_login.html';  // Redirigir a la página de inicio de sesión
+                    window.location.href = 'index.html';  // Redirigir a la página de inicio de sesión
                 }).catch((error) => {
                     console.error("Error al cerrar sesión:", error.message);
                 });
@@ -46,6 +46,6 @@ onAuthStateChanged(auth, (user) => {
         }
     } else {
         console.log("No hay usuario autenticado.");
-        window.location.href = 'index_login.html'; // Redirigir a la página de inicio de sesión si no está autenticado
+        window.location.href = 'index.html'; // Redirigir a la página de inicio de sesión si no está autenticado
     }
 });
