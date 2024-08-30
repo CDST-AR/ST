@@ -1,3 +1,8 @@
+document.addEventListener('DOMContentLoaded', function () {
+    const today = new Date().toISOString().split('T')[0];
+    document.getElementById('fecha').value = today;
+});
+
 // Inicializa EmailJS con tu clave pública
 emailjs.init('abcCukMQrcQF9kmf4'); // Reemplaza con tu clave pública
 
