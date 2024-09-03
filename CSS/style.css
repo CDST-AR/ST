@@ -12,7 +12,7 @@
 }
 
 #navbar.white-bg {
-  background-color: white;
+  background-color: #f5f5f5;
 }
 
 #navbar.shrink {
@@ -161,34 +161,6 @@
     flex-direction: column;
     gap: 40px;
   }
-}
-
-.brindar-ayuda {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f4941c;
-  padding: 70px;
-}
-
-.brindar-ayuda h2 {
-  font-family: "Nunito", sans-serif;
-  font-weight: 900;
-  font-size: 23px;
-  color: #E8E8E8;
-}
-
-.brindar-ayuda button {
-  background-color: #f4941c;
-  font-family: "Nunito", sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  color: #E8E8E8;
-  border-radius: 50px;
-  padding: 4px 15px;
-  border-color: #E8E8E8;
-  margin-left: 30px;
 }
 
 .preguntas-frecuentes {
@@ -397,8 +369,6 @@
 .navbar-toggler{
   background-color: #ffffff;
 }
-
-
 
 /* Ajustes para pantallas pequeñas (menores o iguales a 425px) */
 @media (max-width: 425px) {

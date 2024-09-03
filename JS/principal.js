@@ -52,21 +52,21 @@ onAuthStateChanged(auth, (user) => {
 
 window.addEventListener('scroll', function() {
     const navbar = document.getElementById('navbar');
-    const baSection = document.querySelector('.ba');
     const pfSection = document.querySelector('.pf');
+    const cmSection = document.querySelector('.cm');
   
-    const baPosition = baSection.getBoundingClientRect().top;
     const pfPosition = pfSection.getBoundingClientRect().top;
+    const cmPosition = cmSection.getBoundingClientRect().top;
   
     // Cambia el color de fondo a blanco cuando estés en la sección .qs
-    if (baPosition <= 50) { 
+    if (pfPosition <= 50) { 
       navbar.classList.add('white-bg');
     } else {
       navbar.classList.remove('white-bg');
     }
   
   // Desaparece el navbar cuando estés en la sección .pf de forma suave
-  if (pfPosition <= 50) {
+  if (cmPosition <= 50) {
     navbar.classList.add('shrink');
   } else {
     navbar.classList.remove('shrink');
