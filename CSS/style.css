@@ -1,5 +1,32 @@
-.navbar {
-  padding: 15px;
+#navbar {
+  padding: 0 80px;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 100;
+  background-color: transparent;
+  transition: background-color 0.3s ease, transform 1s ease, opacity 1s ease; /* Aumenta el tiempo de la transición aquí */
+}
+
+#navbar.white-bg {
+  background-color: white;
+}
+
+#navbar.shrink {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+
+
+/* Ajustes para el logo y los elementos del navbar */
+.navbar-brand img {
+  padding: 10px 15px;
+  width: 293px;
+
 }
 
 .navbar a {
@@ -10,7 +37,7 @@
   margin-right: 25px;
 }
 
-.navbar .login {
+.navbar .btn-web-agentes {
   background-color: #f4941c;
   font-family: "Nunito", sans-serif;
   font-weight: 700;
@@ -20,12 +47,48 @@
   padding: 4px 35px;
 }
 
+/* Estilo para el offcanvas */
+.offcanvas {
+  background: #f4941c;
+  /* Fondo del offcanvas */
+  color: #ffffff;
+  /* Color del texto en el offcanvas */
+}
+
+/* Estilo para el texto y los enlaces dentro del offcanvas */
+.offcanvas .nav-link,
+.offcanvas .btn {
+  color: #ffffff;
+  /* Color blanco para el texto y botones */
+  text-align: center;
+}
+
+/* Estilo para el botón de cerrar en el offcanvas */
+.offcanvas .btn-close {
+  filter: invert(1);
+  /* Cambia el color del botón de cerrar a blanco */
+}
+
+/* Estilo para el enlace de cerrar sesión */
+.offcanvas #logout-link {
+  color: #ffffff;
+  /* Color blanco para el enlace de cerrar sesión */
+}
+
+.h{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('../Assets/Banner.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 552px;
+}
+
+
 .quienes-somos {
-  background-image:linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('../Assets/banner-principal.png');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('../Assets/banner-principal.png');
   background-size: cover;
   background-position: center;
   padding: 50px;
-  color: white; 
+  color: white;
   text-align: start;
   background-color: #E8E8E8;
   padding-top: 70px;
@@ -277,12 +340,13 @@
 
 @media (max-width: 768px) {
   .quienes-somos {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), 
-                      linear-gradient(to bottom, #c4cfdc, #7b5f64, #999caa, #53272e); /* Gradiente con superposición negra */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+      linear-gradient(to bottom, #c4cfdc, #7b5f64, #999caa, #53272e);
+    /* Gradiente con superposición negra */
     background-size: cover;
     background-position: center;
     padding: 50px;
-    color: white; 
+    color: white;
     text-align: start;
     background-color: #E8E8E8;
     padding-top: 70px;
@@ -292,17 +356,17 @@
 
 /* Estilos personalizados para el contenedor de usuario en el navbar */
 #username {
-  color: #f4941c;
+  color: #ffffff;
   font-weight: 700;
   font-family: "Nunito", sans-serif;
-  
+
 }
 
 #user {
   color: rgb(22, 105, 164);
   font-weight: 700;
   font-family: "Nunito", sans-serif;
- 
+
 }
 
 #logout-link {
@@ -313,9 +377,53 @@
   margin-left: 10px;
 }
 
-#logout-link:hover {
-  color: #e88d0f;
-  text-decoration: underline;
+/* Ocultar el botón en pantallas pequeñas y mostrarlo dentro del offcanvas */
+@media (max-width: 768px) {
+  .btn-web-agentes {
+    display: none;
+    /* Ocultar fuera del offcanvas */
+  }
+
+  #offcanvasNavbar .offcanvas-body .btn-web-agentes {
+    background-color: #fff;
+    color: #f4941c;
+    display: inline-block;
+    margin-bottom: 1rem;
+    border: none;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    
+  }
+
+  /* Cambiar colores cuando se hace hover en el botón dentro del offcanvas */
+  #offcanvasNavbar .offcanvas-body .btn-web-agentes:hover {
+    background-color: #f4941c;
+    color: #fff;
+  }
 }
+
+/* Mostrar el botón en pantallas más grandes */
+@media (min-width: 768px) {
+  .btn-web-agentes {
+    display: block;
+    /* Mostrar fuera del offcanvas */
+  }
+
+  #offcanvasNavbar .offcanvas-body .btn-web-agentes {
+    display: none;
+    /* Ocultar dentro del offcanvas */
+  }
+}
+
+.logo1{
+  width: 50px;
+}
+
+.navbar-toggler{
+  background-color: #ffffff;
+}
+
+
+
 
 /*# sourceMappingURL=style.css.map */
