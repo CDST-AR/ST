@@ -74,50 +74,29 @@
   /* Color blanco para el enlace de cerrar sesión */
 }
 
-.h{
+.bannerp {
   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('../Assets/Banner.jpg');
   background-size: cover;
   background-position: center;
   height: 552px;
-}
-
-
-.quienes-somos {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('../Assets/banner-principal.png');
-  background-size: cover;
-  background-position: center;
   padding: 50px;
   color: white;
   text-align: start;
   background-color: #E8E8E8;
   padding-top: 70px;
   padding-bottom: 70px;
+  display: flex;
+  justify-content: start; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
 }
 
-.quienes-somos h3 {
-  color: #f4941c;
-  font-size: 12px;
-  font-family: "Nunito", sans-serif;
-  font-weight: 200;
-  margin-bottom: 0px;
-}
 
-.quienes-somos h2 {
+.bannerp h1 {
   color: #f5f5f5;
-  font-size: 28px;
+  font-size: 50px;
   font-family: "Nunito", sans-serif;
-  font-weight: 900;
+  font-weight: 700;
 }
-
-.quienes-somos p {
-  text-align: center;
-  color: #22193F;
-  font-size: 16px;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-}
-
-
 
 .como-funciona {
   text-align: center;
@@ -338,10 +317,7 @@
 }
 
 @media (max-width: 768px) {
-  .quienes-somos {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-      linear-gradient(to bottom, #c4cfdc, #7b5f64, #999caa, #53272e);
-    /* Gradiente con superposición negra */
+  .bannerp {
     background-size: cover;
     background-position: center;
     padding: 50px;
@@ -437,6 +413,7 @@
       align-items: center;
       width: 100%;
       padding: 0px;
+      margin-top: 15px;
   }
 
   /* Asegura que los elementos de la derecha no se desborden */
@@ -461,6 +438,21 @@
       width: 24px;
       height: 24px;
       margin-right: 8px;
+  }
+    /* Ajusta el H1 dentro del bannerp para pantallas pequeñas */
+    .bannerp h1 {
+      font-size: 24px; /* Reduce el tamaño del texto en pantallas pequeñas */
+      word-wrap: break-word; /* Asegura que el texto se ajuste al ancho disponible */
+      text-align: center; /* Centra el texto */
+      margin: 0 10px; /* Añade un pequeño margen para evitar que toque los bordes */
+  }
+
+  .bannerp {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px; /* Añade un padding para asegurar que el contenido no se desborde */
+      overflow: hidden; /* Asegura que no haya desbordamiento visible */
   }
 }
 
