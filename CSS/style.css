@@ -78,7 +78,7 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('../Assets/Banner.jpg');
   background-size: cover;
   background-position: center;
-  height: 552px;
+  height: 450px;
   padding: 50px;
   color: white;
   text-align: start;
@@ -180,7 +180,7 @@
 
 .preguntas-frecuentes h2 {
   color: #22193F;
-  font-size: 28px;
+  font-size: 45px;
   font-family: "Nunito", sans-serif;
   font-weight: 900;
 }
