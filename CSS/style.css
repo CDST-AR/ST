@@ -445,19 +445,6 @@
 
 }
 
-@media (max-width: 768px) {
-  .bannerp h1 {
-      font-size: 24px;
-      word-wrap: break-word;
-      text-align: center;
-      margin: 0 10px;
-  }
-
-  .bannerp {
-      padding: 10px;
-      overflow: hidden;
-  }
-}
 
 
 /*# sourceMappingURL=style.css.map */
