@@ -445,6 +445,25 @@
 
 }
 
+@media (max-width: 440px) {
+  /* Ajusta el H1 dentro del bannerp para pantallas pequeñas */
+  .bannerp h1 {
+    font-size: 24px; /* Reduce el tamaño del texto en pantallas pequeñas */
+    word-wrap: break-word; /* Asegura que el texto se ajuste al ancho disponible */
+    text-align: center; /* Centra el texto */
+    margin: 0 10px; /* Añade un pequeño margen para evitar que toque los bordes */
+}
+
+.bannerp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; /* Añade un padding para asegurar que el contenido no se desborde */
+    overflow: hidden; /* Asegura que no haya desbordamiento visible */
+}
+
+}
+
 
 
 /*# sourceMappingURL=style.css.map */
