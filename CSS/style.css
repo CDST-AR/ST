@@ -461,6 +461,12 @@
     padding: 10px; /* Añade un padding para asegurar que el contenido no se desborde */
     overflow: hidden; /* Asegura que no haya desbordamiento visible */
   }
+  .preguntas-frecuentes h2 {
+    color: #22193F;
+    font-size: 20px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 900;
+  }
 }
 
 @media (max-width: 480px) {
