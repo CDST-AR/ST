@@ -1,5 +1,5 @@
 #navbar {
-  padding: 0 80px;
+  padding: 0 30px;
   overflow: hidden;
   position: fixed;
   top: 0;
@@ -24,9 +24,8 @@
 
 /* Ajustes para el logo y los elementos del navbar */
 .navbar-brand img {
-  padding: 10px 15px;
-  width: 293px;
-
+  height: auto;
+  max-width: 100%;
 }
 
 .navbar a {
@@ -421,6 +420,48 @@
 
 .navbar-toggler{
   background-color: #ffffff;
+}
+
+
+
+/* Ajustes para pantallas pequeñas (menores o iguales a 425px) */
+@media (max-width: 425px) {
+  /* Ajuste el tamaño del logo */
+  .navbar-brand img {
+      width: 500px;
+  }
+
+  /* Asegúrate de que los elementos se alineen correctamente en pantallas pequeñas */
+  .navbar {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      padding: 0px;
+  }
+
+  /* Asegura que los elementos de la derecha no se desborden */
+  .d-flex.align-items-center {
+      flex-wrap: nowrap;
+      width: 100%;
+  }
+
+  /* Ajusta el botón del offcanvas a la derecha */
+  .navbar-toggler {
+      margin-left: auto;
+  }
+
+  /* Alinea el botón Web Agentes y ajusta su tamaño en pantallas pequeñas */
+  .btn-web-agentes {
+      margin-right: 10px;
+      width: auto;
+  }
+
+  /* Asegura que los íconos en el menú se alineen correctamente */
+  .offcanvas-body .navbar-nav .nav-item .nav-link svg {
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+  }
 }
 
 
