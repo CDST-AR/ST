@@ -445,7 +445,7 @@
 
 }
 
-@media (max-width: 460px) {
+@media (max-width: 450px) {
   /* Ajusta el H1 dentro del bannerp para pantallas pequeñas */
   .bannerp h1 {
     font-size: 24px; /* Reduce el tamaño del texto en pantallas pequeñas */
