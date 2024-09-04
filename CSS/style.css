@@ -86,6 +86,26 @@
   color: #fff; /* Color del texto en hover */
 }
 
+.offcanvas {
+  transition: transform 0.4s ease-in-out;
+  transform: translateX(100%);
+}
+
+.offcanvas.show {
+  transform: translateX(0);
+}
+
+.offcanvas {
+  transition: transform 0.4s ease-in-out;
+  visibility: visible;
+}
+
+.offcanvas.fade-out {
+  transform: translateX(100%);
+  visibility: hidden;
+}
+
+
 #logout-link {
   font-family: "Nunito", sans-serif;
   font-weight: 700;
