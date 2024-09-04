@@ -7,6 +7,9 @@
     <title>Formulario de Pedido de Repuestos</title>
     <link rel="stylesheet" href="CSS/style_form_repuestos.css">
     <link rel="icon" href="Assets/favicon.ico" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+            
+    <script type="module" src="JS/app_form_repuestos.js"></script>
 </head>
 
 <body>
@@ -37,6 +40,12 @@
                 <input type="text" name="base_operativa" id="base_operativa" required>
             </div>
 
+            <!-- Campo para cargar la foto -->
+            <div class="field">
+                <label for="photo">Adjuntar Foto del Repuesto:</label>
+                <input type="file" id="photo" accept="image/*">
+            </div>
+
             <!-- Campo de Observaciones -->
             <div class="field">
                 <label for="observaciones">Observaciones:</label>
@@ -49,8 +58,9 @@
             
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script type="module" src="JS/app_form_repuestos.js"></script>
+    
 </body>
 
 </html>
+
+
