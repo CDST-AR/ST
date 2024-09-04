@@ -208,7 +208,7 @@
 
 .preguntas-frecuentes h2 {
   color: #22193F;
-  font-size: 45px;
+  font-size: 35px;
   font-family: "Nunito", sans-serif;
   font-weight: 900;
 }
@@ -295,9 +295,9 @@
 .copy {
   text-align: center;
   color: #E8E8E8;
-  font-size: 12px;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
+  font-size: 14px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
   padding: 20px;
 }
 
