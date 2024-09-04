@@ -1,3 +1,20 @@
+// Función para mostrar la notificación
+function showNotification(message, isError = false) {
+    const notification = document.getElementById('notification');
+    const notificationMessage = document.getElementById('notification-message');
+
+    notificationMessage.textContent = message;
+    notification.classList.toggle('error', isError);
+    notification.classList.remove('hidden');
+    notification.classList.add('visible');
+
+    // Ocultar la notificación después de 5 segundos
+    setTimeout(() => {
+        notification.classList.remove('visible');
+        notification.classList.add('hidden');
+    }, 5000); // 5000 ms = 5 segundos
+}
+
 // Importa los módulos de Firebase
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
 import { getStorage, ref, uploadBytesResumable, getDownloadURL } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-storage.js";
@@ -149,14 +166,14 @@ function enviarFormulario(form, serviceID, templateID, btn) {
     emailjs.sendForm(serviceID, templateID, form)
         .then((response) => {
             console.log('Éxito:', response);
+            showNotification('¡Pedido enviado exitosamente!');
             btn.value = 'Enviar Pedido';
-            alert('¡Pedido enviado exitosamente!');
-            window.close();
+            
         })
         .catch((err) => {
             console.error('Error:', err);
+            showNotification('Hubo un error al enviar el pedido. Inténtalo de nuevo.', true);
             btn.value = 'Enviar Pedido';
-            alert('Hubo un error al enviar el pedido. Inténtalo de nuevo.');
         });
 }
 
@@ -222,3 +239,4 @@ document.getElementById('add-repuesto-btn').addEventListener('click', function (
 
     repuestoIndex++;  // Incrementa el índice
 });
+

@@ -206,3 +206,30 @@ form {
     margin-right: auto;
     text-align: center;
 }
+
+/* Estilos para la notificación */
+.notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50; /* Color verde para el éxito */
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000; /* Asegura que esté encima de otros elementos */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.notification.error {
+    background-color: #f44336; /* Color rojo para errores */
+}
+
+.notification.visible {
+    opacity: 1;
+}
+
+.hidden {
+    display: none;
+}
