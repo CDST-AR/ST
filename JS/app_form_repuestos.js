@@ -47,28 +47,56 @@ const app = initializeApp(firebaseConfig);
 const storage = getStorage(app);
 const auth = getAuth(app);
 
-// Maneja el estado de autenticación del usuario
-onAuthStateChanged(auth, (user) => {
-    const usernameElement = document.getElementById("username");
-    const logoutLink = document.getElementById("logout-link");
+// Importa los módulos de Firebase Firestore
+import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js";
 
+// Inicializa Firestore
+const firestore = getFirestore(app);
+
+// Maneja el estado de autenticación del usuario
+let userName = '';
+let userLastName = '';
+
+onAuthStateChanged(auth, async (user) => {
     if (user) {
         console.log("Usuario autenticado:", user);
 
-        // Obtener el nombre o email del usuario
-        const userNameOrEmail = user.displayName || user.email || "Usuario";
-        const username = user.email ? user.email.split('@')[0] : userNameOrEmail;
+        // Consulta Firestore para obtener el nombre y apellido del usuario
+        const userDocRef = doc(firestore, `users/${user.uid}`);
+        try {
+            const docSnap = await getDoc(userDocRef);
+            if (docSnap.exists()) {
+                const userData = docSnap.data();
+                userName = userData.firstName || 'Nombre no disponible';
+                userLastName = userData.lastName || ''; // Asume que lastName puede ser vacío
 
-        // Mostrar el nombre o el email (sin '@' y lo que sigue) del usuario
+                // Mostrar nombre y apellido en consola
+                console.log(`Nombre: ${userName}, Apellido: ${userLastName}`);
+                
+            } else {
+                console.log("No se encontró el documento del usuario.");
+                userName = 'Nombre no disponible';
+                userLastName = '';
+            }
+        } catch (error) {
+            console.error("Error al obtener los datos del usuario:", error);
+            userName = 'Nombre no disponible';
+            userLastName = '';
+        }
+
+        const usernameElement = document.getElementById("username");
+        const logoutLink = document.getElementById("logout-link");
+
+        const username = user.email ? user.email.split('@')[0] : userName;
+
         usernameElement.textContent = username;
 
-        // Manejador de clic en el enlace de salida
         if (logoutLink) {
             logoutLink.addEventListener('click', (event) => {
                 event.preventDefault();
                 signOut(auth).then(() => {
                     console.log("Cierre de sesión exitoso");
-                    window.location.href = 'principal.html';  // Redirigir a la página de inicio de sesión
+                    window.location.href = 'principal.html';
                 }).catch((error) => {
                     console.error("Error al cerrar sesión:", error.message);
                 });
@@ -76,9 +104,11 @@ onAuthStateChanged(auth, (user) => {
         }
     } else {
         console.log("No hay usuario autenticado.");
-        window.location.href = 'index.html'; // Redirigir a la página de inicio de sesión si no está autenticado
+        window.location.href = 'index.html';
     }
 });
+
+
 
 // Configura la fecha actual en el campo de fecha automáticamente
 document.addEventListener('DOMContentLoaded', function () {
@@ -211,12 +241,24 @@ function resizeImage(file, maxWidth, maxHeight, callback) {
 
 // Función para enviar el formulario con EmailJS
 function enviarFormulario(form, serviceID, templateID, btn) {
+    // Crear campos ocultos para el nombre y apellido del usuario
+    const userNameInput = document.createElement('input');
+    userNameInput.setAttribute('type', 'hidden');
+    userNameInput.setAttribute('name', 'user_name');
+    userNameInput.setAttribute('value', userName);
+    form.appendChild(userNameInput);
+
+    const userLastNameInput = document.createElement('input');
+    userLastNameInput.setAttribute('type', 'hidden');
+    userLastNameInput.setAttribute('name', 'user_last_name');
+    userLastNameInput.setAttribute('value', userLastName);
+    form.appendChild(userLastNameInput);
+
     emailjs.sendForm(serviceID, templateID, form)
         .then((response) => {
             console.log('Éxito:', response);
             showNotification('¡Pedido enviado exitosamente!');
             btn.value = 'Enviar Pedido';
-
         })
         .catch((err) => {
             console.error('Error:', err);
@@ -224,6 +266,7 @@ function enviarFormulario(form, serviceID, templateID, btn) {
             btn.value = 'Enviar Pedido';
         });
 }
+
 
 // Maneja la adición dinámica de repuestos al formulario
 let repuestoIndex = 1;  // Inicializa un índice para los repuestos
