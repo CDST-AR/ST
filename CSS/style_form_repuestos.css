@@ -210,9 +210,10 @@ form {
 /* Estilos para la notificación */
 .notification {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #4CAF50; /* Color verde para el éxito */
+    top: 50%; /* Centra verticalmente */
+    left: 50%; /* Centra horizontalmente */
+    transform: translate(-50%, -50%); /* Ajuste preciso para centrar */
+    background-color: rgb(22, 105, 164); /* Color azul para el éxito */
     color: white;
     padding: 15px;
     border-radius: 5px;

@@ -1,19 +1,30 @@
-// Función para mostrar la notificación
-function showNotification(message, isError = false) {
+function showNotification(message, isError = false, isProgress = false) {
     const notification = document.getElementById('notification');
     const notificationMessage = document.getElementById('notification-message');
 
     notificationMessage.textContent = message;
     notification.classList.toggle('error', isError);
+    notification.classList.toggle('progress', isProgress); // Clase opcional para personalizar el progreso
     notification.classList.remove('hidden');
     notification.classList.add('visible');
 
-    // Ocultar la notificación después de 5 segundos
-    setTimeout(() => {
-        notification.classList.remove('visible');
-        notification.classList.add('hidden');
-    }, 5000); // 5000 ms = 5 segundos
+    if (!isProgress) {
+        // Ocultar la notificación después de 5 segundos si no es de progreso
+        setTimeout(() => {
+            notification.classList.remove('visible');
+            notification.classList.add('hidden');
+
+            // Si es un mensaje de éxito (sin error), cerrar la ventana después de 3 segundos
+            if (!isError && message === '¡Pedido enviado exitosamente!') {
+                setTimeout(() => {
+                    window.close(); // Cierra la ventana después de 3 segundos
+                }, 500);
+            }
+        }, 5000); // 5000 ms = 5 segundos
+    }
 }
+
+
 
 // Importa los módulos de Firebase
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
@@ -110,56 +121,93 @@ document.getElementById('form').addEventListener('submit', async function (event
     repuestoListInput.setAttribute('value', repuestoList);
     form.appendChild(repuestoListInput);
 
-    
-
     // Captura el archivo de foto (si se ha subido)
     const photoInput = document.getElementById('photo');
     const photoFile = photoInput.files[0];
     
     if (photoFile) {
-        // Subir la foto a Firebase Storage
-        const storageRef = ref(storage, `fotos/${photoFile.name}`);
-        const uploadTask = uploadBytesResumable(storageRef, photoFile);
-    
-        uploadTask.on('state_changed',
-            (snapshot) => {
-                // Progreso de la subida (opcional)
-                const progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-                console.log(`Subida: ${progress}% completado`);
-            },
-            (error) => {
-                console.error('Error al subir la foto:', error);
-                btn.value = 'Enviar Pedido';
-                alert('Hubo un error al subir la foto. Inténtalo de nuevo.');
-            },
-            async () => {
-                // Foto subida con éxito
-                try {
-                    const downloadURL = await getDownloadURL(uploadTask.snapshot.ref);
-                    console.log('URL de la foto:', downloadURL);
-    
-                    // Añadir la URL de la foto al formulario
-                    const photoUrlInput = document.createElement('input');
-                    photoUrlInput.setAttribute('type', 'hidden');
-                    photoUrlInput.setAttribute('name', 'photo_url');
-                    photoUrlInput.setAttribute('value', downloadURL);
-                    form.appendChild(photoUrlInput);
-    
-                    // Después de subir la foto, enviar el formulario
-                    enviarFormulario(form, serviceID, templateID, btn);
-                } catch (error) {
-                    console.error('Error al obtener la URL de la foto:', error);
+        // Redimensionar la imagen antes de subirla
+        resizeImage(photoFile, 1024, 1024, async function (resizedBlob) {
+            // Subir la foto redimensionada a Firebase Storage
+            const storageRef = ref(storage, `fotos/${photoFile.name}`);
+            const uploadTask = uploadBytesResumable(storageRef, resizedBlob);
+
+            uploadTask.on('state_changed',
+                (snapshot) => {
+                    const progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+                    console.log(`Subida: ${progress}% completado`);
+                    showNotification(`Cargando foto: ${progress.toFixed(0)}%`, false, true);
+                },
+                (error) => {
+                    console.error('Error al subir la foto:', error);
                     btn.value = 'Enviar Pedido';
-                    alert('Hubo un error al obtener la URL de la foto. Inténtalo de nuevo.');
+                    alert('Hubo un error al subir la foto. Inténtalo de nuevo.');
+                },
+                async () => {
+                    try {
+                        const downloadURL = await getDownloadURL(uploadTask.snapshot.ref);
+                        console.log('URL de la foto:', downloadURL);
+
+                        const photoUrlInput = document.createElement('input');
+                        photoUrlInput.setAttribute('type', 'hidden');
+                        photoUrlInput.setAttribute('name', 'photo_url');
+                        photoUrlInput.setAttribute('value', downloadURL);
+                        form.appendChild(photoUrlInput);
+
+                        enviarFormulario(form, serviceID, templateID, btn);
+                    } catch (error) {
+                        console.error('Error al obtener la URL de la foto:', error);
+                        btn.value = 'Enviar Pedido';
+                        alert('Hubo un error al obtener la URL de la foto. Inténtalo de nuevo.');
+                    }
                 }
-            }
-        );
+            );
+        });
     } else {
-        // Si no hay foto, enviar directamente el formulario
         enviarFormulario(form, serviceID, templateID, btn);
     }
-    
 });
+
+// Función para redimensionar la imagen
+function resizeImage(file, maxWidth, maxHeight, callback) {
+    const reader = new FileReader();
+    
+    reader.onload = function (event) {
+        const img = new Image();
+        
+        img.onload = function () {
+            const canvas = document.createElement('canvas');
+            let width = img.width;
+            let height = img.height;
+
+            // Mantener la relación de aspecto
+            if (width > height) {
+                if (width > maxWidth) {
+                    height *= maxWidth / width;
+                    width = maxWidth;
+                }
+            } else {
+                if (height > maxHeight) {
+                    width *= maxHeight / height;
+                    height = maxHeight;
+                }
+            }
+
+            canvas.width = width;
+            canvas.height = height;
+
+            const ctx = canvas.getContext('2d');
+            ctx.drawImage(img, 0, 0, width, height);
+
+            canvas.toBlob(callback, file.type, 0.8); // 0.8 es la calidad de la compresión
+        }
+
+        img.src = event.target.result;
+    }
+
+    reader.readAsDataURL(file);
+}
+
 
 // Función para enviar el formulario con EmailJS
 function enviarFormulario(form, serviceID, templateID, btn) {
@@ -168,7 +216,7 @@ function enviarFormulario(form, serviceID, templateID, btn) {
             console.log('Éxito:', response);
             showNotification('¡Pedido enviado exitosamente!');
             btn.value = 'Enviar Pedido';
-            
+
         })
         .catch((err) => {
             console.error('Error:', err);

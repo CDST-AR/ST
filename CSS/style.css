@@ -146,6 +146,37 @@
   font-weight: 700;
 }
 
+/* Contenedor del banner */
+.bannerp {
+  position: relative;
+  overflow: hidden; /* Asegura que el contenido fuera del contenedor no sea visible */
+}
+
+/* Estilo inicial del h1 para la animación */
+.bannerp h1 {
+  position: relative;
+  transform: translateX(-100%); /* Mueve el h1 fuera de la vista por la izquierda */
+  opacity: 0; /* Hace que el texto sea invisible al inicio */
+  transition: opacity 0.5s ease-in-out; /* Suaviza la transición de la opacidad */
+}
+
+/* Animación de entrada */
+@keyframes slideIn {
+  from {
+      transform: translateX(-100%); /* Comienza desde fuera de la vista a la izquierda */
+      opacity: 0; /* Comienza invisible */
+  }
+  to {
+      transform: translateX(0); /* Termina en la posición original */
+      opacity: 1; /* Termina visible */
+  }
+}
+
+/* Aplicar la animación al h1 */
+.bannerp h1 {
+  animation: slideIn 1s ease-out forwards; /* Aplica la animación con duración de 1 segundo */
+}
+
 .como-funciona {
   text-align: center;
   padding-top: 70px;
