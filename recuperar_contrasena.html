@@ -17,22 +17,24 @@
             <input type="email" id="recovery-email" placeholder="Correo Electrónico" required>
             <button type="submit">Enviar Enlace de Recuperación</button>
         </form>
+        <div id="recovery-message" class="recovery-message">
+            <h3>¡Enlace de recuperación enviado!</h3>
+            <p>Revisa tu correo electrónico para seguir con el proceso de recuperación de tu cuenta.</p>
+        </div>
         <!-- Contenedor para mensajes de error -->
         <p id="recovery-error-message" class="error-message"></p>
         <p><a href="index.html">Volver al inicio de sesión</a></p>
     </div>
-
-    <!-- Firebase App (SDK Principal) - Versión Compat -->
-    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
-    <!-- Firebase Auth - Versión Compat -->
-    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
-    <!-- Firebase Firestore - Versión Compat (opcional si usas Firestore) -->
-    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
-
-
-
-    <!-- Script de recuperación -->
-    <script src="JS/app_recuperar_contrasena.js"></script>
+    
 </body>
+<!-- Firebase App (SDK Principal) - Versión Compat -->
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+<!-- Firebase Auth - Versión Compat -->
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+<!-- Firebase Firestore - Versión Compat (opcional si usas Firestore) -->
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
+
+<!-- Script de recuperación -->
+<script src="JS/app_recuperar_contrasena.js"></script>
 
 </html>

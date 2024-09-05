@@ -119,3 +119,28 @@ a:hover {
     max-width: 100px; /* Ajusta el tamaño máximo del logo */
     height: auto; /* Mantiene la proporción del logo */
 }
+
+/* Ocultar el mensaje de recuperación por defecto */
+#recovery-message {
+    display: none;
+}
+
+.recovery-message {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f4f8;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+.recovery-message h3 {
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.recovery-message p {
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+}

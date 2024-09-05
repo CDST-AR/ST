@@ -31,7 +31,10 @@ document.getElementById('recovery-form').addEventListener('submit', async (e) =>
             // Enviar el enlace de recuperación
             await auth.sendPasswordResetEmail(email);
             console.log('Enlace de recuperación enviado a:', email);
-            alert('Se ha enviado un enlace de recuperación a tu correo electrónico.');
+
+            // Ocultar el formulario y mostrar el mensaje profesional
+            document.getElementById('recovery-form').style.display = 'none';
+            document.getElementById('recovery-message').style.display = 'block';
         } else {
             console.log('El correo electrónico no está registrado:', email);
             document.getElementById('recovery-error-message').textContent = 'El correo electrónico no está registrado.';
