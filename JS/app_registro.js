@@ -41,10 +41,27 @@ document.getElementById('register-form').addEventListener('submit', async (e) =>
             role: role // Guardar el rol
         });
 
-        // Redirigir o mostrar mensaje de éxito
-        alert('Registro exitoso');
+        // Mostrar notificación de éxito
+        Toastify({
+            text: "Registro exitoso",
+            duration: 3000,
+            gravity: "top", // `top` o `bottom`
+            position: "right", // `left`, `center`, `right`
+            backgroundColor: "#4CAF50",
+            className: "toast-success"
+        }).showToast();
+        // Limpiar los campos del formulario
+        document.getElementById('register-form').reset();
     } catch (error) {
         console.error('Error al registrar usuario:', error);
-        document.getElementById('error-message').textContent = error.message;
+        // Mostrar notificación de error
+        Toastify({
+            text: `Error: ${error.message}`,
+            duration: 3000,
+            gravity: "top", // `top` o `bottom`
+            position: "right", // `left`, `center`, `right`
+            backgroundColor: "#f44336",
+            className: "toast-error"
+        }).showToast();
     }
 });

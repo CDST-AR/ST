@@ -1,30 +1,22 @@
-function showNotification(message, isError = false, isProgress = false) {
-    const notification = document.getElementById('notification');
-    const notificationMessage = document.getElementById('notification-message');
-
-    notificationMessage.textContent = message;
-    notification.classList.toggle('error', isError);
-    notification.classList.toggle('progress', isProgress); // Clase opcional para personalizar el progreso
-    notification.classList.remove('hidden');
-    notification.classList.add('visible');
-
-    if (!isProgress) {
-        // Ocultar la notificación después de 5 segundos si no es de progreso
-        setTimeout(() => {
-            notification.classList.remove('visible');
-            notification.classList.add('hidden');
-
-            // Si es un mensaje de éxito (sin error), cerrar la ventana después de 3 segundos
-            if (!isError && message === '¡Pedido enviado exitosamente!') {
-                setTimeout(() => {
-                    window.close(); // Cierra la ventana después de 3 segundos
-                }, 500);
-            }
-        }, 5000); // 5000 ms = 5 segundos
+// Función para mostrar notificaciones con Toastify
+function showToast(message, isError = false, isProgress = false) {
+    // Si hay una notificación de progreso activa, ciérrala
+    if (window.currentToast) {
+        window.currentToast.hideToast();
     }
+
+    // Crear la nueva notificación
+    window.currentToast = Toastify({
+        text: message,
+        duration: isProgress ? -1 : 5000, // -1 para notificaciones de progreso que no desaparecen automáticamente
+        style: {
+            background: isError ? '#ff4d4d' : '#4caf50', // Rojo para errores, verde para éxito
+        },
+        className: isProgress ? 'toast-progress' : '', // Puedes agregar clases personalizadas si lo deseas
+        position: 'right',
+        close: true
+    }).showToast();
 }
-
-
 
 // Importa los módulos de Firebase
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
@@ -72,7 +64,7 @@ onAuthStateChanged(auth, async (user) => {
 
                 // Mostrar nombre y apellido en consola
                 console.log(`Nombre: ${userName}, Apellido: ${userLastName}`);
-                
+
             } else {
                 console.log("No se encontró el documento del usuario.");
                 userName = 'Nombre no disponible';
@@ -154,7 +146,7 @@ document.getElementById('form').addEventListener('submit', async function (event
     // Captura el archivo de foto (si se ha subido)
     const photoInput = document.getElementById('photo');
     const photoFile = photoInput.files[0];
-    
+
     if (photoFile) {
         // Redimensionar la imagen antes de subirla
         resizeImage(photoFile, 1024, 1024, async function (resizedBlob) {
@@ -162,16 +154,16 @@ document.getElementById('form').addEventListener('submit', async function (event
             const storageRef = ref(storage, `fotos/${photoFile.name}`);
             const uploadTask = uploadBytesResumable(storageRef, resizedBlob);
 
+            // Código para manejar el progreso de la carga de la foto
             uploadTask.on('state_changed',
                 (snapshot) => {
                     const progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-                    console.log(`Subida: ${progress}% completado`);
-                    showNotification(`Cargando foto: ${progress.toFixed(0)}%`, false, true);
+                    showToast(`Cargando foto: ${progress.toFixed(0)}%`, false, true);
                 },
                 (error) => {
                     console.error('Error al subir la foto:', error);
                     btn.value = 'Enviar Pedido';
-                    alert('Hubo un error al subir la foto. Inténtalo de nuevo.');
+                    showToast('Hubo un error al subir la foto. Inténtalo de nuevo.', true);
                 },
                 async () => {
                     try {
@@ -184,11 +176,15 @@ document.getElementById('form').addEventListener('submit', async function (event
                         photoUrlInput.setAttribute('value', downloadURL);
                         form.appendChild(photoUrlInput);
 
-                        enviarFormulario(form, serviceID, templateID, btn);
+                        // Esperar un poco antes de mostrar el mensaje de éxito para asegurar que la notificación de progreso se haya ocultado
+                        setTimeout(() => {
+                            console.log('Foto cargada exitosamente.');
+                            enviarFormulario(form, serviceID, templateID, btn); // Enviar el formulario después de cargar la foto
+                        }, 500); // Ajusta el tiempo según sea necesario
                     } catch (error) {
                         console.error('Error al obtener la URL de la foto:', error);
                         btn.value = 'Enviar Pedido';
-                        alert('Hubo un error al obtener la URL de la foto. Inténtalo de nuevo.');
+                        showToast('Hubo un error al obtener la URL de la foto. Inténtalo de nuevo.', true);
                     }
                 }
             );
@@ -201,10 +197,10 @@ document.getElementById('form').addEventListener('submit', async function (event
 // Función para redimensionar la imagen
 function resizeImage(file, maxWidth, maxHeight, callback) {
     const reader = new FileReader();
-    
+
     reader.onload = function (event) {
         const img = new Image();
-        
+
         img.onload = function () {
             const canvas = document.createElement('canvas');
             let width = img.width;
@@ -257,12 +253,16 @@ function enviarFormulario(form, serviceID, templateID, btn) {
     emailjs.sendForm(serviceID, templateID, form)
         .then((response) => {
             console.log('Éxito:', response);
-            showNotification('¡Pedido enviado exitosamente!');
+            showToast('¡Pedido enviado exitosamente!');
+            form.reset();
             btn.value = 'Enviar Pedido';
+            setTimeout(() => {
+                window.close(); // Cerrar la ventana
+            }, 2000); // 2000 milisegundos = 2 segundos
         })
         .catch((err) => {
             console.error('Error:', err);
-            showNotification('Hubo un error al enviar el pedido. Inténtalo de nuevo.', true);
+            showToast('Hubo un error al enviar el pedido. Inténtalo de nuevo.', true);
             btn.value = 'Enviar Pedido';
         });
 }
