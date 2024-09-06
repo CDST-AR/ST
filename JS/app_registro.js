@@ -9,16 +9,15 @@ const firebaseConfig = {
     appId: "1:305991448119:web:161322518952422e5531b2"
 };
 
-
 // Inicializar Firebase
 firebase.initializeApp(firebaseConfig);
 console.log('Firebase inicializado');
-
 
 // Obtener referencias a Firebase Auth y Firestore
 const auth = firebase.auth();
 const db = firebase.firestore();
 console.log('Auth y Firestore obtenidos', auth, db);
+
 // Manejar el registro de usuario
 document.getElementById('register-form').addEventListener('submit', async (e) => {
     e.preventDefault();
@@ -27,17 +26,19 @@ document.getElementById('register-form').addEventListener('submit', async (e) =>
     const lastName = document.getElementById('last-name').value;
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
-    
+    const role = document.getElementById('role').value; // Obtener el rol del formulario
+
     try {
         // Crear usuario con email y contraseña
         const userCredential = await auth.createUserWithEmailAndPassword(email, password);
         const user = userCredential.user;
 
-        // Guardar información adicional en Firestore
+        // Guardar información adicional en Firestore incluyendo el rol
         await db.collection('users').doc(user.uid).set({
             firstName: firstName,
             lastName: lastName,
-            email: email
+            email: email,
+            role: role // Guardar el rol
         });
 
         // Redirigir o mostrar mensaje de éxito

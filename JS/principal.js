@@ -1,5 +1,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
 import { getAuth, onAuthStateChanged, signOut } from 'https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js';
+import { getFirestore, doc, getDoc } from 'https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js';
 
 const firebaseConfig = {
     apiKey: "AIzaSyD1QzjOS2hp46d75kPlhHf0xmV8e5nkJSA",
@@ -13,14 +14,14 @@ const firebaseConfig = {
 
 // Inicializa Firebase
 const app = initializeApp(firebaseConfig);
-
-// Obtén la autenticación
 const auth = getAuth(app);
+const firestore = getFirestore(app);
 
 // Maneja el estado de autenticación del usuario
-onAuthStateChanged(auth, (user) => {
+onAuthStateChanged(auth, async (user) => {
     const usernameElement = document.getElementById("username");
     const logoutLink = document.getElementById("logout-link");
+    const adminRegisterElement = document.getElementById("admin-register"); // Elemento de registro de administrador
 
     if (user) {
         console.log("Usuario autenticado:", user);
@@ -31,6 +32,31 @@ onAuthStateChanged(auth, (user) => {
 
         // Mostrar el nombre o el email (sin '@' y lo que sigue) del usuario
         usernameElement.textContent = username;
+
+        try {
+            // Verifica si el usuario es administrador en Firestore
+            const userDocRef = doc(firestore, "users", user.uid);
+            const userDocSnap = await getDoc(userDocRef);
+
+            if (userDocSnap.exists()) {
+                const userData = userDocSnap.data();
+                if (userData.role === "admin") {
+                    // Mostrar el ítem de registro de administrador si es admin
+                    adminRegisterElement.style.display = 'block';
+                } else {
+                    // Ocultar el ítem de registro de administrador si no es admin
+                    adminRegisterElement.style.display = 'none';
+                }
+            } else {
+                console.log("No se encontró el documento del usuario en Firestore.");
+                // Ocultar el ítem de registro de administrador si no se encuentra el documento
+                adminRegisterElement.style.display = 'none';
+            }
+        } catch (error) {
+            console.error("Error al obtener los datos del usuario:", error);
+            // Ocultar el ítem de registro de administrador en caso de error
+            adminRegisterElement.style.display = 'none';
+        }
 
         // Manejador de clic en el enlace de salida
         if (logoutLink) {
@@ -49,6 +75,8 @@ onAuthStateChanged(auth, (user) => {
         window.location.href = 'index.html'; // Redirigir a la página de inicio de sesión si no está autenticado
     }
 });
+
+
 
 window.addEventListener('scroll', function() {
     const navbar = document.getElementById('navbar');
