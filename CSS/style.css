@@ -286,6 +286,31 @@
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23E21982'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
 
+.accordion-collapse {
+  transition: height 0.4s ease, opacity 0.4s ease;
+  overflow: hidden;
+}
+
+.accordion-body {
+  transition: opacity 0.4s ease;
+  opacity: 0;
+}
+
+/* Cuando el acordeón está colapsado (cerrado) */
+.accordion-collapse:not(.show) {
+  height: 0;
+}
+
+/* Cuando el acordeón se despliega (abierto) */
+.accordion-collapse.show {
+  height: auto;
+}
+
+.accordion-collapse.show .accordion-body {
+  opacity: 1;
+}
+
+
 .quienes-somos {
   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('../Assets/banner-principal.png');
   background-size: cover;
