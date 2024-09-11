@@ -187,3 +187,12 @@ h1 {
     font-size: 24px;
     color: rgb(22, 105, 164); /* Color del título */
 }
+
+#solutionList img {
+    max-width: 100%; /* Ajusta el ancho máximo al tamaño del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Hace que la imagen sea un bloque para evitar márgenes extraños */
+    margin: 10px auto; /* Añade un margen alrededor de la imagen y la centra horizontalmente */
+    max-height: 200px; /* Limita la altura máxima de la imagen */
+    width: auto; /* Asegura que el ancho se ajuste en relación a la altura */
+}

@@ -50,21 +50,43 @@ function limpiarDetallesError() {
     document.getElementById("solutionList").innerHTML = "";
 }
 
-// Función para mostrar las soluciones
 function mostrarSoluciones(errorData) {
     const solutionList = document.getElementById("solutionList");
     solutionList.innerHTML = "";
 
     if (errorData.Solucion && Array.isArray(errorData.Solucion)) {
-        errorData.Solucion.forEach(step => {
+        errorData.Solucion.forEach((step, index) => {
             const li = document.createElement("li");
             li.textContent = step;
             solutionList.appendChild(li);
+
+            // Verificar si hay imágenes para esta posición
+            if (errorData.Imagenes && Array.isArray(errorData.Imagenes)) {
+                errorData.Imagenes.forEach((imagen) => {
+                    if (index === imagen.Posicion - 1 && imagen.URL) {
+                        const img = document.createElement("img");
+                        img.src = imagen.URL;
+                        img.alt = "Imagen relacionada con la solución";
+                        img.style.maxWidth = "100%";
+                        img.style.display = "block";
+                        img.style.margin = "10px auto";
+
+                        // Crear un contenedor para la imagen
+                        const imgContainer = document.createElement("li");
+                        imgContainer.appendChild(img);
+                        solutionList.appendChild(imgContainer); // Añadir la imagen como un nuevo <li>
+                    }
+                });
+            }
         });
     } else {
         solutionList.innerHTML = "<li>No hay soluciones disponibles.</li>";
     }
 }
+
+
+
+
 
 // Función para cargar los modelos disponibles en el <select>
 export function cargarModelos() {
@@ -174,16 +196,7 @@ onAuthStateChanged(auth, (user) => {
         });
         document.getElementById("errorSelect").addEventListener("change", buscarError);
 
-        // Manejador de clic en el enlace de salida
-        logoutLink.addEventListener('click', (event) => {
-            event.preventDefault();
-            signOut(auth).then(() => {
-                console.log("Cierre de sesión exitoso");
-                window.location.href = 'index.html';  // Redirigir a la página de inicio de sesión
-            }).catch((error) => {
-                console.error("Error al cerrar sesión:", error.message);
-            });
-        });
+
 
         // Inicia el temporizador de inactividad al autenticarse
         resetInactivityTimer();
@@ -192,3 +205,5 @@ onAuthStateChanged(auth, (user) => {
         window.location.href = 'index.html'; // Redirigir a la página de inicio de sesión si no está autenticado
     }
 });
+
+
