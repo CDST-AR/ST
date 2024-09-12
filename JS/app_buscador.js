@@ -70,11 +70,23 @@ function mostrarSoluciones(errorData) {
                         img.style.maxWidth = "100%";
                         img.style.display = "block";
                         img.style.margin = "10px auto";
+                        img.classList.add("solution-img");
 
                         // Crear un contenedor para la imagen
                         const imgContainer = document.createElement("li");
                         imgContainer.appendChild(img);
                         solutionList.appendChild(imgContainer); // Añadir la imagen como un nuevo <li>
+
+                        // Añadir evento para abrir la imagen en un modal al tocarla
+                        img.addEventListener("click", function() {
+                            const modal = document.getElementById("imageModal");
+                            const modalImg = document.getElementById("imgModal");
+                            const captionText = document.getElementById("caption");
+
+                            modal.style.display = "block";
+                            modalImg.src = this.src;
+                            captionText.innerHTML = this.alt;
+                        });
                     }
                 });
             }
@@ -82,7 +94,16 @@ function mostrarSoluciones(errorData) {
     } else {
         solutionList.innerHTML = "<li>No hay soluciones disponibles.</li>";
     }
+
+    // Agregar funcionalidad para cerrar el modal
+    const modal = document.getElementById("imageModal");
+    const closeBtn = document.getElementsByClassName("close")[0];
+
+    closeBtn.onclick = function() {
+        modal.style.display = "none";
+    };
 }
+
 
 
 

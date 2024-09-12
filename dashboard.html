@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +8,14 @@
     <link rel="stylesheet" href="CSS/style_buscador.css">
     <link rel="icon" href="Assets/favicon.ico" type="image/x-icon">
 </head>
+
 <body>
 
     <div class="title-container">
         <img src="Assets/logo.png" alt="Logo" class="logo">
         <h1>Buscador de Errores de Impresora</h1>
     </div>
-    
+
     <div id="searchContainer">
         <label for="modelSelect">Modelo de Impresora:</label>
         <select id="modelSelect">
@@ -33,16 +35,22 @@
         <p><strong>Síntoma:</strong> <span id="symptom"></span></p>
         <p><strong>Solución:</strong></p>
         <ul id="solutionList"></ul>
-            
+        <!-- Modal para mostrar imágenes -->
+        <div id="imageModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="imgModal">
+            <div id="caption"></div>
+        </div>
+
     </div>
 
     <div id="user-info">
         <p>Usuario: <span id="username"></span></p>
-        
+
     </div>
 
     <!-- Aquí se incluirá el archivo JS que conectará con Firebase -->
     <script type="module" src="JS/app_buscador.js"></script>
 </body>
+
 </html>
-    
