@@ -116,8 +116,14 @@ export function cargarErrores() {
     const errorSelect = document.getElementById("errorSelect");
     const selectedModel = modelSelect.value;
 
-    // Limpiar el menú de códigos de error
-    errorSelect.innerHTML = "";
+    // Limpiar el menú de códigos de error y agregar la opción predeterminada
+    errorSelect.innerHTML = ""; 
+
+    // Agregar la opción "Seleccione el error" como predeterminada
+    const defaultOption = document.createElement("option");
+    defaultOption.value = "";
+    defaultOption.textContent = "Seleccione el error";
+    errorSelect.appendChild(defaultOption);
 
     if (selectedModel) {
         const dbRef = ref(database, `models/${selectedModel}/errors`);
@@ -131,6 +137,8 @@ export function cargarErrores() {
                     option.textContent = key;
                     errorSelect.appendChild(option);
                 }
+                // Asegurarse de que la opción predeterminada esté seleccionada
+                errorSelect.value = ""; 
             } else {
                 console.log("No se encontraron errores para el modelo seleccionado.");
             }
@@ -139,6 +147,7 @@ export function cargarErrores() {
         });
     }
 }
+
 
 // Función para buscar un código de error en Firebase
 export function buscarError() {
