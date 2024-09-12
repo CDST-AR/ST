@@ -1,6 +1,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
 import { getAuth, onAuthStateChanged, signOut } from 'https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js';
-import { getFirestore, doc, getDoc } from 'https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js';
+import { getFirestore, doc, getDoc, updateDoc } from 'https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js';
 
 const firebaseConfig = {
     apiKey: "AIzaSyD1QzjOS2hp46d75kPlhHf0xmV8e5nkJSA",
@@ -21,16 +21,12 @@ const firestore = getFirestore(app);
 onAuthStateChanged(auth, async (user) => {
     const usernameElement = document.getElementById("username");
     const logoutLink = document.getElementById("logout-link");
-    const adminRegisterElement = document.getElementById("admin-register"); // Elemento de registro de administrador
+    const adminRegisterElement = document.getElementById("admin-register");
 
     if (user) {
         console.log("Usuario autenticado:", user);
 
-        // Obtener el nombre o email del usuario
-        const userNameOrEmail = user.displayName || user.email || "Usuario";
-        const username = user.email ? user.email.split('@')[0] : userNameOrEmail;
-
-        // Mostrar el nombre o el email (sin '@' y lo que sigue) del usuario
+        const username = user.email.split('@')[0];
         usernameElement.textContent = username;
 
         try {
@@ -41,63 +37,47 @@ onAuthStateChanged(auth, async (user) => {
             if (userDocSnap.exists()) {
                 const userData = userDocSnap.data();
                 if (userData.role === "admin") {
-                    // Mostrar el ítem de registro de administrador si es admin
                     adminRegisterElement.style.display = 'block';
                 } else {
-                    // Ocultar el ítem de registro de administrador si no es admin
                     adminRegisterElement.style.display = 'none';
                 }
             } else {
                 console.log("No se encontró el documento del usuario en Firestore.");
-                // Ocultar el ítem de registro de administrador si no se encuentra el documento
                 adminRegisterElement.style.display = 'none';
             }
         } catch (error) {
             console.error("Error al obtener los datos del usuario:", error);
-            // Ocultar el ítem de registro de administrador en caso de error
             adminRegisterElement.style.display = 'none';
         }
 
         // Manejador de clic en el enlace de salida
         if (logoutLink) {
-            logoutLink.addEventListener('click', (event) => {
+            logoutLink.addEventListener('click', async (event) => {
                 event.preventDefault();
-                signOut(auth).then(() => {
+
+                try {
+                    // Referencia al documento del usuario en Firestore
+                    const userRef = doc(firestore, 'users', user.uid);
+
+                    // Actualizar el estado de conexión a 'false' y limpiar el campo 'currentSession'
+                    await updateDoc(userRef, {
+                        connected: false,
+                        currentSession: ''  // Limpiar el campo currentSession
+                    });
+
+                    console.log("Estado de conexión actualizado a 'false' y sesión actual vaciada.");
+
+                    // Cerrar sesión
+                    await signOut(auth);
                     console.log("Cierre de sesión exitoso");
-                    window.location.href = 'index.html';  // Redirigir a la página de inicio de sesión
-                }).catch((error) => {
+
+                    // Redirigir al usuario a la página de inicio de sesión
+                    window.location.href = 'index.html';
+
+                } catch (error) {
                     console.error("Error al cerrar sesión:", error.message);
-                });
+                }
             });
         }
-    } else {
-        console.log("No hay usuario autenticado.");
-        window.location.href = 'index.html'; // Redirigir a la página de inicio de sesión si no está autenticado
     }
 });
-
-
-
-window.addEventListener('scroll', function() {
-    const navbar = document.getElementById('navbar');
-    const pfSection = document.querySelector('.pf');
-    const cmSection = document.querySelector('.cm');
-  
-    const pfPosition = pfSection.getBoundingClientRect().top;
-    const cmPosition = cmSection.getBoundingClientRect().top;
-  
-    // Cambia el color de fondo a blanco cuando estés en la sección .qs
-    if (pfPosition <= 50) { 
-      navbar.classList.add('white-bg');
-    } else {
-      navbar.classList.remove('white-bg');
-    }
-  
-  // Desaparece el navbar cuando estés en la sección .pf de forma suave
-  if (cmPosition <= 50) {
-    navbar.classList.add('shrink');
-  } else {
-    navbar.classList.remove('shrink');
-  }
-  });
-  

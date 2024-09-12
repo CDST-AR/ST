@@ -45,6 +45,12 @@ document.getElementById('login-form').addEventListener('submit', async (e) => {
             if (userData.currentSession && userData.currentSession !== sessionId) {
                 console.log("Otra sesión activa detectada. Cerrando la sesión previa...");
                 
+                // Actualizar el campo 'connected' a false y vaciar 'currentSession' antes de cerrar la sesión
+                await userRef.update({
+                    connected: false,
+                    currentSession: ''  // Limpiar el campo currentSession
+                });
+
                 // Cerrar sesión en este dispositivo
                 await auth.signOut();
 
@@ -58,10 +64,11 @@ document.getElementById('login-form').addEventListener('submit', async (e) => {
             }
         }
 
-        // Actualizar Firestore con el nuevo sessionId y lastLogin
+        // Actualizar Firestore con el nuevo sessionId, lastLogin y poner connected a true
         await userRef.set({
             currentSession: sessionId,
-            lastLogin: firebase.firestore.FieldValue.serverTimestamp()
+            lastLogin: firebase.firestore.FieldValue.serverTimestamp(),
+            connected: true // Indicar que el usuario está conectado
         }, { merge: true });
 
         // Redirigir al usuario a la página principal
@@ -90,6 +97,12 @@ auth.onAuthStateChanged(async (user) => {
             if (currentSession && currentSession !== sessionId) {
                 console.log("La sesión actual no es válida. Cerrando sesión...");
 
+                // Actualizar el campo 'connected' a false y vaciar 'currentSession' antes de cerrar la sesión
+                await userRef.update({
+                    connected: false,
+                    currentSession: ''  // Limpiar el campo currentSession
+                });
+
                 // Cerrar sesión si el sessionId no coincide
                 await auth.signOut();
 
@@ -105,3 +118,36 @@ auth.onAuthStateChanged(async (user) => {
         console.log("No hay usuario autenticado.");
     }
 });
+
+// Manejador para cerrar sesión manualmente
+async function signOutUser() {
+    try {
+        const user = auth.currentUser;
+
+        if (user) {
+            // Referencia al documento del usuario en Firestore
+            const userRef = db.collection('users').doc(user.uid);
+
+            // Actualizar el estado de conexión a 'false' y limpiar el campo 'currentSession' antes de cerrar sesión
+            await userRef.update({
+                connected: false,
+                currentSession: ''  // Limpiar el campo currentSession
+            });
+
+            // Esperar a que los cambios en Firestore se completen antes de cerrar la sesión
+            console.log("Actualizando Firestore antes de cerrar sesión...");
+
+            // Cerrar la sesión del usuario
+            await auth.signOut();
+
+            console.log("Sesión cerrada y conexión actualizada a 'false'.");
+
+            // Redirigir al usuario a la página de inicio de sesión
+            window.location.href = 'index.html';
+        } else {
+            console.log("No hay usuario autenticado para cerrar sesión.");
+        }
+    } catch (error) {
+        console.error("Error al cerrar sesión:", error.message);
+    }
+}
