@@ -17,6 +17,9 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const firestore = getFirestore(app);
 
+// Generar un ID de sesión único para la sesión actual
+let sessionId = Math.random().toString(36).substr(2, 9);
+
 // Maneja el estado de autenticación del usuario
 onAuthStateChanged(auth, async (user) => {
     const usernameElement = document.getElementById("username");
@@ -40,6 +43,24 @@ onAuthStateChanged(auth, async (user) => {
                     adminRegisterElement.style.display = 'block';
                 } else {
                     adminRegisterElement.style.display = 'none';
+                }
+
+                // Verificar el currentSession
+                if (userData.currentSession !== sessionId) {
+                    console.log("La sesión actual no es válida. Redirigiendo al inicio de sesión...");
+
+                    // Actualizar el estado de conexión a 'false' y limpiar el campo 'currentSession'
+                    await updateDoc(userDocRef, {
+                        connected: false,
+                        currentSession: ''  // Limpiar el campo currentSession
+                    });
+
+                    // Cerrar sesión
+                    await signOut(auth);
+
+                    // Redirigir al usuario a la página de inicio de sesión
+                    window.location.href = 'index.html';
+                    return; // Salir de la función para evitar continuar
                 }
             } else {
                 console.log("No se encontró el documento del usuario en Firestore.");
