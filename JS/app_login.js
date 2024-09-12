@@ -9,66 +9,87 @@ const firebaseConfig = {
     appId: "1:305991448119:web:161322518952422e5531b2"
 };
 
-// Inicializa Firebase
+// Inicializar Firebase
 firebase.initializeApp(firebaseConfig);
+
+// Referencia a Firestore
+const db = firebase.firestore();
 
 // Autenticación
 const auth = firebase.auth();
 
 // Manejador de inicio de sesión
-document.getElementById('login-form').addEventListener('submit', (e) => {
+document.getElementById('login-form').addEventListener('submit', async (e) => {
     e.preventDefault();
+    
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
+    
+    try {
+        const userCredential = await auth.signInWithEmailAndPassword(email, password);
+        const user = userCredential.user;
+        
+        console.log("Inicio de sesión exitoso:", user.email);
 
-    auth.signInWithEmailAndPassword(email, password)
-        .then((userCredential) => {
-            const user = userCredential.user;
-            console.log("Inicio de sesión exitoso:", user.email);
-            // Redirige al usuario a la página deseada
-            window.location.href = 'principal.html'; // Cambia 'dashboard.html' por la página a la que desees redirigir
-        })
-        .catch((error) => {
-            console.error("Error al iniciar sesión:", error.message);
-            // Mostrar mensaje de error en el contenedor
-            const errorMessage = document.getElementById('error-message');
-            errorMessage.textContent = "Usuario o clave incorrecta"; // Mensaje genérico
-        });
-});
+        // Genera un ID de sesión único para la sesión actual
+        const sessionId = Math.random().toString(36).substr(2, 9);
 
-// Cerrar sesión (esto se usa si deseas tener la opción de cerrar sesión en otra página)
-function setupLogout() {
-    const logoutButton = document.createElement('button');
-    logoutButton.textContent = 'Cerrar Sesión';
-    logoutButton.id = 'logout-btn';
-    logoutButton.style.display = 'none';
-    document.body.appendChild(logoutButton);
-
-    logoutButton.addEventListener('click', () => {
-        auth.signOut().then(() => {
-            console.log("Cierre de sesión exitoso");
-            document.getElementById('logout-btn').style.display = 'none';
-            // Puedes redirigir al usuario a la página de inicio de sesión si es necesario
-            // window.location.href = 'index.html';
-        }).catch((error) => {
-            console.error("Error al cerrar sesión:", error.message);
-        });
-    });
-}
-
-// Escuchar cambios en el estado de autenticación
-auth.onAuthStateChanged((user) => {
-    if (user) {
-        // El usuario está autenticado
-        console.log("Usuario autenticado:", user.email);
-        setupLogout();
-    } else {
-        // El usuario no está autenticado
-        const logoutButton = document.getElementById('logout-btn');
-        if (logoutButton) {
-            logoutButton.style.display = 'none';
+        // Obtén el documento del usuario en Firestore
+        const userRef = db.collection('users').doc(user.uid);
+        const userDoc = await userRef.get();
+        
+        if (userDoc.exists) {
+            const userData = userDoc.data();
+            
+            if (userData.currentSession && userData.currentSession !== sessionId) {
+                // Cerrar la sesión de la sesión anterior (esto se puede hacer invalidando los tokens)
+                console.log("Cerrando sesión anterior...");
+                
+                // Actualizar Firestore para la nueva sesión
+                await userRef.update({
+                    currentSession: sessionId,
+                    lastLogin: firebase.firestore.FieldValue.serverTimestamp()
+                });
+            } else {
+                // Actualizar con la nueva sesión
+                await userRef.set({
+                    currentSession: sessionId,
+                    lastLogin: firebase.firestore.FieldValue.serverTimestamp()
+                }, { merge: true });
+            }
+        } else {
+            // Si el usuario no tiene datos de sesión guardados, crearlos
+            await userRef.set({
+                currentSession: sessionId,
+                lastLogin: firebase.firestore.FieldValue.serverTimestamp()
+            });
         }
+
+        // Redirige al usuario a la página deseada
+        window.location.href = 'principal.html';
+
+    } catch (error) {
+        console.error("Error al iniciar sesión:", error.message);
+        
+        const errorMessage = document.getElementById('error-message');
+        errorMessage.textContent = "Usuario o clave incorrecta";
     }
 });
 
+// Escuchar cambios en el estado de autenticación
+auth.onAuthStateChanged(async (user) => {
+    if (user) {
+        console.log("Usuario autenticado:", user.email);
 
+        const userRef = db.collection('users').doc(user.uid);
+        const userDoc = await userRef.get();
+        
+        if (userDoc.exists && userDoc.data().currentSession) {
+            console.log("Sesión actual válida:", userDoc.data().currentSession);
+        } else {
+            console.log("No hay sesión activa registrada.");
+        }
+    } else {
+        console.log("No hay usuario autenticado.");
+    }
+});
