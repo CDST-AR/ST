@@ -1,4 +1,7 @@
-// Configuración de Firebase
+import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js';
+import { getAuth, signInWithEmailAndPassword, signOut, onAuthStateChanged } from 'https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js';
+import { getFirestore, doc, getDoc, updateDoc, setDoc, serverTimestamp } from 'https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js';
+
 const firebaseConfig = {
     apiKey: "AIzaSyD1QzjOS2hp46d75kPlhHf0xmV8e5nkJSA",
     authDomain: "powergym-abb76.firebaseapp.com",
@@ -10,13 +13,9 @@ const firebaseConfig = {
 };
 
 // Inicializar Firebase
-firebase.initializeApp(firebaseConfig);
-
-// Referencia a Firestore
-const db = firebase.firestore();
-
-// Autenticación
-const auth = firebase.auth();
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+const firestore = getFirestore(app);
 
 // Generar un ID de sesión único para la sesión actual
 let sessionId = Math.random().toString(36).substr(2, 9);
@@ -29,45 +28,56 @@ document.getElementById('login-form').addEventListener('submit', async (e) => {
     const password = document.getElementById('password').value;
 
     try {
-        const userCredential = await auth.signInWithEmailAndPassword(email, password);
-        const user = userCredential.user;
+        let userCredential = await signInWithEmailAndPassword(auth, email, password);
+        let user = userCredential.user;
 
         console.log("Inicio de sesión exitoso:", user.email);
 
         // Referencia al usuario en Firestore
-        const userRef = db.collection('users').doc(user.uid);
-        const userDoc = await userRef.get();
+        const userRef = doc(firestore, 'users', user.uid);
+        const userDoc = await getDoc(userRef);
 
-        if (userDoc.exists) {
+        if (userDoc.exists()) {
             const userData = userDoc.data();
 
             // Verificar si hay una sesión existente y si es diferente de la nueva sesión
             if (userData.currentSession && userData.currentSession !== sessionId) {
                 console.log("Otra sesión activa detectada. Cerrando la sesión previa...");
-                
-                // Actualizar el campo 'connected' a false y vaciar 'currentSession' antes de cerrar la sesión
-                await userRef.update({
+
+                // Cerrar la sesión previa en el dispositivo donde está activa
+                await updateDoc(userRef, {
                     connected: false,
                     currentSession: ''  // Limpiar el campo currentSession
                 });
 
-                // Cerrar sesión en este dispositivo
-                await auth.signOut();
+                // Cerrar sesión en el dispositivo actual
+                await signOut(auth);
 
                 // Mostrar un mensaje de alerta
-                alert("Tu sesión ha sido cerrada en otro dispositivo.");
+                alert("Tu sesión anterior ha sido cerrada. Intentando iniciar la nueva sesión...");
 
-                // Redirigir al usuario a la página de inicio de sesión
-                window.location.href = 'index.html';
+                // Reintentar iniciar sesión automáticamente
+                userCredential = await signInWithEmailAndPassword(auth, email, password);
+                user = userCredential.user;
 
-                return;  // Salir de la función si la sesión no coincide
+                // Actualizar Firestore con el nuevo sessionId, lastLogin y poner connected a true
+                await setDoc(userRef, {
+                    currentSession: sessionId,
+                    lastLogin: serverTimestamp(),
+                    connected: true // Indicar que el usuario está conectado
+                }, { merge: true });
+
+                // Redirigir al usuario a la página principal
+                window.location.href = 'principal.html';
+
+                return;  // Salir de la función para evitar que continúe el código restante
             }
         }
 
         // Actualizar Firestore con el nuevo sessionId, lastLogin y poner connected a true
-        await userRef.set({
+        await setDoc(userRef, {
             currentSession: sessionId,
-            lastLogin: firebase.firestore.FieldValue.serverTimestamp(),
+            lastLogin: serverTimestamp(),
             connected: true // Indicar que el usuario está conectado
         }, { merge: true });
 
@@ -83,28 +93,28 @@ document.getElementById('login-form').addEventListener('submit', async (e) => {
 });
 
 // Escuchar cambios en el estado de autenticación
-auth.onAuthStateChanged(async (user) => {
+onAuthStateChanged(auth, async (user) => {
     if (user) {
         console.log("Usuario autenticado:", user.email);
 
-        const userRef = db.collection('users').doc(user.uid);
-        const userDoc = await userRef.get();
+        const userRef = doc(firestore, 'users', user.uid);
+        const userDoc = await getDoc(userRef);
 
-        if (userDoc.exists) {
+        if (userDoc.exists()) {
             const currentSession = userDoc.data().currentSession;
-            
+
             // Verificar que el sessionId almacenado en Firestore coincide con el de este dispositivo
             if (currentSession && currentSession !== sessionId) {
                 console.log("La sesión actual no es válida. Cerrando sesión...");
 
                 // Actualizar el campo 'connected' a false y vaciar 'currentSession' antes de cerrar la sesión
-                await userRef.update({
+                await updateDoc(userRef, {
                     connected: false,
                     currentSession: ''  // Limpiar el campo currentSession
                 });
 
                 // Cerrar sesión si el sessionId no coincide
-                await auth.signOut();
+                await signOut(auth);
 
                 // Redirigir al usuario a la página de inicio de sesión
                 window.location.href = 'index.html';
@@ -126,10 +136,10 @@ async function signOutUser() {
 
         if (user) {
             // Referencia al documento del usuario en Firestore
-            const userRef = db.collection('users').doc(user.uid);
+            const userRef = doc(firestore, 'users', user.uid);
 
             // Actualizar el estado de conexión a 'false' y limpiar el campo 'currentSession' antes de cerrar sesión
-            await userRef.update({
+            await updateDoc(userRef, {
                 connected: false,
                 currentSession: ''  // Limpiar el campo currentSession
             });
@@ -138,7 +148,7 @@ async function signOutUser() {
             console.log("Actualizando Firestore antes de cerrar sesión...");
 
             // Cerrar la sesión del usuario
-            await auth.signOut();
+            await signOut(auth);
 
             console.log("Sesión cerrada y conexión actualizada a 'false'.");
 
