@@ -18,59 +18,58 @@ const db = firebase.firestore();
 // Autenticación
 const auth = firebase.auth();
 
+// Generar un ID de sesión único para la sesión actual
+let sessionId = Math.random().toString(36).substr(2, 9);
+
 // Manejador de inicio de sesión
 document.getElementById('login-form').addEventListener('submit', async (e) => {
     e.preventDefault();
-    
+
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
-    
+
     try {
         const userCredential = await auth.signInWithEmailAndPassword(email, password);
         const user = userCredential.user;
-        
+
         console.log("Inicio de sesión exitoso:", user.email);
 
-        // Genera un ID de sesión único para la sesión actual
-        const sessionId = Math.random().toString(36).substr(2, 9);
-
-        // Obtén el documento del usuario en Firestore
+        // Referencia al usuario en Firestore
         const userRef = db.collection('users').doc(user.uid);
         const userDoc = await userRef.get();
-        
+
         if (userDoc.exists) {
             const userData = userDoc.data();
-            
+
+            // Verificar si hay una sesión existente y si es diferente de la nueva sesión
             if (userData.currentSession && userData.currentSession !== sessionId) {
-                // Cerrar la sesión de la sesión anterior (esto se puede hacer invalidando los tokens)
-                console.log("Cerrando sesión anterior...");
+                console.log("Otra sesión activa detectada. Cerrando la sesión previa...");
                 
-                // Actualizar Firestore para la nueva sesión
-                await userRef.update({
-                    currentSession: sessionId,
-                    lastLogin: firebase.firestore.FieldValue.serverTimestamp()
-                });
-            } else {
-                // Actualizar con la nueva sesión
-                await userRef.set({
-                    currentSession: sessionId,
-                    lastLogin: firebase.firestore.FieldValue.serverTimestamp()
-                }, { merge: true });
+                // Cerrar sesión en este dispositivo
+                await auth.signOut();
+
+                // Mostrar un mensaje de alerta
+                alert("Tu sesión ha sido cerrada en otro dispositivo.");
+
+                // Redirigir al usuario a la página de inicio de sesión
+                window.location.href = 'index.html';
+
+                return;  // Salir de la función si la sesión no coincide
             }
-        } else {
-            // Si el usuario no tiene datos de sesión guardados, crearlos
-            await userRef.set({
-                currentSession: sessionId,
-                lastLogin: firebase.firestore.FieldValue.serverTimestamp()
-            });
         }
 
-        // Redirige al usuario a la página deseada
+        // Actualizar Firestore con el nuevo sessionId y lastLogin
+        await userRef.set({
+            currentSession: sessionId,
+            lastLogin: firebase.firestore.FieldValue.serverTimestamp()
+        }, { merge: true });
+
+        // Redirigir al usuario a la página principal
         window.location.href = 'principal.html';
 
     } catch (error) {
         console.error("Error al iniciar sesión:", error.message);
-        
+
         const errorMessage = document.getElementById('error-message');
         errorMessage.textContent = "Usuario o clave incorrecta";
     }
@@ -83,11 +82,24 @@ auth.onAuthStateChanged(async (user) => {
 
         const userRef = db.collection('users').doc(user.uid);
         const userDoc = await userRef.get();
-        
-        if (userDoc.exists && userDoc.data().currentSession) {
-            console.log("Sesión actual válida:", userDoc.data().currentSession);
+
+        if (userDoc.exists) {
+            const currentSession = userDoc.data().currentSession;
+            
+            // Verificar que el sessionId almacenado en Firestore coincide con el de este dispositivo
+            if (currentSession && currentSession !== sessionId) {
+                console.log("La sesión actual no es válida. Cerrando sesión...");
+
+                // Cerrar sesión si el sessionId no coincide
+                await auth.signOut();
+
+                // Redirigir al usuario a la página de inicio de sesión
+                window.location.href = 'index.html';
+            } else {
+                console.log("Sesión actual válida:", currentSession);
+            }
         } else {
-            console.log("No hay sesión activa registrada.");
+            console.log("No hay datos de sesión en Firestore.");
         }
     } else {
         console.log("No hay usuario autenticado.");
