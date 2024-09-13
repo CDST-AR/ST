@@ -1,0 +1,646 @@
+#navbar {
+  padding: 0 30px;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 100;
+  background-color: transparent;
+  transition: background-color 0.3s ease, transform 1s ease, opacity 1s ease; /* Aumenta el tiempo de la transición aquí */
+}
+
+#navbar.white-bg {
+  background-color: #f5f5f5;
+}
+
+#navbar.shrink {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+
+
+/* Ajustes para el logo y los elementos del navbar */
+.navbar-brand img {
+  height: auto;
+  max-width: 100%;
+}
+
+.navbar a {
+  color: #22193F;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  margin-right: 25px;
+}
+
+.navbar .btn-web-agentes {
+  background-color: #f4941c;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #ffffff;
+  border-radius: 50px;
+  padding: 4px 35px;
+}
+
+/* Estilo para el offcanvas */
+.offcanvas {
+  background: #f4941c;
+  /* Fondo del offcanvas */
+  color: #ffffff;
+  /* Color del texto en el offcanvas */
+}
+
+/* Estilo para el texto y los enlaces dentro del offcanvas */
+.offcanvas .nav-link,
+.offcanvas .btn {
+  color: #ffffff;
+  /* Color blanco para el texto y botones */
+  text-align: center;
+}
+
+/* Estilo para el botón de cerrar en el offcanvas */
+.offcanvas .btn-close {
+  filter: invert(1);
+  /* Cambia el color del botón de cerrar a blanco */
+}
+
+/* Estilo para el enlace de cerrar sesión */
+.offcanvas #logout-link {
+  color: #ffffff;
+  /* Color blanco para el enlace de cerrar sesión */
+}
+
+/* Estilo para los ítems del menú en el offcanvas */
+.offcanvas-body .nav-item .nav-link {
+  padding: 10px 15px;
+  border-radius: 5px; /* Ajusta el borde para un cuadrado suave */
+  transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.offcanvas-body .nav-item .nav-link:hover {
+  background-color: #343a40; /* Color de fondo oscuro en hover */
+  color: #fff; /* Color del texto en hover */
+}
+
+.offcanvas {
+  transition: transform 0.4s ease-in-out;
+  transform: translateX(100%);
+}
+
+.offcanvas.show {
+  transform: translateX(0);
+}
+
+.offcanvas {
+  transition: transform 0.4s ease-in-out;
+  visibility: visible;
+}
+
+.offcanvas.fade-out {
+  transform: translateX(100%);
+  visibility: hidden;
+}
+
+
+#logout-link {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  margin-left: 10px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  
+}
+
+#logout-link:hover {
+  background-color: #343a40; /* Color de fondo oscuro en hover */
+  color: #fff; /* Color del texto en hover */
+}
+
+.bannerp {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('../Assets/Banner.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 450px;
+  padding: 50px;
+  color: white;
+  text-align: start;
+  background-color: #E8E8E8;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  display: flex;
+  justify-content: start; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+}
+
+
+.bannerp h1 {
+  color: #f5f5f5;
+  font-size: 50px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+}
+
+/* Contenedor del banner */
+.bannerp {
+  position: relative;
+  overflow: hidden; /* Asegura que el contenido fuera del contenedor no sea visible */
+}
+
+/* Estilo inicial del h1 para la animación */
+.bannerp h1 {
+  position: relative;
+  transform: translateX(-100%); /* Mueve el h1 fuera de la vista por la izquierda */
+  opacity: 0; /* Hace que el texto sea invisible al inicio */
+  transition: opacity 0.5s ease-in-out; /* Suaviza la transición de la opacidad */
+}
+
+/* Animación de entrada */
+@keyframes slideIn {
+  from {
+      transform: translateX(-100%); /* Comienza desde fuera de la vista a la izquierda */
+      opacity: 0; /* Comienza invisible */
+  }
+  to {
+      transform: translateX(0); /* Termina en la posición original */
+      opacity: 1; /* Termina visible */
+  }
+}
+
+/* Aplicar la animación al h1 */
+.bannerp h1 {
+  animation: slideIn 1s ease-out forwards; /* Aplica la animación con duración de 1 segundo */
+}
+
+.como-funciona {
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+
+.como-funciona h3 {
+  color: #f4941c;
+  font-size: 12px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 200;
+  margin-bottom: 0px;
+}
+
+.como-funciona h2 {
+  color: #22193F;
+  font-size: 28px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 900;
+}
+
+.cartas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0px;
+  padding-bottom: 70px;
+}
+
+.cartas .card {
+  width: 18rem;
+  border: none;
+  padding: 0px;
+  margin-left: 50px;
+}
+
+.cartas .card-img-top {
+  width: 100px;
+}
+
+.cartas .card-body {
+  text-align: center;
+  padding: 0px;
+}
+
+.cartas .card-text {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: #22193F;
+}
+
+.cartas .titulo-cartas {
+  color: #f4941c;
+  font-family: "Nunito", sans-serif;
+  font-weight: 900;
+}
+
+@media (max-width: 768px) {
+  .cartas {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+.preguntas-frecuentes {
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 30px;
+  background-color: #E8E8E8;
+}
+
+.preguntas-frecuentes h3 {
+  color: #f4941c;
+  font-size: 12px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 200;
+  margin-bottom: 0px;
+}
+
+.preguntas-frecuentes h2 {
+  color: #22193F;
+  font-size: 35px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 900;
+}
+
+.accordion-button {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  color: #22193F;
+}
+
+.container-preguntas-frecuentes {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  background-color: #E8E8E8;
+}
+
+#accordionPanelsStayOpenExample {
+  width: 580px;
+}
+
+.accordion-button::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23E21982'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-collapse {
+  transition: height 0.4s ease, opacity 0.4s ease;
+  overflow: hidden;
+}
+
+.accordion-body {
+  transition: opacity 0.4s ease;
+  opacity: 0;
+}
+
+/* Cuando el acordeón está colapsado (cerrado) */
+.accordion-collapse:not(.show) {
+  height: 0;
+}
+
+/* Cuando el acordeón se despliega (abierto) */
+.accordion-collapse.show {
+  height: auto;
+}
+
+.accordion-collapse.show .accordion-body {
+  opacity: 1;
+}
+
+
+.quienes-somos {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('../Assets/banner-principal.png');
+  background-size: cover;
+  background-position: center;
+  padding: 50px;
+  color: white;
+  text-align: start;
+  background-color: #E8E8E8;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.quienes-somos h3 {
+  color: #f4941c;
+  font-size: 12px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 200;
+  margin-bottom: 0px;
+}
+
+.quienes-somos h2 {
+  color: #f5f5f5;
+  font-size: 28px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 900;
+}
+
+.quienes-somos p {
+  text-align: center;
+  color: #22193F;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+.contenedor-footer {
+  background-color: #22193F;
+}
+
+.footer {
+  background-color: #f4941c;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 20px;
+
+}
+
+.footer a {
+  color: #E8E8E8;
+  font-size: 14px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  padding-right: 20px;
+}
+
+.copy {
+  text-align: center;
+  color: #E8E8E8;
+  font-size: 14px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  padding: 20px;
+}
+
+.copy p {
+  margin-bottom: 0px;
+}
+
+.links {
+  padding: 20px;
+}
+
+
+.col {
+  padding: 0px 0px;
+}
+
+@media (max-width: 768px) {
+  .bannerp {
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    color: white;
+    text-align: start;
+    background-color: #E8E8E8;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
+
+/* Estilos personalizados para el contenedor de usuario en el navbar */
+#username {
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Nunito", sans-serif;
+
+}
+
+#user {
+  color: rgb(22, 105, 164);
+  font-weight: 700;
+  font-family: "Nunito", sans-serif;
+
+}
+
+
+
+/* Ocultar el botón en pantallas pequeñas y mostrarlo dentro del offcanvas */
+@media (max-width: 768px) {
+  .btn-web-agentes {
+    display: none;
+    /* Ocultar fuera del offcanvas */
+  }
+
+  #offcanvasNavbar .offcanvas-body .btn-web-agentes {
+    background-color: #fff;
+    color: #f4941c;
+    display: inline-block;
+    margin-bottom: 1rem;
+    border: none;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    
+  }
+
+  /* Cambiar colores cuando se hace hover en el botón dentro del offcanvas */
+  #offcanvasNavbar .offcanvas-body .btn-web-agentes:hover {
+    background-color: #f4941c;
+    color: #fff;
+  }
+}
+
+/* Mostrar el botón en pantallas más grandes */
+@media (min-width: 768px) {
+  .btn-web-agentes {
+    display: block;
+    /* Mostrar fuera del offcanvas */
+  }
+
+  #offcanvasNavbar .offcanvas-body .btn-web-agentes {
+    display: none;
+    /* Ocultar dentro del offcanvas */
+  }
+}
+
+.logo1{
+  width: 50px;
+}
+
+.navbar-toggler{
+  background-color: #ffffff;
+}
+
+/* Ajustes para pantallas pequeñas (menores o iguales a 425px) */
+@media (max-width: 425px) {
+  /* Ajuste el tamaño del logo */
+  .navbar-brand img {
+      width: 500px;
+  }
+
+  /* Asegúrate de que los elementos se alineen correctamente en pantallas pequeñas */
+  .navbar {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      padding: 0px;
+      margin-top: 15px;
+  }
+
+  /* Asegura que los elementos de la derecha no se desborden */
+  .d-flex.align-items-center {
+      flex-wrap: nowrap;
+      width: 100%;
+  }
+
+  /* Ajusta el botón del offcanvas a la derecha */
+  .navbar-toggler {
+      margin-left: auto;
+  }
+
+  /* Alinea el botón Web Agentes y ajusta su tamaño en pantallas pequeñas */
+  .btn-web-agentes {
+      margin-right: 10px;
+      width: auto;
+  }
+
+  /* Asegura que los íconos en el menú se alineen correctamente */
+  .offcanvas-body .navbar-nav .nav-item .nav-link svg {
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+  }
+    /* Ajusta el H1 dentro del bannerp para pantallas pequeñas */
+    .bannerp h1 {
+      font-size: 24px; /* Reduce el tamaño del texto en pantallas pequeñas */
+      word-wrap: break-word; /* Asegura que el texto se ajuste al ancho disponible */
+      text-align: center; /* Centra el texto */
+      margin: 0 10px; /* Añade un pequeño margen para evitar que toque los bordes */
+  }
+
+  .bannerp {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px; /* Añade un padding para asegurar que el contenido no se desborde */
+      overflow: hidden; /* Asegura que no haya desbordamiento visible */
+  }
+  .preguntas-frecuentes h2 {
+    color: #22193F;
+    font-size: 20px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 900;
+  }
+}
+
+@media (max-width: 430px) {
+      /* Ajusta el H1 dentro del bannerp para pantallas pequeñas */
+      .bannerp h1 {
+        font-size: 24px; /* Reduce el tamaño del texto en pantallas pequeñas */
+        word-wrap: break-word; /* Asegura que el texto se ajuste al ancho disponible */
+        text-align: center; /* Centra el texto */
+        margin: 0 10px; /* Añade un pequeño margen para evitar que toque los bordes */
+    }
+  
+    .bannerp {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px; /* Añade un padding para asegurar que el contenido no se desborde */
+        overflow: hidden; /* Asegura que no haya desbordamiento visible */
+    }
+    .preguntas-frecuentes h2 {
+      color: #22193F;
+      font-size: 20px;
+      font-family: "Nunito", sans-serif;
+      font-weight: 900;
+    }
+
+}
+
+@media (max-width: 576px) {
+  /* Ajusta el H1 dentro del bannerp para pantallas pequeñas */
+  .bannerp h1 {
+    font-size: 24px; /* Reduce el tamaño del texto en pantallas pequeñas */
+    word-wrap: break-word; /* Asegura que el texto se ajuste al ancho disponible */
+    text-align: center; /* Centra el texto */
+    margin: 0 10px; /* Añade un pequeño margen para evitar que toque los bordes */
+  }
+
+  .bannerp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; /* Añade un padding para asegurar que el contenido no se desborde */
+    overflow: hidden; /* Asegura que no haya desbordamiento visible */
+  }
+  .preguntas-frecuentes h2 {
+    color: #22193F;
+    font-size: 20px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 900;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Ajusta el H1 dentro del bannerp para pantallas pequeñas */
+  .bannerp h1 {
+    font-size: 24px; /* Reduce el tamaño del texto en pantallas pequeñas */
+    word-wrap: break-word; /* Asegura que el texto se ajuste al ancho disponible */
+    text-align: center; /* Centra el texto */
+    margin: 0 10px; /* Añade un pequeño margen para evitar que toque los bordes */
+  }
+
+  .bannerp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; /* Añade un padding para asegurar que el contenido no se desborde */
+    overflow: hidden; /* Asegura que no haya desbordamiento visible */
+  }
+  .preguntas-frecuentes h2 {
+    color: #22193F;
+    font-size: 20px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 900;
+  }
+}
+
+@media (max-width: 614px) {
+  /* Ajusta el H1 dentro del bannerp para pantallas pequeñas */
+  .bannerp h1 {
+    font-size: 24px; /* Reduce el tamaño del texto en pantallas pequeñas */
+    word-wrap: break-word; /* Asegura que el texto se ajuste al ancho disponible */
+    text-align: center; /* Centra el texto */
+    margin: 0 10px; /* Añade un pequeño margen para evitar que toque los bordes */
+  }
+
+  .bannerp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; /* Añade un padding para asegurar que el contenido no se desborde */
+    overflow: hidden; /* Asegura que no haya desbordamiento visible */
+  }
+  .preguntas-frecuentes h2 {
+    color: #22193F;
+    font-size: 20px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 900;
+  }
+}
+
+@media (max-width: 768px) {
+  .quienes-somos {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+      linear-gradient(to bottom, #c4cfdc, #7b5f64, #999caa, #53272e);
+    /* Gradiente con superposición negra */
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    color: white;
+    text-align: start;
+    background-color: #E8E8E8;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
+
+
+
+/*# sourceMappingURL=style.css.map */

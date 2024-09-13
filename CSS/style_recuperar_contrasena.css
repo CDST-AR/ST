@@ -1,0 +1,146 @@
+/* Reset CSS */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 1;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: #f4951f; /* Fondo de color sólido */
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(244,148,31,1) 100%); /* Degradado radial desde blanco a color de fondo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Form Container */
+.recovery-wrapper {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo transparente similar a otros contenedores */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Headings */
+h2, h3 {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: rgb(22, 105, 164); /* Color igual al de otros encabezados */
+}
+
+/* Input fields */
+input[type="email"] {
+    width: 100%; /* Asegura que los campos ocupen el ancho completo del contenedor */
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
+    color: #555;
+    box-sizing: border-box;
+}
+
+input[type="email"]:focus {
+    border-color: #5ca9e4;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) inset, 0 0 0 2px rgba(70, 161, 231, 0.3);
+}
+
+/* Submit button */
+button[type="submit"] {
+    width: 100%; /* Asegura que el botón ocupe el ancho completo del contenedor */
+    padding: 10px;
+    font-size: 16px;
+    background-color: #f4951f; /* Color de fondo igual al botón de login */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+button[type="submit"]:hover {
+    background-color: #ff8c00; /* Color de fondo en hover igual al botón de login */
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .recovery-wrapper {
+        max-width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+        padding: 15px; /* Ajuste del padding para pantallas pequeñas */
+    }
+
+    input[type="email"], button[type="submit"] {
+        width: 100%; /* Asegura que los campos y el botón ocupen el ancho completo del contenedor */
+    }
+}
+
+/* Estilos para el mensaje de error */
+.error-message {
+    color: #ff4d4d; /* Color de texto rojo para los errores */
+    font-size: 14px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* Estilos para el enlace de regreso al login */
+a {
+    font-size: 14px;
+    color: rgb(22, 105, 164); /* Color del enlace */
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.logo {
+    display: block;
+    margin: 0 auto 20px; /* Centra el logo horizontalmente y agrega un margen inferior */
+    max-width: 100px; /* Ajusta el tamaño máximo del logo */
+    height: auto; /* Mantiene la proporción del logo */
+}
+
+/* Ocultar el mensaje de recuperación por defecto */
+#recovery-message {
+    display: none;
+}
+
+.recovery-message {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f4f8;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+.recovery-message h3 {
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.recovery-message p {
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+}
