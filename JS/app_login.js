@@ -15,58 +15,36 @@ firebase.initializeApp(firebaseConfig);
 // Autenticación
 const auth = firebase.auth();
 
+// Elementos del DOM
+const loginForm = document.getElementById('login-form');
+const spinner = document.getElementById('loading-spinner');
+const errorMessage = document.getElementById('error-message');
+
 // Manejador de inicio de sesión
-document.getElementById('login-form').addEventListener('submit', (e) => {
+loginForm.addEventListener('submit', async (e) => {
     e.preventDefault();
+
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
 
-    auth.signInWithEmailAndPassword(email, password)
-        .then((userCredential) => {
-            const user = userCredential.user;
-            console.log("Inicio de sesión exitoso:", user.email);
-            // Redirige al usuario a la página deseada
-            window.location.href = 'principal.html'; // Cambia 'dashboard.html' por la página a la que desees redirigir
-        })
-        .catch((error) => {
-            console.error("Error al iniciar sesión:", error.message);
-            // Mostrar mensaje de error en el contenedor
-            const errorMessage = document.getElementById('error-message');
-            errorMessage.textContent = "Usuario o clave incorrecta"; // Mensaje genérico
-        });
-});
+    // Mostrar el spinner
+    spinner.style.display = 'block';
 
-// Cerrar sesión (esto se usa si deseas tener la opción de cerrar sesión en otra página)
-function setupLogout() {
-    const logoutButton = document.createElement('button');
-    logoutButton.textContent = 'Cerrar Sesión';
-    logoutButton.id = 'logout-btn';
-    logoutButton.style.display = 'none';
-    document.body.appendChild(logoutButton);
+    try {
+        await auth.signInWithEmailAndPassword(email, password);
 
-    logoutButton.addEventListener('click', () => {
-        auth.signOut().then(() => {
-            console.log("Cierre de sesión exitoso");
-            document.getElementById('logout-btn').style.display = 'none';
-            // Puedes redirigir al usuario a la página de inicio de sesión si es necesario
-            // window.location.href = 'index.html';
-        }).catch((error) => {
-            console.error("Error al cerrar sesión:", error.message);
-        });
-    });
-}
+        // Agregar un retardo antes de redirigir después del login exitoso
+        setTimeout(() => {
+            // Redirige o realiza alguna acción después del login exitoso
+            window.location.href = "principal.html";
+        }, 2000); // Retardo de 2 segundos antes de la redirección
 
-// Escuchar cambios en el estado de autenticación
-auth.onAuthStateChanged((user) => {
-    if (user) {
-        // El usuario está autenticado
-        console.log("Usuario autenticado:", user.email);
-        setupLogout();
-    } else {
-        // El usuario no está autenticado
-        const logoutButton = document.getElementById('logout-btn');
-        if (logoutButton) {
-            logoutButton.style.display = 'none';
-        }
+    } catch (error) {
+        errorMessage.textContent = "Usuario o clave incorrecta"; // Mensaje genérico para el error
+    } finally {
+        // Ocultar el spinner después de que termine el proceso, independientemente del resultado
+        setTimeout(() => {
+            spinner.style.display = 'none';
+        }, 2000); // Ocultar spinner después de 2 segundos
     }
 });

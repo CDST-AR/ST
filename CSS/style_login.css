@@ -121,3 +121,17 @@ button[type="submit"]:hover {
     text-decoration: underline; /* Subrayar el enlace al pasar el cursor sobre él */
     color: #004a77; /* Color más oscuro al pasar el cursor */
 }
+.spinner {
+    border: 8px solid rgba(0, 0, 0, 0.1);
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
