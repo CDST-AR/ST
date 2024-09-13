@@ -1,7 +1,4 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
-import { getAuth, signInWithEmailAndPassword, onAuthStateChanged, signOut } from 'https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js';
-import { getFirestore, doc, getDoc, updateDoc } from 'https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js';
-
+// Configuración de Firebase
 const firebaseConfig = {
     apiKey: "AIzaSyD1QzjOS2hp46d75kPlhHf0xmV8e5nkJSA",
     authDomain: "powergym-abb76.firebaseapp.com",
@@ -13,88 +10,63 @@ const firebaseConfig = {
 };
 
 // Inicializa Firebase
-const app = initializeApp(firebaseConfig);
-const auth = getAuth(app);
-const firestore = getFirestore(app);
+firebase.initializeApp(firebaseConfig);
 
-// Generar un ID de sesión único y almacenarlo en localStorage
-let sessionId = Math.random().toString(36).substr(2, 9);
-localStorage.setItem('sessionId', sessionId);  // Guardar el sessionId en localStorage
+// Autenticación
+const auth = firebase.auth();
 
 // Manejador de inicio de sesión
-document.getElementById('login-form').addEventListener('submit', async (e) => {
+document.getElementById('login-form').addEventListener('submit', (e) => {
     e.preventDefault();
-
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
 
-    try {
-        // Intenta iniciar sesión con las credenciales proporcionadas
-        const userCredential = await signInWithEmailAndPassword(auth, email, password);
-        const user = userCredential.user;
-        console.log("Inicio de sesión exitoso:", user.email);
-
-        // Referencia al documento del usuario en Firestore
-        const userRef = doc(firestore, 'users', user.uid);
-
-        // Actualiza Firestore con el nuevo sessionId, lastLogin y pone connected a true
-        await updateDoc(userRef, {
-            currentSession: sessionId,
-            lastLogin: new Date(),
-            connected: true
+    auth.signInWithEmailAndPassword(email, password)
+        .then((userCredential) => {
+            const user = userCredential.user;
+            console.log("Inicio de sesión exitoso:", user.email);
+            // Redirige al usuario a la página deseada
+            window.location.href = 'principal.html'; // Cambia 'dashboard.html' por la página a la que desees redirigir
+        })
+        .catch((error) => {
+            console.error("Error al iniciar sesión:", error.message);
+            // Mostrar mensaje de error en el contenedor
+            const errorMessage = document.getElementById('error-message');
+            errorMessage.textContent = "Usuario o clave incorrecta"; // Mensaje genérico
         });
-
-        // Redirige al usuario a la página principal
-        window.location.href = 'principal.html';
-
-    } catch (error) {
-        console.error("Error al iniciar sesión:", error.message);
-        const errorMessage = document.getElementById('error-message');
-        errorMessage.textContent = "Usuario o clave incorrecta";
-    }
 });
 
+// Cerrar sesión (esto se usa si deseas tener la opción de cerrar sesión en otra página)
+function setupLogout() {
+    const logoutButton = document.createElement('button');
+    logoutButton.textContent = 'Cerrar Sesión';
+    logoutButton.id = 'logout-btn';
+    logoutButton.style.display = 'none';
+    document.body.appendChild(logoutButton);
+
+    logoutButton.addEventListener('click', () => {
+        auth.signOut().then(() => {
+            console.log("Cierre de sesión exitoso");
+            document.getElementById('logout-btn').style.display = 'none';
+            // Puedes redirigir al usuario a la página de inicio de sesión si es necesario
+            // window.location.href = 'index.html';
+        }).catch((error) => {
+            console.error("Error al cerrar sesión:", error.message);
+        });
+    });
+}
 
 // Escuchar cambios en el estado de autenticación
-onAuthStateChanged(auth, async (user) => {
+auth.onAuthStateChanged((user) => {
     if (user) {
+        // El usuario está autenticado
         console.log("Usuario autenticado:", user.email);
-
-        const userRef = doc(firestore, 'users', user.uid);
-
-        // Retraso para permitir que Firestore se sincronice
-        await new Promise(resolve => setTimeout(resolve, 500));
-
-        const userDocSnap = await getDoc(userRef);
-
-        if (userDocSnap.exists()) {
-            const userData = userDocSnap.data();
-            const currentSession = userData.currentSession;
-
-            console.log("Session ID generado localmente:", sessionId);
-            console.log("Session ID en Firestore:", currentSession);
-
-            if (currentSession && currentSession !== sessionId) {
-                console.log("La sesión actual no es válida. Cerrando sesión...");
-
-                // Actualiza el estado de conexión a 'false' y limpia el campo 'currentSession'
-                await updateDoc(userRef, {
-                    connected: false,
-                    currentSession: ''
-                });
-
-                // Cierra sesión
-                await signOut(auth);
-
-                // Redirige al usuario a la página de inicio de sesión
-                window.location.href = 'index.html';
-            } else {
-                console.log("Sesión actual válida:", currentSession);
-            }
-        } else {
-            console.log("No hay datos de sesión en Firestore.");
-        }
+        setupLogout();
     } else {
-        console.log("No hay usuario autenticado.");
+        // El usuario no está autenticado
+        const logoutButton = document.getElementById('logout-btn');
+        if (logoutButton) {
+            logoutButton.style.display = 'none';
+        }
     }
 });
