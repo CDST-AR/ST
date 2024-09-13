@@ -17,8 +17,8 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const firestore = getFirestore(app);
 
-// Generar un ID de sesión único para la sesión actual
-let sessionId = Math.random().toString(36).substr(2, 9);
+// Recuperar el sessionId del localStorage
+let sessionId = localStorage.getItem('sessionId');
 
 // Maneja el estado de autenticación del usuario
 onAuthStateChanged(auth, async (user) => {
