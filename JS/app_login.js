@@ -35,16 +35,15 @@ loginForm.addEventListener('submit', async (e) => {
 
         // Agregar un retardo antes de redirigir después del login exitoso
         setTimeout(() => {
-            // Redirige o realiza alguna acción después del login exitoso
             window.location.href = "principal.html";
-        }, 2000); // Retardo de 2 segundos antes de la redirección
+        }, 3000); // Retardo de 10 segundos
 
     } catch (error) {
         errorMessage.textContent = "Usuario o clave incorrecta"; // Mensaje genérico para el error
     } finally {
-        // Ocultar el spinner después de que termine el proceso, independientemente del resultado
+        // Ocultar el spinner después de que termine el proceso
         setTimeout(() => {
             spinner.style.display = 'none';
-        }, 2000); // Ocultar spinner después de 2 segundos
+        }, 3000); // Ocultar spinner después de 10 segundos
     }
 });
