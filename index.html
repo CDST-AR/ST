@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -40,4 +41,48 @@
     <script type="module" src="JS/app_login.js"></script>
 </body>
 
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDST</title>
+    <link rel="stylesheet" href="CSS/style_login.css">
+    <link rel="icon" href="Assets/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="login-wrapper">
+        <!-- Logo -->
+        <img src="Assets/logo.png" alt="Logo de la Empresa" class="logo">
+
+        <h2>Iniciar Sesión</h2>
+        <form id="login-form">
+            <input type="email" id="email" placeholder="Correo Electrónico" required>
+            <input type="password" id="password" placeholder="Contraseña" required>
+            <button type="submit">Ingresar</button>
+        </form>
+        <!-- Spinner (Círculo de carga) -->
+        <div id="loading-spinner" class="spinner" style="display: none;"></div>
+
+        <!-- Enlace para recuperación de contraseña -->
+        <p><a href="recuperar_contrasena.html" id="forgot-password">¿Olvidaste tu contraseña?</a></p>
+        <!-- Contenedor para mensajes de error -->
+        <p id="error-message" class="error-message"></p>
+    </div>
+
+    <!-- Firebase App (SDK Principal) - Versión Compat -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <!-- Firebase Authentication - Versión Compat -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+
+
+
+    <!-- Script principal -->
+    <script type="module" src="JS/app_login.js"></script>
+</body>
+
+>>>>>>> 8cc800f98792c52f5414208a22303f50f1c5bf0f
 </html>
