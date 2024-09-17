@@ -73,4 +73,3 @@ window.addEventListener('scroll', () => {
     navbar.classList.toggle('white-bg', pfPosition <= 50);
     navbar.classList.toggle('shrink', cmPosition <= 50);
 });
-s
