@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="es">
 
@@ -68,75 +67,4 @@
 
 </body>
 
-=======
-<!DOCTYPE html>
-<html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de Pedido de Repuestos</title>
-    <link rel="stylesheet" href="CSS/style_form_repuestos.css">
-    <link rel="icon" href="Assets/favicon.ico" type="image/x-icon">
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-
-    <script type="module" src="JS/app_form_repuestos.js"></script>
-</head>
-
-<body>
-    <div class="container">
-        <img src="Assets/logo.png" alt="Logo" class="logo">
-        <h1>Formulario de Pedido de Repuestos</h1>
-        <form id="form">
-            <div class="field">
-                <label for="incidente_num">Nº de Incidente:</label>
-                <input type="text" name="incidente_num" id="incidente_num" required>
-            </div>
-            <div class="field">
-                <label for="fecha">Fecha:</label>
-                <input type="date" name="fecha" id="fecha" required>
-            </div>
-            <div class="field">
-                <label for="printer_model">Modelo de Impresora:</label>
-                <input type="text" name="printer_model" id="printer_model" required>
-            </div>
-            <div id="repuestos-container">
-                <!-- El botón para agregar repuestos -->
-                <div class="field">
-                    <button type="button" id="add-repuesto-btn">Haz clic aquí para agregar un repuesto</button>
-                </div>
-            </div>
-            <div class="field">
-                <label for="base_operativa">Base Operativa:</label>
-                <input type="text" name="base_operativa" id="base_operativa" required>
-            </div>
-
-            <!-- Campo para cargar la foto -->
-            <div class="field">
-                <label for="photo">Adjuntar Foto del Repuesto:</label>
-                <input type="file" id="photo" accept="image/*">
-            </div>
-
-            <!-- Campo de Observaciones -->
-            <div class="field">
-                <label for="observaciones">Observaciones:</label>
-                <textarea name="observaciones" id="observaciones" rows="4"></textarea>
-            </div>
-            <input type="submit" id="button" value="Enviar Pedido">
-        </form>
-        <div id="user-info">
-            <p>Usuario: <span id="username"></span></p>
-        </div>
-    </div>
-    <!-- Contenedor para la notificación -->
-    <div id="notification" class="notification hidden">
-        <p id="notification-message"></p>
-    </div>
-
-
-</body>
-
->>>>>>> 8cc800f98792c52f5414208a22303f50f1c5bf0f
 </html>
