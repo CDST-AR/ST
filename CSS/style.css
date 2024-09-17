@@ -640,6 +640,28 @@
     padding-bottom: 70px;
   }
 }
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px; /* Ajusta el margen inferior según sea necesario */
+  right: 20px; /* Ajusta el margen derecho según sea necesario */
+  background-color: #25D366; /* Color de fondo verde de WhatsApp */
+  border-radius: 50%; /* Hace el círculo perfecto */
+  padding: 15px; /* Ajusta el tamaño del círculo */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra opcional para un efecto de profundidad */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Asegura que el ícono esté sobre otros elementos */
+  text-decoration: none; /* Elimina el subrayado del enlace */
+}
+.whatsapp-icon:hover {
+  background-color: #128C7E; /* Color más oscuro al pasar el ratón */
+}
+
+.whatsapp-icon i {
+  color: white; /* Color del ícono */
+  font-size: 34px; /* Ajusta el tamaño del ícono según sea necesario */
+}
 
 
 

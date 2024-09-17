@@ -25,26 +25,12 @@ onAuthStateChanged(auth, async (user) => {
 
     if (user) {
         console.log("Usuario autenticado:", user);
-
-        const username = user.email.split('@')[0];
-        usernameElement.textContent = username;
+        usernameElement.textContent = user.email.split('@')[0];
 
         try {
             // Verifica si el usuario es administrador en Firestore
-            const userDocRef = doc(firestore, "users", user.uid);
-            const userDocSnap = await getDoc(userDocRef);
-
-            if (userDocSnap.exists()) {
-                const userData = userDocSnap.data();
-                if (userData.role === "admin") {
-                    adminRegisterElement.style.display = 'block';
-                } else {
-                    adminRegisterElement.style.display = 'none';
-                }
-            } else {
-                console.log("No se encontró el documento del usuario en Firestore.");
-                adminRegisterElement.style.display = 'none';
-            }
+            const userDocSnap = await getDoc(doc(firestore, "users", user.uid));
+            adminRegisterElement.style.display = userDocSnap.exists() && userDocSnap.data().role === "admin" ? 'block' : 'none';
         } catch (error) {
             console.error("Error al obtener los datos del usuario:", error);
             adminRegisterElement.style.display = 'none';
@@ -56,50 +42,30 @@ onAuthStateChanged(auth, async (user) => {
                 event.preventDefault();
 
                 try {
-                    // Referencia al documento del usuario en Firestore
-                    const userRef = doc(firestore, 'users', user.uid);
-
-                    // Actualizar el estado de conexión a 'false'
-                    await updateDoc(userRef, {
-                        connected: false
-                    });
-
-                    console.log("Estado de conexión actualizado a 'false'.");
-
-                    // Cerrar sesión
+                    // Cierra sesión
                     await signOut(auth);
                     console.log("Cierre de sesión exitoso");
 
-                    // Redirigir al usuario a la página de inicio de sesión
+                    // Redirige al usuario a la página de inicio de sesión
                     window.location.href = 'index.html';
-
                 } catch (error) {
                     console.error("Error al cerrar sesión:", error.message);
                 }
             });
         }
+
     }
 });
-window.addEventListener('scroll', function() {
+
+// Maneja el cambio de fondo del navbar y su visibilidad en función del scroll
+window.addEventListener('scroll', () => {
     const navbar = document.getElementById('navbar');
     const pfSection = document.querySelector('.pf');
     const cmSection = document.querySelector('.cm');
-  
+
     const pfPosition = pfSection.getBoundingClientRect().top;
     const cmPosition = cmSection.getBoundingClientRect().top;
-  
-    // Cambia el color de fondo a blanco cuando estés en la sección .qs
-    if (pfPosition <= 50) { 
-      navbar.classList.add('white-bg');
-    } else {
-      navbar.classList.remove('white-bg');
-    }
-  
-  // Desaparece el navbar cuando estés en la sección .pf de forma suave
-  if (cmPosition <= 50) {
-    navbar.classList.add('shrink');
-  } else {
-    navbar.classList.remove('shrink');
-  }
-  });
-  
+
+    navbar.classList.toggle('white-bg', pfPosition <= 50);
+    navbar.classList.toggle('shrink', cmPosition <= 50);
+});
