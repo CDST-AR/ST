@@ -1,6 +1,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
 import { getAuth, onAuthStateChanged, signOut } from 'https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js';
-import { getFirestore, doc, getDoc, updateDoc } from 'https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js';
+import { getFirestore, doc, getDoc } from 'https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js';
 
 const firebaseConfig = {
     apiKey: "AIzaSyD1QzjOS2hp46d75kPlhHf0xmV8e5nkJSA",
@@ -54,6 +54,10 @@ onAuthStateChanged(auth, async (user) => {
             });
         }
 
+    } else {
+        // Si no hay un usuario autenticado, redirige al index.html
+        console.log("No hay usuario autenticado, redirigiendo al inicio de sesión...");
+        window.location.href = 'index.html';
     }
 });
 
