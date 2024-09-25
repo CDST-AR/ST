@@ -56,7 +56,7 @@
 
 /* Estilo para el texto y los enlaces dentro del offcanvas */
 .offcanvas .nav-link,
-.offcanvas .btn {
+.offcanvas .btn  {
   color: #ffffff;
   /* Color blanco para el texto y botones */
   text-align: center;
