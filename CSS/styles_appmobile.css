@@ -132,3 +132,24 @@ button:focus {
     outline: none;
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
+@media (max-width: 768px) {
+    .smartphone-frame {
+        display: none; /* Oculta el marco en móviles */
+    }
+    .image-container {
+        width: 100%; /* Ajusta la imagen al 100% del contenedor */
+        height: auto; /* Permite que la altura se ajuste automáticamente */
+        border-radius: 0; /* Elimina el redondeado en móviles */
+    }
+    .tutorial-container {
+        grid-template-columns: 1fr; /* Cambia a una sola columna en móviles */
+    }
+    .info-box {
+        font-size: 14px; /* Reduce el tamaño del texto en móviles */
+        padding: 10px;
+    }
+    button {
+        padding: 10px 20px;
+        font-size: 14px; /* Reduce el tamaño del botón en móviles */
+    }
+}
