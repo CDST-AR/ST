@@ -1,260 +1,32 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Manual de Usuario - App Mobile</title>
-    <link rel="stylesheet" href="CSS/style_appMobile.css">
+    <title>Tutorial de App - Video Simulado</title>
+    <link rel="stylesheet" href="CSS/styles_appmobile.css">
 </head>
-
 <body>
-    <header>
-        <div class="container">
-            <img src="Assets/logo2.png" alt="" class="logo">
-            <h1>Manual de Usuario Canal Directo Mobile</h1>
+    <div class="tutorial-container">
+        <div class="column smartphone-column">
+            <div class="smartphone-frame">
+                <img src="Assets/smartphone-6729378_1920.png" alt="Smartphone Frame" class="frame-image">
+                <div class="image-container">
+                    <img src="Assets/" alt="Pantalla 1" class="tutorial-image" id="current-image">
+                </div>
+            </div>
         </div>
-    </header>
-
-    <div class="container">
-        <nav class="sidebar">
-            <h2>Índice</h2>
-            <ul>
-                <li><a href="#requerimientos">Requerimientos</a></li>
-                <li><a href="#acceso">Acceso a la Aplicación</a></li>
-                <li><a href="#bandeja">Bandeja de Servicios Técnicos</a></li>
-                <li><a href="#filtros">Seleccionar Filtros</a></li>
-                <li><a href="#orden">Seleccionar Orden</a></li>
-                <li><a href="#menu-contextual">Menú contextual</a></li>
-                <li><a href="#detalle-incidente">Detalle de un incidente</a></li>
-            </ul>
-        </nav>
-
-        <main>
-            <section id="requerimientos">
-                <h2>Requerimientos</h2>
-                <br>
-                <p>Descripción de los requerimientos.</p>
-                <br>
-                <ul>
-                    <li><strong> Operativo Android 4.3 o superior </strong></li>
-                    <li><strong> Pantalla táctil de 4” o superior</strong></li>
-                </ul>
-            </section>
-            <section id="acceso">
-                <h2>Acceso a la Aplicación de Canal Directo</h2>
-
-                <div class="acceso-contenedor">
-                    <div class="texto-contenedor">
-                        <h3>Paso 1: Inicio de sesión</h3>
-                        <p>Ingrese su usuario y contraseña proporcionados por <strong>Canal Directo</strong>.</p>
-                        <p><strong>Nota:</strong> Después de iniciar sesión, la aplicación comenzará a sincronizarse con
-                            los servidores. Recomendamos estar conectado a una red Wi-Fi o de alta velocidad. Este
-                            proceso puede tardar entre 5 y 15 minutos, dependiendo de la calidad de la conexión y el
-                            tamaño de los datos a sincronizar.</p>
-                    </div>
-                    <div class="imagen-contenedor">
-                        <img src="Assets/appmobile_login.png" alt="Pantalla de inicio de sesión" class="acceso-img">
-                    </div>
-                </div>
-
-                <div class="acceso-contenedor">
-                    <div class="texto-contenedor">
-                        <h3>Paso 2: Sincronización inicial</h3>
-                        <p>En el primer acceso, se cargarán todos los incidentes asignados al agente. El tiempo de
-                            sincronización dependerá de la cantidad de casos vinculados al usuario.</p>
-                    </div>
-                    <div class="imagen-contenedor">
-                        <img src="Assets/appmobile_pantallaprincipal.png" alt="Pantalla de sincronización inicial"
-                            class="acceso-img">
-                    </div>
-                </div>
-            </section>
-
-
-
-            <section id="bandeja">
-                <h2>Bandeja de Servicios Técnicos</h2>
-                <div class="flex-row">
-                    <div class="texto-contenedor">
-                        <p>En esta sección, podrás ver los servicios técnicos asignados. La bandeja incluye opciones
-                            para sincronización, filtrado y ordenamiento de la información según tus preferencias.</p>
-
-                        <h3>Información Visualizada</h3>
-                        <ul>
-                            <li><strong>Nro. de Incidente:</strong> Número de servicio técnico generado por CD.</li>
-                            <li><img src="Assets/appmobile_sincro.png" alt="Icono de sincronización" class="icono">
-                                <strong>Icono de Sincronización del Servicio:</strong>Indica si todos los datos del
-                                incidente están sincronizados con los servidores de CD.
-                            </li>
-                            <li><strong>Cliente-Sucursal:</strong> Nombre del cliente y sucursal donde se encuentra el
-                                equipo.</li>
-                            <li><strong>Marca y Modelo del Equipo</strong></li>
-                            <li><strong>Nro. de Serie del Equipo</strong></li>
-                            <li><strong>Tipo de Servicio y Estado del Servicio:</strong> Tipo (correctivo, preventivo,
-                                guardia, etc.) y estado (derivado, en curso, finalizado, etc.).</li>
-                            <li><strong>Fecha de Ingreso:</strong> Fecha en la que se registró el servicio.</li>
-                            <li><strong>Icono de Prioridad del Servicio:</strong>Indica el SLA del servicio. </li>
-                        </ul>
-
-                        <h3>Opciones de Control</h3>
-                        <ul>
-                            <li>
-                                <img src="Assets/appmobile_btn_sincro.png" alt="Botón de sincronización" class="boton">
-                                <strong>Botón de Sincronización:</strong> Permite actualizar la información visualizada
-                                en pantalla.
-                            </li>
-                            <li>
-                                <img src="Assets/appmobile_btn_filtro.png" alt="Botón de filtros" class="boton">
-                                <strong>Botón de Filtros:</strong> Permite filtrar la visualización de acuerdo al tipo
-                                de incidente.
-                            </li>
-                            <li>
-                                <img src="Assets/appmobile_btn_orden.png" alt="Botón de orden" class="boton">
-                                <strong>Botón de Orden:</strong> Permite ordenar los incidentes de acuerdo a vuestra
-                                preferencia.
-                            </li>
-                        </ul>
-                    </div>
-                    <img src="Assets/appmobile_pantallaprincipal-1.png" alt="Imagen de referencia" class="bandeja-img">
-                </div>
-            </section>
-
-
-
-
-
-            <section id="filtros">
-                <div class="contenedor-titulo">
-                    <h2>Seleccionar Filtros en la Bandeja de Incidentes</h2>
-                </div>
-                <div class="flex-row">
-                    <div class="texto-contenedor">
-                        <p>La selección de filtros se divide en dos partes:</p>
-                        <h3>I. Por Estado</h3>
-                        <p>Podrás filtrar los incidentes según su estado. Las opciones disponibles son:</p>
-                        <ul>
-                            <li><strong>Asignados:</strong> Incidentes derivados o en curso, pendientes de
-                                actualización.</li>
-                            <li><strong>En Proceso:</strong> Incidentes en todos sus estados (derivados, en curso, en
-                                espera de repuestos, backup, demorados o finalizados).</li>
-                            <li><strong>Todos:</strong> Todos los incidentes en general, incluidos los cerrados.</li>
-                        </ul>
-
-                        <h3>II. Por Tipo</h3>
-                        <p>Podrás filtrar los incidentes según su tipo. Las opciones disponibles son:</p>
-                        <ul>
-                            <li><strong>Preventivos:</strong> Incidentes de tipo preventivo.</li>
-                            <li><strong>Todos Excepto Preventivos:</strong> Todos los incidentes excepto los
-                                preventivos.</li>
-                            <li><strong>Todos:</strong> Todos los incidentes en general.</li>
-                        </ul>
-
-                        <p>Este filtro te ayudará a realizar una vista más simple de los incidentes pendientes de
-                            acuerdo a su vencimiento.</p>
-                    </div>
-                    <img src="Assets/appmobile_filtros.png" alt="Imagen de filtros" class="filtros-img">
-                </div>
-            </section>
-
-            <section id="orden">
-                <div class="contenedor-titulo">
-                    <h2>Seleccionar Orden de la Bandeja de Incidentes</h2>
-                </div>
-                <div class="flex-row">
-                    <div class="texto-contenedor">
-                        <p>El orden de la bandeja de incidentes queda a preferencia del agente. Puedes ordenar los
-                            incidentes por:</p>
-                        <ul>
-                            <li><strong>Número de Incidente:</strong> Ordena los incidentes según su número único.</li>
-                            <li><strong>Estado:</strong> Ordena los incidentes según su estado (derivado, en curso,
-                                finalizado, etc.).</li>
-                            <li><strong>Tipo:</strong> Ordena los incidentes según su tipo (preventivo, correctivo,
-                                etc.).</li>
-                        </ul>
-                    </div>
-                    <img src="Assets/appmobile_orden.png" alt="Imagen de orden" class="orden-img">
-                </div>
-            </section>
-            <section id="menu-contextual">
-                <div class="contenedor-titulo">
-                    <h2>Menú Contextual de la Aplicación Mobile</h2>
-                </div>
-                <div class="flex-row">
-                    <div class="texto-contenedor">
-                        <p>El menú contextual de la aplicación Mobile ofrece las siguientes opciones:</p>
-                        <ul>
-                            <li><strong>Incidentes:</strong> Muestra la bandeja de incidentes anteriormente explicada.
-                            </li>
-                            <li><strong>Cartuchos:</strong> Permite ingresar reclamos por cartuchos defectuosos.</li>
-                            <li><strong>Casilla de Mensajes:</strong> Permite visualizar notificaciones puntuales por
-                                fallas o problemas en la aplicación.</li>
-                            <li><strong>Preferencias:</strong> Permite cambiar el tipo de notificación de la app (sonido
-                                o vibrar).</li>
-                            <li><strong>Acerca de:</strong> Informa la versión de la app.</li>
-                            <li><strong>Cerrar Sesión:</strong> Cierra sesión de la app. Importante: Al cerrar sesión se
-                                desconecta totalmente la app. Tenga en cuenta que cuando ingrese nuevamente, la
-                                sincronización demorará de acuerdo a los incidentes que tenga asignado.</li>
-                        </ul>
-                    </div>
-                    <img src="Assets/appmobile_menu_contextual.png" alt="Imagen del menú contextual" class="menu-img">
-                </div>
-            </section>
-            <section id="detalle-incidente">
-                <div class="detalle-contenedor">
-                    <div class="texto-contenedor">
-                        <h2>Detalle de un incidente de Servicio Técnico</h2>
-                        <p>La visualización del servicio técnico en esta pantalla brinda un resumen del incidente. Por
-                            orden de aparición se visualizará:</p>
-                        <ul>
-                            <li>Número de incidente</li>
-                            <li>Empresa</li>
-                            <li>Sucursal</li>
-                            <li>Serie del equipo</li>
-                            <li>Modelo del equipo</li>
-                            <li>Tipo de incidente</li>
-                            <li>Estado en el que se encuentra</li>
-                            <li>Fecha y hora de ingreso del pedido</li>
-                            <li>Datos del solicitante</li>
-                            <li>Datos del usuario</li>
-                            <li>Tiempo al vencimiento</li>
-                        </ul>
-                        <p>Debajo encontrará tres menús desplegables con información adicional:</p>
-                        <ul>
-                            <li><strong>Instancias:</strong> Muestra la lista de instancias del incidente.</li>
-                            <li><strong>Bitácora:</strong> Chat interno con CD.</li>
-                            <li><strong>Repuestos:</strong> Asignación de repuestos utilizados (no disponible por el
-                                momento).</li>
-                        </ul>
-                        <p>En la parte superior encontrará dos iconos:</p>
-                        <ul>
-                            <li><strong>Asignar nuevas instancias:</strong> Permite asignar nuevas instancias al
-                                incidente.</li>
-                            <li><strong>Asignar repuestos:</strong> Permite asignar repuestos (no disponible por el
-                                momento).</li>
-                            <li><strong>Imprimir informe técnico:</strong> Permite la impresión del informe técnico (no
-                                disponible por el momento).</li>
-                        </ul>
-                        <p>Nota: Todos estos menús serán explicados en detalle más adelante.</p>
-                    </div>
-                    <div class="imagen-contenedor">
-                        <img src="Assets/appmobile_detalle_incidente.png" alt="Descripción de la imagen" class="detalle-img">
-                    </div>
-                </div>
-            </section>
-
-
-
-        </main>
+        <div class="column info-column">
+            <div class="info-box" id="info-box">
+                <!-- El contenido se actualizará con JavaScript -->
+            </div>
+            <div class="controls">
+                <button id="prev">Anterior</button>
+                <button id="next">Siguiente</button>
+            </div>
+        </div>
     </div>
 
-    <footer>
-        <p>&copy; 2024 App Mobile. Todos los derechos reservados.</p>
-    </footer>
-
-    <!-- Coloca el script justo antes de cerrar el body -->
-    <script src="JS/app_appMobile.js"></script>
+    <script src="JS/app_appmobile.js"></script>
 </body>
-
 </html>

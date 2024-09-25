@@ -1,0 +1,68 @@
+/* Reboot.css */
+
+/* Reset default margin and padding */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    line-height: 1.5;
+}
+
+/* Set a consistent font-family */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #eaeaea;
+}
+
+/* Basic styling for headings and paragraphs */
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: normal;
+}
+
+p {
+    margin: 0;
+}
+
+/* Styling for lists */
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Remove default table spacing */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Remove default form spacing and borders */
+input, textarea, select, button {
+    font: inherit;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Ensure buttons are consistent */
+button {
+    cursor: pointer;
+}
+
+/* Links styling */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Ensure no default focus outline */
+:focus {
+    outline: none;
+}
