@@ -145,27 +145,6 @@ button:focus {
     outline: none;
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
-@media (max-width: 768px) {
-    .smartphone-frame {
-        display: none; /* Oculta el marco en móviles */
-    }
-    .image-container {
-        width: 100%; /* Ajusta la imagen al 100% del contenedor */
-        height: auto; /* Permite que la altura se ajuste automáticamente */
-        border-radius: 0; /* Elimina el redondeado en móviles */
-    }
-    .tutorial-container {
-        grid-template-columns: 1fr; /* Cambia a una sola columna en móviles */
-    }
-    .info-box {
-        font-size: 14px; /* Reduce el tamaño del texto en móviles */
-        padding: 10px;
-    }
-    button {
-        padding: 10px 20px;
-        font-size: 14px; /* Reduce el tamaño del botón en móviles */
-    }
-}
 
 #page-counter {
     margin-top: 10px; /* Espacio entre los botones y el contador */
@@ -190,4 +169,100 @@ button:focus {
     font-weight: bold;
     text-align: center; /* Asegura que el texto esté centrado */
 }
+
+@media (max-width: 1024px) {
+    .tutorial-container {
+        grid-template-columns: 1fr; /* Cambia a una sola columna para tablets */
+        padding: 15px; /* Menos padding en tablets */
+    }
+
+    .info-column {
+        display: flex;
+        flex-direction: column; /* Organiza el contenido en columna */
+        align-items: center; /* Centra horizontalmente el contenido */
+    }
+
+    .info-box {
+        width: 90%; /* Ajusta el ancho de info-box en tablets */
+        height: auto; /* Permite que la altura sea automática */
+        max-height: 500px; /* Limita la altura máxima */
+        margin-bottom: 20px; /* Espacio entre el info-box y el smartphone */
+    }
+
+    .smartphone-column {
+        justify-content: center; /* Centra horizontalmente el contenido */
+        align-items: center; /* Alinea al centro verticalmente */
+        width: 100%; /* Asegura que ocupe todo el ancho disponible */
+    }
+
+    .controls {
+        flex-direction: column; /* Muestra los botones en columna */
+        gap: 15px; /* Aumenta el espacio entre botones */
+        margin-top: 15px; /* Añade espacio entre el info-box y los controles */
+    }
+
+    /* Nueva regla para invertir el orden del info-box y el smartphone */
+    .info-column, .smartphone-column {
+        order: 2; /* Asigna el mismo orden a ambos */
+    }
+    
+    .smartphone-column {
+        order: 1; /* Asegura que el smartphone se muestre primero */
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .smartphone-frame {
+        display: none; /* Oculta el marco en móviles */
+    }
+    
+    .image-container {
+        width: 100%; /* Ajusta la imagen al 100% del contenedor */
+        height: auto; /* Permite que la altura se ajuste automáticamente */
+        border-radius: 0; /* Elimina el redondeado en móviles */
+    }
+
+    .info-box {
+        width: 100%; /* Ancho completo en móviles */
+        height: auto; /* Altura automática */
+        padding: 10px; /* Menos padding en móviles */
+        font-size: 14px; /* Reduce el tamaño del texto en móviles */
+    }
+
+    button {
+        width: 100%; /* Botones a ancho completo */
+        padding: 10px; /* Ajusta el padding */
+        font-size: 14px; /* Reduce el tamaño del botón en móviles */
+    }
+
+    #page-counter {
+        font-size: 14px; /* Aumenta el tamaño del texto del contador */
+    }
+
+    .header-info-box h1 {
+        font-size: 20px; /* Ajusta el tamaño del título */
+    }
+}
+
+@media (max-width: 480px) {
+    .header-info-box h1 {
+        font-size: 18px; /* Ajusta el tamaño del título en móviles pequeños */
+    }
+
+    .info-box {
+        padding: 5px; /* Menos padding para pantallas pequeñas */
+    }
+
+    button {
+        padding: 8px; /* Reduce el padding en botones */
+        font-size: 12px; /* Reduce el tamaño de los botones */
+    }
+
+    #page-counter {
+        font-size: 12px; /* Ajusta el tamaño del texto del contador */
+    }
+}
+
 
