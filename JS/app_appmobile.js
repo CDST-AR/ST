@@ -236,11 +236,11 @@ const infoData = [
     },
     {
         title: "Conforme del Cliente para Finalizar el Incidente",
-        step1: "• Al finalizar el incidente, la App Mobile solicitará la conformidad del cliente.",
+        step1: "• Al finalizar el incidente, la App Mobile solicitará la conformidad del cliente (persona que estuvo durante la reparacion).",
         step2: "• Se abrirá una ventana con los siguientes <strong>campos obligatorios</strong> para completar:",
-        step3: "  - <strong>Nombre</strong>: Nombre del cliente que otorga la conformidad.",
-        step4: "  - <strong>Apellido</strong>: Apellido del cliente.",
-        step5: "  - <strong>Legajo</strong>: Número de legajo o identificación del cliente.",
+        step3: "  - <strong>Nombre</strong>:.",
+        step4: "  - <strong>Apellido</strong>:",
+        step5: "  - <strong>Legajo</strong>:  (si no posee legajo puede poner su DNI).",
         step6: "• Para aplicar los cambios, presione la flecha<img src='Assets/appmobile_btn_flecha.png' alt='Descarga' style='width: 15px;'> en la <strong>esquina superior derecha</strong> nuevamente."
     },
     {
