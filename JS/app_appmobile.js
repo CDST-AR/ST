@@ -293,11 +293,18 @@ const infoData = [
     // Agrega más objetos aquí si es necesario
 ];
 
-let currentIndex = 0;
+let currentIndex = 0; // Índice actual de la imagen
+const totalImages = images.length; // Número total de imágenes
 const imageElement = document.getElementById("current-image");
 const infoBox = document.getElementById("info-box");
 const prevButton = document.getElementById("prev");
 const nextButton = document.getElementById("next");
+const pageCounter = document.getElementById("page-counter"); // Elemento para mostrar la página actual
+
+// Función para actualizar el contador de páginas
+function updatePageCounter() {
+    pageCounter.textContent = `Página ${currentIndex + 1} de ${totalImages}`;
+}
 
 function updateInfoBox(data) {
     const sections = [];
@@ -334,20 +341,22 @@ function showImage(index) {
         imageElement.src = images[index];
         imageElement.style.opacity = 1; // Fade in transition
         updateInfoBox(infoData[index]); // Actualiza el info-box con la información
+        updatePageCounter(); // Actualiza el contador de páginas
     }, 500); // Tiempo que dura el fade out
 }
 
-// Inicializa el contenido del info-box
+// Inicializa el contenido del info-box y el contador de páginas
 updateInfoBox(infoData[currentIndex]);
+updatePageCounter();
 
 // Eventos de los botones
 nextButton.addEventListener("click", () => {
-    currentIndex = (currentIndex + 1) % images.length;
+    currentIndex = (currentIndex + 1) % totalImages;
     showImage(currentIndex);
 });
 
 prevButton.addEventListener("click", () => {
-    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    currentIndex = (currentIndex - 1 + totalImages) % totalImages;
     showImage(currentIndex);
 });
 

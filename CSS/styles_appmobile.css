@@ -86,6 +86,10 @@ body{
 
 
 .info-box {
+    display: flex; /* Activar flexbox */
+    flex-direction: column; /* Organiza los hijos en una columna */
+    justify-content: center; /* Centra el contenido verticalmente */
+    align-items: center; /* Centra el contenido horizontalmente */
     background-color: #f9f9f9;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -93,7 +97,16 @@ body{
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     font-family: Arial, sans-serif;
     color: #333;
+    width: 700px; /* Ancho fijo */
+    height: 650px; /* Alto fijo */
+    overflow-y: auto; /* Añade un scroll si el contenido excede el alto */
+    box-sizing: border-box; /* Asegura que padding y border se incluyan dentro del width/height */
+    
 }
+
+
+
+
 
 .info-box h2 {
     margin-top: 0;
@@ -153,3 +166,28 @@ button:focus {
         font-size: 14px; /* Reduce el tamaño del botón en móviles */
     }
 }
+
+#page-counter {
+    margin-top: 10px; /* Espacio entre los botones y el contador */
+    font-size: 12px; /* Tamaño del texto */
+    text-align: center; /* Centrar el texto debajo de los botones */
+    color: #333; /* Color del texto */
+    font-weight: bold; /* Hacer el texto un poco más destacado */
+}
+
+.header-info-box {
+    display: flex;
+    align-items: center; /* Alinea verticalmente el logo y el título */
+    margin-bottom: 15px; /* Espacio entre el título y el info-box */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    flex-direction: column; /* Coloca el logo y el título en una columna */
+}
+
+.header-info-box h1 {
+    font-size: 24px;
+    color: rgb(22, 105, 164); /* Ajusta el color del título */
+    margin: 0; /* Elimina márgenes del h1 */
+    font-weight: bold;
+    text-align: center; /* Asegura que el texto esté centrado */
+}
+
