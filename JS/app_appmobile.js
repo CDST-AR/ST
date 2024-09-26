@@ -26,6 +26,15 @@ const images = [
     "Assets/appmobile_eliminar_instancia.png",
 ];
 
+function preloadImages(imageArray) {
+    imageArray.forEach(src => {
+        const img = new Image();
+        img.src = src;
+    });
+}
+
+preloadImages(images); // 'images' es tu array de imágenes
+
 
 const infoData = [
     {
@@ -344,3 +353,5 @@ prevButton.addEventListener("click", () => {
 
 // Mostrar la primera imagen al cargar
 showImage(currentIndex);
+
+
