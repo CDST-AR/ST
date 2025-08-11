@@ -50,7 +50,7 @@ function limpiarDetallesError() {
     document.getElementById("solutionList").innerHTML = "";
 }
 
-function mostrarSoluciones(errorData) {
+export function mostrarSoluciones(errorData) {
     const solutionList = document.getElementById("solutionList");
     solutionList.innerHTML = "";
 
